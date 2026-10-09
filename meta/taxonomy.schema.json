@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Split Smart user-guide taxonomy",
+  "locales": ["en", "hi", "zh"],
+  "default_locale": "en",
+  "domains": [
+    "getting-started",
+    "groups",
+    "expenses",
+    "settlements",
+    "budgets",
+    "payments",
+    "places-memories",
+    "account",
+    "reference",
+    "platform"
+  ],
+  "doc_types": ["tutorial", "how-to", "concept", "reference"],
+  "audiences": ["end-user", "admin", "developer", "agent"],
+  "proper_nouns_allowlist": [
+    "Split Smart",
+    "Smart Ledger",
+    "Debt Sync",
+    "UPI",
+    "QR Code",
+    "Google Pay",
+    "Google",
+    "VPA"
+  ],
+  "frontmatter_required": [
+    "id",
+    "locale",
+    "available_locales",
+    "title",
+    "summary",
+    "taxonomy",
+    "entity_tags",
+    "keywords"
+  ],
+  "id_pattern": "^doc-[a-z0-9]+(-[a-z0-9]+)*$",
+  "notes": {
+    "stable_id": "The id field is identical across all locale files for the same document. Agents use id as the canonical key; do not add canonical_id.",
+    "snippets": "_snippets files must not include page frontmatter and are excluded from manifests."
+  }
+}

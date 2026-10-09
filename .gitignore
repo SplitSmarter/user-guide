@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+dist/
+*.log
+.DS_Store
+.env*
+.vercel
+.idea/
+docs-manifest.json
+export/
+content.bak*/

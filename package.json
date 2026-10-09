@@ -1,0 +1,28 @@
+{
+  "name": "@splitsmarter/user-guide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Split Smart end-user help center (Nextra docs-as-code)",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "patch-package",
+    "manifest": "node scripts/build-docs-manifest.mjs",
+    "export:content": "node scripts/export-content-json.mjs"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "nextra": "^4.5.0",
+    "nextra-theme-docs": "^4.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "patch-package": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
