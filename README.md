@@ -22,8 +22,8 @@ npm install
 npm run dev
 ```
 
-- Home: [http://localhost:3000](http://localhost:3000)
-- English docs: [http://localhost:3000/docs/en](http://localhost:3000/docs/en)
+- Site redirects `/` to a locale (cookie or browser preference), e.g. [http://localhost:3000/en](http://localhost:3000/en)
+- Switch language with the **language menu** in the sidebar (not via sidebar folders)
 
 ## Build
 
@@ -42,9 +42,11 @@ npm run export:content  # export/pages.json for Vite / React Native embeds
 ## Locales
 
 - `en` — canonical
-- `hi`, `zh` — parallel trees; brand/protocol names stay Latin (see `meta/authoring/locale-and-proper-nouns.md`)
+- `hi`, `zh` — parallel trees under `content/{locale}/`
+- Brand/protocol names stay Latin (see `meta/authoring/locale-and-proper-nouns.md`)
+- Human UI: Nextra `LocaleSwitch` (sidebar language menu). URLs: `/en/...`, `/hi/...`, `/zh/...`
 
 ## Notes
 
-- Docs are served under `/docs/*` via Nextra `contentDirBasePath`.
-- A small `patch-package` patch makes `Layout`’s Zod `children` field optional (required by Nextra 4.6.1 + Zod 4). Applied on `npm install`.
+- `middleware.js` (from `nextra/locales`) redirects unprefixed paths to a locale.
+- A small `patch-package` patch makes `Layout`’s Zod `children` field optional (Nextra 4.6.1 + Zod 4). Applied on `npm install`.

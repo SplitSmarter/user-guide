@@ -12,16 +12,25 @@ export const metadata = {
     'End-user guide for Split Smart: groups, expenses, settlements, budgets, and UPI.'
 }
 
-export default async function RootLayout({ children }) {
+const I18N = [
+  { locale: 'en', name: 'English' },
+  { locale: 'hi', name: 'हिंदी' },
+  { locale: 'zh', name: '中文' }
+]
+
+export default async function LangLayout({ children, params }) {
+  const { lang } = await params
+  const pageMap = await getPageMap(`/${lang}`)
+
   const navbar = (
     <Navbar
       logo={<b>Split Smart Help</b>}
       projectLink="https://github.com/SplitSmarter/user-guide"
     />
   )
-  const pageMap = await getPageMap()
+
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
+    <html lang={lang} dir="ltr" suppressHydrationWarning>
       <Head />
       <body>
         <Layout
@@ -29,8 +38,10 @@ export default async function RootLayout({ children }) {
           pageMap={pageMap}
           docsRepositoryBase="https://github.com/SplitSmarter/user-guide/tree/main"
           editLink="Edit this page"
+          copyPageButton
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           footer={<Footer>Split Smart user guide</Footer>}
+          i18n={I18N}
         >
           {children}
         </Layout>

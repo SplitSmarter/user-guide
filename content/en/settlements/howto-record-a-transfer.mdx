@@ -7,26 +7,43 @@ available_locales: ["en","hi","zh"]
 summary: "Log a payment between people or merchants."
 taxonomy: {"domain":"settlements","module":"settlements","doc_type":"how-to","audience":["end-user"]}
 entity_tags: ["transfer"]
-keywords: ["record payment","transfer money"]
-related_docs: ["doc-set-link-payment"]
+keywords: ["record payment","transfer money","Debt Sync"]
+related_docs: ["doc-set-link-payment","doc-set-balances","doc-gs-settle","doc-pay-friend"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-19T00:00:00.000Z"
 ---
-## Overview
+# Record a transfer
 
-Log a payment between people or merchants.
+Log that money moved between people, or between a person and a merchant. Recording a transfer does **not** clear balances by itself — link it afterward if you want Debt Sync to update what people owe.
 
 ## Prerequisites
 
-- An active Split Smart account (unless this page is about creating one).
+- An active Split Smart account
+- Who paid whom (or which merchant), and how much
+- Optional: the group this transfer belongs with
 
 ## Steps
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+1. Open transfers in Split Smart and start a new transfer.
+2. Choose **from** and **to**. **You (the current user) must be on one side** — either you paid, or you received. The other side is another person or a merchant.
+3. Each side is either a person **or** a merchant (not both on the same side).
+4. Enter the amount, date, and payment category. Add a group or description if it helps you find it later.
+5. Save the transfer.
+6. Confirm it appears in your transfer list with the correct parties and amount.
+
+## Limits to know
+
+- **You are always a party.** You cannot log a transfer that is only between two other people or two merchants; one side is always you.
+- **Custom users cannot be the sender.** If someone without a full account paid, they cannot be on the “from” side.
+- For **settle-up**, use a person → person transfer in the direction of the debt (who owes → who is owed), with you as either sender or receiver. Merchant transfers are for funding or refunds, not peer settlement.
+- Saving the transfer only records cashflow. Open [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense) to clear debt or mark bill cover.
+
+## What good looks like
+
+The transfer shows the right from/to, amount, and date. Balances on related expenses stay the same until you create a settlement or payment link.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- Clear what someone owes, or mark who funded the bill: [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense)
+- Understand the model: [Balances and transfers](/en/settlements/concept-balances-and-transfers)
+- Send money in-app instead of only logging it: [Pay a friend](/en/payments/howto-pay-a-friend)

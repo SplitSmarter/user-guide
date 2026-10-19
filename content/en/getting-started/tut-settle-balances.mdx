@@ -7,26 +7,40 @@ available_locales: ["en","hi","zh"]
 summary: "Clear what you owe with Debt Sync after shared spending."
 taxonomy: {"domain":"getting-started","module":"getting-started","doc_type":"tutorial","audience":["end-user"]}
 entity_tags: ["settlement","debt-sync"]
-keywords: ["settle up","pay balance"]
-related_docs: ["doc-set-record-transfer"]
+keywords: ["settle up","pay balance","Debt Sync"]
+related_docs: ["doc-set-record-transfer","doc-set-link-payment","doc-set-balances","doc-pay-friend"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-19T00:00:00.000Z"
 ---
-## Overview
+# Settle balances
 
-Clear what you owe with Debt Sync after shared spending.
+Clear what you owe after a shared expense. You will record that money moved, then link it so Debt Sync updates remaining debt.
+
+This walkthrough uses a simple dinner: Alice paid ₹1000; Alice’s share ₹400, Bob’s ₹600 — so **Bob owes Alice ₹600**.
 
 ## Prerequisites
 
-- An active Split Smart account (unless this page is about creating one).
+- An active Split Smart account (you will be on one side of the transfer — sender or receiver)
+- A group with at least one shared expense (see [Log your first expense](/en/getting-started/tut-log-first-expense) if you need one)
+- Custom users cannot be the sender on a transfer
 
 ## Steps
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+1. Open balances for the group or expense and confirm who owes whom (here: Bob owes Alice ₹600).
+2. [Record a transfer](/en/settlements/howto-record-a-transfer) from **Bob → Alice** for ₹600. Sign in as Bob (you send) or as Alice (you receive) — **you must be one side** of the transfer.
+3. On that expense, create a **settlement link** between the transfer and the expense for the full ₹600. See [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense) (Path A: settle peer debt).
+4. Check balances again. Remaining peer debt between Bob and Alice on that expense should be **₹0**.
+
+## What good looks like
+
+- The transfer exists with Bob as from and Alice as to, and you are one of those two.
+- A settlement link ties that transfer to the expense.
+- Bob no longer owes Alice for that bill (or the remaining amount matches any partial settle you chose).
+
+Recording the transfer alone is not enough — without the settlement link, balances stay the same.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- Learn the full model: [Balances and transfers](/en/settlements/concept-balances-and-transfers)
+- Mark which payment funded who paid on a bill (not settle-up): [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense)
+- Send money in-app with UPI: [Pay a friend](/en/payments/howto-pay-a-friend)

@@ -5,7 +5,7 @@ export const generateStaticParams = generateStaticParamsFor('mdxPath')
 
 export async function generateMetadata(props) {
   const params = await props.params
-  const { metadata } = await importPage(params.mdxPath)
+  const { metadata } = await importPage(params.mdxPath, params.lang)
   return metadata
 }
 
@@ -18,7 +18,7 @@ export default async function Page(props) {
     toc,
     metadata,
     sourceCode
-  } = await importPage(params.mdxPath)
+  } = await importPage(params.mdxPath, params.lang)
 
   if (!MDXContent) {
     return null

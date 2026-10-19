@@ -1,32 +1,64 @@
 ---
 title: "Link a payment to an expense"
-description: "Connect a transfer or payment link to expense amounts."
+description: "Connect a transfer to an expense to clear debt or mark who funded the bill."
 id: "doc-set-link-payment"
 locale: "en"
 available_locales: ["en","hi","zh"]
-summary: "Connect a transfer or payment link to expense amounts."
+summary: "Connect a transfer to an expense to clear debt or mark who funded the bill."
 taxonomy: {"domain":"settlements","module":"settlements","doc_type":"how-to","audience":["end-user"]}
-entity_tags: ["settlement-link"]
-keywords: ["payment link","link transfer"]
-related_docs: ["doc-set-record-transfer"]
+entity_tags: ["settlement-link","payment-link"]
+keywords: ["payment link","settlement link","link transfer","settle up"]
+related_docs: ["doc-set-record-transfer","doc-set-balances","doc-exp-split-expense","doc-gs-settle"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-19T00:00:00.000Z"
 ---
-## Overview
+# Link a payment to an expense
 
-Connect a transfer or payment link to expense amounts.
+Attach an existing transfer to an expense so Debt Sync either **clears peer debt** or **marks the bill as funded**. Pick the path that matches your goal.
+
+## Which one do I need?
+
+| Goal | Use | Transfer shape |
+|------|-----|----------------|
+| Someone paid you back (or you paid them back) for a shared bill | **Settlement link** | Person → person (debtor → creditor) |
+| Record which payment funded who paid on the expense (usually to a merchant) | **Payment link** | Typically payer → merchant (refunds: merchant → payer only) |
+
+If you have not logged the money yet, [record a transfer](/en/settlements/howto-record-a-transfer) first.
 
 ## Prerequisites
 
-- An active Split Smart account (unless this page is about creating one).
+- An active Split Smart account
+- An expense with shares / paid-by already set
+- A transfer whose parties and remaining amount match what you want to link
 
-## Steps
+## Path A: Settle peer debt
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+1. Open the expense (or balances) where someone still owes someone else.
+2. Choose a **person → person** transfer in the right direction: the person who owes sends to the person who is owed. You must already be one side of that transfer (you paid or you were paid).
+3. Create a **settlement link** between that transfer and the expense. Use the full remaining amount, or a smaller amount for a partial settle.
+4. Confirm remaining debt on that expense drops for those people.
+
+**What good looks like:** Remaining peer debt is reduced (or zero). The transfer still exists; part or all of its amount is now linked as settlement.
+
+Settlement links need peer transfers only — no merchant on either side. You (or a group admin/coordinator) must be allowed to link for that expense and transfer.
+
+## Path B: Cover who paid the bill
+
+1. Open the expense and the person listed as having paid.
+2. Choose a matching transfer:
+   - **Pay-out:** that person → merchant (their payment funded the bill)
+   - **Refund:** merchant → that person only (reduces cover; cannot go below zero)
+3. Create a **payment link** against that person’s paid-by on the expense. Link the full room available, or a partial amount.
+4. Confirm cover toward their paid amount increases (or refund cover reduces net cover correctly).
+
+**What good looks like:** The expense shows that paid-by as covered (fully or partly). This does **not** mean other people paid that person back — use Path A for settle-up.
+
+## Shared amount pool
+
+Settlement links and payment links draw from the **same** transfer amount. You cannot link more than the transfer still has available. Prefer separate transfers when one payment is purely settle-up and another is purely merchant cover.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- First full settle walkthrough: [Settle balances](/en/getting-started/tut-settle-balances)
+- Why balances and links work this way: [Balances and transfers](/en/settlements/concept-balances-and-transfers)
+- Adjust who paid and who shares: [Split an expense](/en/expenses/howto-split-an-expense)

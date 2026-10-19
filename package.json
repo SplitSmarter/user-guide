@@ -19,6 +19,8 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@types/node": "20.17.6",
+    "@types/react": "19.3.0",
     "gray-matter": "^4.0.3",
     "patch-package": "^8.0.1"
   },

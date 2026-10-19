@@ -6,9 +6,27 @@ const withNextra = nextra({
     codeblocks: false
   },
   defaultShowCopyCode: true,
-  contentDirBasePath: '/docs'
+  contentDirBasePath: '/'
 })
 
 export default withNextra({
-  reactStrictMode: true
+  reactStrictMode: true,
+  i18n: {
+    locales: ['en', 'hi', 'zh'],
+    defaultLocale: 'en'
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            // Allow Nextra "Copy page" / code-copy clipboard usage
+            key: 'Permissions-Policy',
+            value: 'clipboard-write=(self)'
+          }
+        ]
+      }
+    ]
+  }
 })

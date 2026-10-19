@@ -7,26 +7,68 @@ available_locales: ["en","hi","zh"]
 summary: "How Debt Sync tracks what people owe and how transfers clear it."
 taxonomy: {"domain":"settlements","module":"settlements","doc_type":"concept","audience":["end-user"]}
 entity_tags: ["balance","transfer","debt-sync"]
-keywords: ["balances","transfers"]
-related_docs: ["doc-set-record-transfer"]
+keywords: ["balances","transfers","settlement link","payment link"]
+related_docs: ["doc-set-record-transfer","doc-set-link-payment","doc-gs-settle","doc-exp-paid-by-vs-sharers","doc-pay-accounts"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-19T00:00:00.000Z"
 ---
-## Overview
+# Balances and transfers
 
-How Debt Sync tracks what people owe and how transfers clear it.
+Debt Sync answers two questions after you log expenses: **who owes whom**, and **how do you clear that debt** when money actually moves.
 
-## Prerequisites
+## How balances form
 
-- An active Split Smart account (unless this page is about creating one).
+Every shared expense has people who **paid** and people who **share** the cost. For each person on that expense:
 
-## Steps
+**Net = amount paid − share**
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+- Positive net → they are owed money (creditor)
+- Negative net → they owe money (debtor)
+
+**Example:** Alice pays ₹1000 for dinner. Alice’s share is ₹400; Bob’s share is ₹600.
+
+| Person | Paid | Share | Net |
+|--------|------|-------|-----|
+| Alice  | ₹1000 | ₹400 | **+₹600** (Bob owes her) |
+| Bob    | ₹0    | ₹600 | **−₹600** (owes Alice) |
+
+Group balances are those nets summed across the group’s expenses. For paid-by vs sharers detail, see [Paid by vs sharers](/en/expenses/concept-paid-by-vs-sharers).
+
+## What a transfer is
+
+A **transfer** records that money moved: person to person, or person to merchant (or the reverse).
+
+**You (the signed-in user) are always on one side** — as sender or as receiver. The other side is another person or a merchant. You do not log transfers that involve only other people.
+
+Recording a transfer alone does **not** change who owes whom. Debt Sync only updates balances when you **link** that transfer to an expense.
+
+## Two kinds of links
+
+| Link | What it does | Clears “who owes whom”? |
+|------|----------------|-------------------------|
+| **Settlement link** | Attaches a **peer** transfer (person → person) to an expense to clear debt | Yes |
+| **Payment link** | Attaches a transfer to someone’s **paid-by** on the expense (usually payer → merchant) so the bill shows as funded | No — cover / receipt, not settle-up |
+
+Continuing the example:
+
+- Bob pays Alice ₹600 and you add a **settlement link** → remaining peer debt drops toward zero.
+- Alice’s payment to the restaurant as a **payment link** → documents that her payment funded the bill; it does not mean Bob paid Alice back.
+
+## One transfer, one amount pool
+
+Each transfer has a single amount. Settlement links and payment links both draw from that same pool. As you link amounts, less of the transfer remains available to link elsewhere.
+
+While a transfer has links, you typically cannot change its money or parties until those links are adjusted.
+
+## Things to keep in mind
+
+- **Settle-up needs a peer transfer.** Both sides must be people (no merchant), and you are one of them. Direction must match the debt: the person who owes sends to the person who is owed.
+- **You can settle part of a debt.** Link less than the full remaining amount when needed.
+- **Editing an expense after links exist** may scale, clamp, or unlink those links so the ledger stays consistent.
+- **“Expense settled” is not the same as “everyone’s peer debt is zero.”** An expense-level settled flag can reflect linked settlement amounts against the bill total; peer balances are what Debt Sync clears person to person.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- First time clearing a balance? [Settle balances](/en/getting-started/tut-settle-balances)
+- Log money that moved: [Record a transfer](/en/settlements/howto-record-a-transfer)
+- Attach it to an expense: [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense)
