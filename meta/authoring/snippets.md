@@ -9,7 +9,7 @@ Reusable MDX fragments live in `snippets/{locale}/` at the **repo root** (not un
 3. Import relatively from content:
 
 ```mdx
-import UpiDisclaimer from '../../../snippets/en/upi-disclaimer.mdx'
+import ExampleNote from '../../../snippets/en/example-note.mdx'
 ```
 
 4. Match locale of the importing page.

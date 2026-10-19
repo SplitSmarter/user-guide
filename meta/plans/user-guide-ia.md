@@ -9,7 +9,6 @@ Source of truth for sidebar structure. Keep in sync with `content/{locale}/_meta
 - Expenses (Smart Ledger) — paid-by vs sharers, split, items, recurring, receipts
 - Settlements (Debt Sync) — balances, transfers, payment links
 - Budgets — rules and creating a budget
-- Payments & UPI — accounts, link UPI, pay a friend
 - Places & memories — places, memories, trip memory
 - Account & privacy — password, Google, visibility
 - Reference — glossary, statuses, FAQ
