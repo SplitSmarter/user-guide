@@ -1,0 +1,29 @@
+---
+title: "Date window"
+description: "A Memory covers spending only between its start and end dates."
+id: "doc-mem-dates"
+locale: "en"
+available_locales: ["en", "hi", "zh"]
+summary: "A Memory covers spending only between its start and end dates."
+taxonomy:
+  domain: memories
+  module: components
+  doc_type: concept
+  audience: [end-user]
+entity_tags: [memory, dates]
+keywords: [memory dates, date window, start end]
+related_docs:
+  - doc-mem-concept
+  - doc-mem-expense-links
+  - doc-mem-lifecycle
+version_introduced: v1.0.0
+last_updated: 2026-10-21
+---
+
+# Date window
+
+Every Memory has a **start** date and an **end** date. Together they are the date window: the days when spending can belong to that experience.
+
+An expense stays linked only if its **expense date** falls inside that window. If you try to save an expense while a Memory outside that window is still selected, the expense will not save. Turn that Memory off or change the date. If you later move the expense date, shorten the window, or complete the Memory so the end date no longer covers the expense, Split Smart drops the link. It does not add links when a date newly falls inside the window.
+
+Set the window wide enough for the whole trip or event before you log spend. You can still complete the Memory early and confirm the final end date. See [Lifecycle](/en/memories/components/concept-lifecycle) and [Expense links](/en/memories/components/concept-expense-links).

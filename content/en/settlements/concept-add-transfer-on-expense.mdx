@@ -1,0 +1,29 @@
+---
+title: "On an expense"
+description: "The Add transfer switch on an expense pays a merchant. It is not how people settle."
+id: "doc-set-expense-transfer"
+locale: "en"
+available_locales: ["en", "hi", "zh"]
+summary: "The Add transfer switch on an expense pays a merchant. It is not how people settle."
+taxonomy:
+  domain: settlements
+  module: settlements
+  doc_type: concept
+  audience: [end-user]
+entity_tags: [transfer, expense, merchant]
+keywords: [add transfer, merchant, expense]
+related_docs:
+  - doc-set-record-transfer
+  - doc-plc-merchant-location
+  - doc-set-link-payment
+version_introduced: v1.0.0
+last_updated: 2026-10-23
+---
+
+# On an expense
+
+On **Add Expense**, **Add transfer** is a switch under the split. It is not the standalone transfer form.
+
+Turn it on, then choose a merchant. You can pick that merchant’s branch, or skip it. See [On a transfer](/en/places/concept-place-on-transfer). One **SUBMIT** saves the expense and that merchant payment together. The amount is what you paid on the expense.
+
+This records where your payment went. It does not settle what other people owe you. For a payment between people, use [Record a transfer](/en/settlements/howto-record-a-transfer).

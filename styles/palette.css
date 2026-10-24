@@ -1,0 +1,116 @@
+/**
+ * Platinum palette — synced with Split Smart mobile UI
+ * (my-app/app/global.css + src/constants/colors.ts).
+ *
+ * Edit THIS file to recolor the docs site. Keep Head accent HSL in
+ * app/[lang]/layout.jsx aligned with --color-accent-sky.
+ *
+ * Token values are space-separated RGB channels (use as rgb(var(--token))).
+ */
+
+/* LIGHT THEME (Default) — Platinum */
+:root {
+  --color-cat-purple: 139 92 246;
+  --color-cat-purple-bg: 243 232 255;
+  --color-cat-blue: 59 130 246;
+  --color-cat-blue-bg: 219 234 254;
+  --color-cat-amber: 245 158 11;
+  --color-cat-amber-bg: 254 243 199;
+
+  /* Backgrounds */
+  --color-bg-primary: 241 244 248; /* #F1F4F8 */
+  --color-bg-primary-lighter: 255 255 255; /* #FFFFFF */
+  --color-bg-primary-darker: 226 232 240; /* #E2E8F0 */
+  --color-bg-canvas: 255 255 255; /* #FFFFFF */
+
+  /* Brand CTA (slate) — emerald reserved for status */
+  --color-bg-secondary: 15 23 42; /* #0F172A */
+  --color-bg-secondary-lighter: 209 250 229; /* #D1FAE5 */
+  --color-bg-secondary-darker: 30 41 59; /* #1E293B */
+  --color-bg-overlay: 255 255 255;
+
+  /* Accent (sky / indigo) */
+  --color-accent-sky: 2 132 199; /* #0284C7 */
+  --color-accent-sky-bg: 224 242 254; /* #E0F2FE */
+  --color-orb-indigo: 99 102 241; /* #6366F1 */
+
+  /* Text */
+  --color-text-primary: 15 23 42; /* #0F172A */
+  --color-text-primary-placeholder: 148 163 184; /* #94A3B8 */
+  --color-text-primary-lighter: 100 116 139; /* #64748B */
+  --color-text-primary-darker: 2 6 23; /* #020617 */
+  --color-text-canvas: 15 23 42;
+  --color-text-secondary: 255 255 255;
+  --color-text-secondary-lighter: 241 245 249;
+  --color-text-secondary-darker: 203 213 225;
+  --color-text-overlay: 15 23 42;
+  --color-text-link: 2 132 199;
+
+  /* Icons */
+  --color-icon-primary: 71 85 105;
+  --color-icon-primary-lighter: 148 163 184;
+  --color-icon-primary-darker: 30 41 59;
+  --color-icon-secondary: 16 185 129;
+  --color-icon-secondary-lighter: 52 211 153;
+  --color-icon-secondary-darker: 5 150 105;
+
+  /* Status */
+  --color-status-error: 239 68 68;
+  --color-green-increase: 16 185 129;
+  --color-red-decrease: 239 68 68;
+  --color-golden: 217 119 6;
+  --color-border-input: 203 213 225; /* #CBD5E1 */
+
+  /* Hex mirrors for Nextra Head / ImageResponse (keep in sync with channels above) */
+  --palette-bg-primary-hex: #f1f4f8;
+  --palette-bg-primary-dark-hex: #07090e;
+  --palette-brand-hex: #0f172a;
+  --palette-accent-sky-hex: #0284c7;
+}
+
+/* DARK THEME — Platinum (Nextra / next-themes uses .dark) */
+.dark {
+  --color-cat-purple: 167 139 250;
+  --color-cat-purple-bg: 53 35 80;
+  --color-cat-blue: 96 165 250;
+  --color-cat-blue-bg: 25 50 85;
+  --color-cat-amber: 251 191 36;
+  --color-cat-amber-bg: 70 50 20;
+
+  --color-bg-primary: 7 9 14; /* #07090E */
+  --color-bg-primary-lighter: 30 41 59; /* #1E293B */
+  --color-bg-primary-darker: 11 15 23; /* #0B0F17 */
+  --color-bg-canvas: 15 23 42; /* #0F172A */
+
+  --color-bg-secondary: 248 250 252; /* #F8FAFC */
+  --color-bg-secondary-lighter: 6 78 59; /* #064E3B */
+  --color-bg-secondary-darker: 226 232 240; /* #E2E8F0 */
+  --color-bg-overlay: 30 41 59;
+
+  --color-accent-sky: 56 189 248; /* #38BDF8 */
+  --color-accent-sky-bg: 12 74 110; /* #0C4A6E */
+  --color-orb-indigo: 99 102 241;
+
+  --color-text-primary: 248 250 252; /* #F8FAFC */
+  --color-text-primary-placeholder: 100 116 139;
+  --color-text-primary-lighter: 148 163 184;
+  --color-text-primary-darker: 255 255 255;
+  --color-text-canvas: 248 250 252;
+  --color-text-secondary: 15 23 42;
+  --color-text-secondary-lighter: 30 41 59;
+  --color-text-secondary-darker: 71 85 105;
+  --color-text-overlay: 248 250 252;
+  --color-text-link: 56 189 248;
+
+  --color-icon-primary: 148 163 184;
+  --color-icon-primary-lighter: 203 213 225;
+  --color-icon-primary-darker: 100 116 139;
+  --color-icon-secondary: 16 185 129;
+  --color-icon-secondary-lighter: 52 211 153;
+  --color-icon-secondary-darker: 5 150 105;
+
+  --color-status-error: 248 113 113;
+  --color-border-input: 51 65 85;
+
+  --palette-accent-sky-hex: #38bdf8;
+}

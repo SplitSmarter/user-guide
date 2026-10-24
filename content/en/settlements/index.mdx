@@ -1,25 +1,33 @@
 ---
 title: "Settlements (Debt Sync)"
-description: "See who owes whom after shared expenses, record money that moved, and clear balances with Debt Sync."
+description: "A transfer records that money moved. Saving it does not change who owes whom."
 id: "doc-settlements-index"
 locale: "en"
-available_locales: ["en","hi","zh"]
-summary: "See who owes whom after shared expenses, record money that moved, and clear balances with Debt Sync."
-taxonomy: {"domain":"settlements","module":"settlements","doc_type":"reference","audience":["end-user"]}
-entity_tags: ["settlements","debt-sync"]
-keywords: ["Settlements","Debt Sync","balances","settle up"]
-related_docs: ["doc-set-balances","doc-set-record-transfer","doc-set-link-payment","doc-gs-settle"]
-version_introduced: "v1.0.0"
-last_updated: "2026-10-19T00:00:00.000Z"
+available_locales: ["en", "hi", "zh"]
+summary: "A transfer records that money moved. Saving it does not change who owes whom."
+taxonomy:
+  domain: settlements
+  module: settlements
+  doc_type: reference
+  audience: [end-user]
+entity_tags: [settlements, transfer, debt-sync]
+keywords: [transfer, Debt Sync, sender, merchant]
+related_docs:
+  - doc-set-balances
+  - doc-set-record-transfer
+  - doc-set-expense-transfer
+  - doc-set-link-payment
+version_introduced: v1.0.0
+last_updated: 2026-10-23
 ---
+
 # Settlements (Debt Sync)
 
-**Debt Sync** tracks what people owe after shared spending in **Smart Ledger**, and helps you clear those balances. Record that money moved, then link it to an expense so remaining debt updates.
+A **transfer** is a record that money moved. It can be between you and another person, or between you and a merchant. Saving it leaves the expense as it was. The bill still shows who owes whom.
 
-## Start here
+You start one in two places:
 
-1. [Balances and transfers](/en/settlements/concept-balances-and-transfers) — how balances form and how transfers relate to debt.
-2. [Record a transfer](/en/settlements/howto-record-a-transfer) — log that money moved between people or a merchant.
-3. [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense) — attach that transfer so debt clears or the bill shows as funded.
+- On its own, from the home create sheet, the home **Transfer** button, or **Activity** on the **Transfers** tab. See [Record a transfer](/en/settlements/howto-record-a-transfer).
+- On an expense, with the **Add transfer** switch, which pays a merchant. See [On an expense](/en/settlements/concept-add-transfer-on-expense).
 
-New to Split Smart? Follow the first-success path: [Settle balances](/en/getting-started/tut-settle-balances).
+How the dinner bill becomes “Bob owes Alice” is [Balances and transfers](/en/settlements/concept-balances-and-transfers). Why that debt stays after you save is [Does not clear a debt](/en/settlements/howto-link-payment-to-expense).

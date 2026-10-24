@@ -1,0 +1,33 @@
+---
+title: "Lifecycle"
+description: "A Memory is active while you use it, archived when you complete it, or deleted when you remove it."
+id: "doc-mem-lifecycle"
+locale: "en"
+available_locales: ["en", "hi", "zh"]
+summary: "A Memory is active while you use it, archived when you complete it, or deleted when you remove it."
+taxonomy:
+  domain: memories
+  module: components
+  doc_type: concept
+  audience: [end-user]
+entity_tags: [memory, status]
+keywords: [archive memory, complete memory, memory status]
+related_docs:
+  - doc-mem-concept
+  - doc-mem-complete
+  - doc-mem-context
+version_introduced: v1.0.0
+last_updated: 2026-10-21
+---
+
+# Lifecycle
+
+| Status | Meaning |
+|--------|---------|
+| **Active** | You can use the Memory, turn it on so new expenses offer it, and attach expenses that fit the date window. |
+| **Archived** | The experience is finished. Completing a Memory usually archives it, sets or confirms the end date, and stops offering it on new expenses. |
+| **Deleted** | The Memory is removed from normal use. It is no longer offered on new expenses. |
+
+Most Memories are ones you create. Split Smart may rarely add a system Memory; you can ignore those unless the app shows one.
+
+Completing does not delete expenses. It can drop Memory links whose expense dates fall outside the final window. See [Complete a memory](/en/memories/guides/howto-complete-a-memory).

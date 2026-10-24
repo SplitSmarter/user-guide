@@ -6,11 +6,13 @@
   "domains": [
     "getting-started",
     "groups",
+    "people",
     "expenses",
     "settlements",
     "budgets",
     "payments",
-    "places-memories",
+    "memories",
+    "places",
     "account",
     "reference",
     "platform"

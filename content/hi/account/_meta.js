@@ -1,6 +1,6 @@
 export default {
-  'index': 'Overview',
-  'howto-reset-password': 'Reset your password',
+  index: 'Overview',
   'howto-login-with-google': 'Log in with Google',
-  'howto-manage-profile-visibility': 'Manage profile visibility'
+  'howto-reset-password': 'Reset your password',
+  'howto-manage-profile-visibility': 'Who can find you'
 }

@@ -8,6 +8,8 @@ Local path: `D:\Projects\split smarter\user-guide`
 | Path | Role |
 |------|------|
 | `content/` | Published MDX (Nextra + future agents/embeds) |
+| `styles/palette.css` | Platinum color tokens (edit here to recolor the site) |
+| `styles/nextra-bridge.css` | Maps palette → Nextra CSS vars |
 | `snippets/` | Body-only MDX partials (not routes) |
 | `meta/` | Authoring guides & IA plans (never published) |
 | `scripts/` | Manifest / export stubs for agents and embeds |
@@ -45,6 +47,16 @@ npm run export:content  # export/pages.json for Vite / React Native embeds
 - `hi`, `zh` — parallel trees under `content/{locale}/`
 - Brand/protocol names stay Latin (see `meta/authoring/locale-and-proper-nouns.md`)
 - Human UI: Nextra `LocaleSwitch` (sidebar language menu). URLs: `/en/...`, `/hi/...`, `/zh/...`
+
+## Theming (Platinum palette)
+
+Colors match the Split Smart mobile UI (`COLORS` / `global.css`).
+
+1. Edit **[`styles/palette.css`](styles/palette.css)** — light (`:root`) and dark (`.dark`) RGB tokens.
+2. Keep [`styles/nextra-bridge.css`](styles/nextra-bridge.css) mapping-only (no hardcoded hex).
+3. If you change **accent sky** (`--color-accent-sky`), update `HEAD_ACCENT` HSL in [`app/[lang]/layout.jsx`](app/[lang]/layout.jsx) to match (`#0284C7` ≈ hue 199).
+4. Brand CTA slate for icons is `#0F172A` (`app/icon.tsx` / `app/apple-icon.tsx`).
+5. Dark mode follows Nextra’s theme toggle (`.dark` class).
 
 ## Notes
 

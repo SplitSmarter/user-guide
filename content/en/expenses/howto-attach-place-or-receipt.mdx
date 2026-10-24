@@ -1,32 +1,32 @@
 ---
 title: "Attach a place or receipt"
-description: "Link places and receipt images to an expense."
+description: "The place on an expense is its Location. A receipt is a photo of the bill. A merchant branch belongs on a transfer."
 id: "doc-exp-attach-place"
 locale: "en"
-available_locales: ["en","hi","zh"]
-summary: "Link places and receipt images to an expense."
-taxonomy: {"domain":"expenses","module":"expenses","doc_type":"how-to","audience":["end-user"]}
-entity_tags: ["place","receipt","asset"]
-keywords: ["attach receipt","expense place"]
-related_docs: ["doc-plc-save-place"]
-version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+available_locales: ["en", "hi", "zh"]
+summary: "The place on an expense is its Location. A receipt is a photo of the bill. A merchant branch belongs on a transfer."
+taxonomy:
+  domain: expenses
+  module: expenses
+  doc_type: how-to
+  audience: [end-user]
+entity_tags: [place, receipt]
+keywords: [expense location, receipt, merchant branch]
+related_docs:
+  - doc-plc-expense
+  - doc-plc-save-place
+  - doc-plc-merchant-location
+  - doc-mem-attach-expense
+version_introduced: v1.0.0
+last_updated: 2026-10-23
 ---
-## Overview
 
-Link places and receipt images to an expense.
+# Attach a place or receipt
 
-## Prerequisites
+These are three different things on a spend.
 
-- An active Split Smart account (unless this page is about creating one).
+- The **place** is the **Location** on the expense: your current spot, a saved place, or none. See [On an expense](/en/places/concept-place-on-expense).
+- A **receipt** is a photo of the bill. It is not the place.
+- A **merchant branch** is the location you pick after choosing a merchant on a transfer. See [On a transfer](/en/places/concept-place-on-transfer).
 
-## Steps
-
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
-
-## Next steps
-
-See related pages in the frontmatter `related_docs` list.
-
+Save a location you will use again in [Save a place](/en/places/howto-save-a-place). A Memory is separate: [Attach memory to an expense](/en/memories/guides/howto-attach-memory-to-expense).

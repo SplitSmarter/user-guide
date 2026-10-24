@@ -1,6 +1,7 @@
 export default {
-  'index': 'Overview',
+  index: 'Overview',
   'concept-balances-and-transfers': 'Balances and transfers',
   'howto-record-a-transfer': 'Record a transfer',
-  'howto-link-payment-to-expense': 'Link a payment to an expense'
+  'concept-add-transfer-on-expense': 'On an expense',
+  'howto-link-payment-to-expense': 'Does not clear a debt'
 }

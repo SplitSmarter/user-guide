@@ -1,32 +1,47 @@
 ---
 title: "Invite members"
-description: "Send group invites and manage pending invitations."
+description: "Add someone while creating a group, or share the group link. They join immediately or get an invite they can accept or decline."
 id: "doc-grp-invite"
 locale: "en"
-available_locales: ["en","hi","zh"]
-summary: "Send group invites and manage pending invitations."
-taxonomy: {"domain":"groups","module":"groups","doc_type":"how-to","audience":["end-user"]}
-entity_tags: ["invite"]
-keywords: ["invite to group"]
-related_docs: ["doc-grp-roles-visibility"]
-version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+available_locales: ["en", "hi", "zh"]
+summary: "Add someone while creating a group, or share the group link. They join immediately or get an invite they can accept or decline."
+taxonomy:
+  domain: groups
+  module: groups
+  doc_type: how-to
+  audience: [end-user]
+entity_tags: [invite, group]
+keywords: [invite to group, share link, accept invite]
+related_docs:
+  - doc-grp-roles-visibility
+  - doc-gs-create-group
+  - doc-ppl-connection-settings
+  - doc-grp-custom-users
+version_introduced: v1.0.0
+last_updated: 2026-10-23
 ---
-## Overview
 
-Send group invites and manage pending invitations.
+# Invite members
 
-## Prerequisites
+People you add start as members. Someone who is already in the group is not invited again.
 
-- An active Split Smart account (unless this page is about creating one).
+## Add while you create the group
 
-## Steps
+1. Follow [Create a group and invite people](/en/getting-started/tut-create-group-and-invite).
+2. Under **Members**, tap **Add** and choose the person. That can be an account or a [custom contact](/en/people/howto-custom-contacts).
+3. Create the group.
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+If their settings allow everyone, or they allow only friends and they have connected with you, they join immediately. Otherwise they get an invite, if they still accept invitations. If they allow nobody, you cannot add them. The rule is in [What a connection allows](/en/people/concept-connection-settings).
+
+## Share a link
+
+Open the group and share its invite link. A link can expire or run out of uses. Someone who uses it joins as a member.
+
+## If you are invited
+
+Accept the invite to join. Decline it to stay out.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- [Groups, roles, and visibility](/en/groups/concept-groups-roles-visibility)
+- [People](/en/people)

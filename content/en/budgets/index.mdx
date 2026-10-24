@@ -1,17 +1,36 @@
 ---
 title: "Budgets"
-description: "Guides for Budgets."
+description: "A budget is a spending cap. You choose who it covers and, if you want, what it watches."
 id: "doc-budgets-index"
 locale: "en"
-available_locales: ["en","hi","zh"]
-summary: "Guides for Budgets."
-taxonomy: {"domain":"budgets","module":"budgets","doc_type":"reference","audience":["end-user"]}
-entity_tags: ["budgets"]
-keywords: ["Budgets"]
-related_docs: []
-version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+available_locales: ["en", "hi", "zh"]
+summary: "A budget is a spending cap. You choose who it covers and, if you want, what it watches."
+taxonomy:
+  domain: budgets
+  module: budgets
+  doc_type: reference
+  audience: [end-user]
+entity_tags: [budget]
+keywords: [budget, spending cap]
+related_docs:
+  - doc-bud-create
+  - doc-bud-rules
+version_introduced: v1.0.0
+last_updated: 2026-10-24
 ---
+
 # Budgets
 
-Browse the pages in this section from the sidebar.
+A **budget** is a cap on spending for a stretch of time. You name it, set the amount, and choose who it covers: **Just me**, **Shared**, or **Group**.
+
+Create one in [Create a budget](/en/budgets/howto-create-a-budget). What the cap watches, and the difference between a warning and a block, is [What the cap does](/en/budgets/concept-budget-rules-and-caps).
+
+## Where it shows up
+
+A **group** budget appears on that group’s **Budgets** tab: the name, how often it resets, **Soft** or **Hard**, and the amount. Opening that row is not available yet.
+
+A budget for **Just me** or **Shared** does not get its own list. While you add an expense, a matching budget can show as a chip with its name and how full it is. A hard cap that this expense would pass shows **Hard** on that chip.
+
+The **Budgets & Goals** cards on home are examples. They are not the budgets you saved.
+
+After you save, the app has no screen to edit, delete, or pause a budget.

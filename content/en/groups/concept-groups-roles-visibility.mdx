@@ -1,32 +1,45 @@
 ---
 title: "Groups, roles, and visibility"
-description: "How group membership, roles, and visibility work."
+description: "The person who creates a group is the admin. Members start with a smaller set of actions. Public groups can be found while they accept members."
 id: "doc-grp-roles-visibility"
 locale: "en"
-available_locales: ["en","hi","zh"]
-summary: "How group membership, roles, and visibility work."
-taxonomy: {"domain":"groups","module":"groups","doc_type":"concept","audience":["end-user"]}
-entity_tags: ["group","roles"]
-keywords: ["group roles","visibility"]
-related_docs: ["doc-grp-invite"]
-version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+available_locales: ["en", "hi", "zh"]
+summary: "The person who creates a group is the admin. Members start with a smaller set of actions. Public groups can be found while they accept members."
+taxonomy:
+  domain: groups
+  module: groups
+  doc_type: concept
+  audience: [end-user]
+entity_tags: [group, roles, visibility]
+keywords: [admin, coordinator, member, public group, private group]
+related_docs:
+  - doc-groups-index
+  - doc-grp-invite
+  - doc-ppl-connection-settings
+version_introduced: v1.0.0
+last_updated: 2026-10-23
 ---
-## Overview
 
-How group membership, roles, and visibility work.
+# Groups, roles, and visibility
 
-## Prerequisites
+The person who creates the group is the **admin**. People added later start as **members**. A **coordinator** has the same extra actions as an admin.
 
-- An active Split Smart account (unless this page is about creating one).
+You see a person’s role on **Members**.
 
-## Steps
+## Who can do what
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+**Admin** and **coordinator** can:
 
-## Next steps
+- Edit the group
+- Invite and add people
+- Log expenses
+- Approve members
+- Manage settlements and budgets
 
-See related pages in the frontmatter `related_docs` list.
+A **member** does not edit the group, and does not manage settlements or budgets. A member can log expenses, invite, add people, and approve members only while the group leaves those on.
 
+## Public and private
+
+A **public** group can be found while it is still accepting members. A **private** group is only for members and people invited in. A new group starts public.
+
+How someone joins is in [Invite members](/en/groups/howto-invite-members). Whether they join immediately or get an invite depends on their settings in [What a connection allows](/en/people/concept-connection-settings).

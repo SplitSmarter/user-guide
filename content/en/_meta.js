@@ -1,11 +1,13 @@
 export default {
   index: 'Home',
   'getting-started': 'Getting started',
-  groups: 'Groups & people',
+  groups: 'Groups',
+  people: 'People',
   expenses: 'Expenses (Smart Ledger)',
   settlements: 'Settlements (Debt Sync)',
   budgets: 'Budgets',
-  'places-memories': 'Places & memories',
+  memories: 'Memories',
+  places: 'Places',
   account: 'Account & privacy',
   reference: 'Reference'
 }
