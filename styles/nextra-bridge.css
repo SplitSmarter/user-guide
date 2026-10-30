@@ -1,0 +1,19 @@
+/**
+ * Maps Platinum palette tokens → Nextra theme internals.
+ * Do not hardcode hex here — change styles/palette.css instead.
+ */
+
+:root {
+  /* Nextra page background: rgb(var(--nextra-bg)) */
+  --nextra-bg: var(--color-bg-primary);
+
+  /* Primary accent (links / active nav) — sky, not emerald */
+  --nextra-primary-hue: 199deg;
+  --nextra-primary-saturation: 98%;
+}
+
+.dark {
+  --nextra-bg: var(--color-bg-primary);
+  --nextra-primary-hue: 199deg;
+  --nextra-primary-saturation: 90%;
+}

@@ -1,5 +1,5 @@
 export default {
-  'index': 'Overview',
-  'concept-budget-rules-and-caps': 'Budget rules and caps',
-  'howto-create-a-budget': 'Create a budget'
+  index: 'Overview',
+  'howto-create-a-budget': 'Create a budget',
+  'concept-budget-rules-and-caps': 'What the cap does'
 }

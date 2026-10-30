@@ -1,4 +1,5 @@
 node_modules/
+middleware.export-disabled.js
 .next/
 out/
 dist/

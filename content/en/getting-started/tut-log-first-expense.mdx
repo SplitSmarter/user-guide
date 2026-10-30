@@ -1,32 +1,45 @@
 ---
 title: "Log your first expense"
-description: "Add a shared expense in Smart Ledger and choose sharers."
+description: "Log the ₹1000 dinner so Bob owes Alice ₹600."
 id: "doc-gs-log-expense"
 locale: "en"
 available_locales: ["en","hi","zh"]
-summary: "Add a shared expense in Smart Ledger and choose sharers."
+summary: "Log the ₹1000 dinner so Bob owes Alice ₹600."
 taxonomy: {"domain":"getting-started","module":"getting-started","doc_type":"tutorial","audience":["end-user"]}
 entity_tags: ["expense","smart-ledger"]
-keywords: ["add expense","first expense"]
-related_docs: ["doc-exp-split-expense","doc-gs-settle"]
+keywords: ["add expense","paid by","split between","first expense"]
+related_docs: ["doc-exp-paid-by-vs-sharers","doc-gs-settle","doc-gs-create-group"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-22"
 ---
-## Overview
 
-Add a shared expense in Smart Ledger and choose sharers.
+# Log your first expense
+
+Log the dinner in Smart Ledger. Alice paid ₹1000. Her share is ₹400. Bob’s share is ₹600. After you save, **Bob owes Alice ₹600**.
+
+Who paid and who shares the cost are different. See [Paid by vs sharers](/en/expenses/concept-paid-by-vs-sharers).
 
 ## Prerequisites
 
-- An active Split Smart account (unless this page is about creating one).
+- The dinner group from [Create a group and invite people](/en/getting-started/tut-create-group-and-invite)
+- You are signed in as one of the people on the bill
 
 ## Steps
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+1. On the home wallet, open the create sheet and choose **Expense**.
+2. Select the dinner group.
+3. Set the amount to ₹1000 and the date to today.
+4. Under **Paid by**, set Alice as the person who paid the ₹1000.
+5. Under **Split Between**, set Alice’s share to ₹400 and Bob’s share to ₹600.
+6. Leave Memory and Place off. If a Memory chip is already selected, turn it off for this first bill.
+7. Save.
+
+Do not use the **Add transfer** switch on this screen. That switch records a payment to a merchant on the bill. It does not settle what Bob owes Alice.
+
+## What good looks like
+
+Open the expense. Bob owes Alice ₹600. **Settlement Path** still shows that amount as pending.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+[Settle balances](/en/getting-started/tut-settle-balances).

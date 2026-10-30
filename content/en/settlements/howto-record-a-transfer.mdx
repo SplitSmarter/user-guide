@@ -1,49 +1,55 @@
 ---
 title: "Record a transfer"
-description: "Log a payment between people or merchants."
+description: "Log that money moved from you to a person or a merchant, or the other way around."
 id: "doc-set-record-transfer"
 locale: "en"
-available_locales: ["en","hi","zh"]
-summary: "Log a payment between people or merchants."
-taxonomy: {"domain":"settlements","module":"settlements","doc_type":"how-to","audience":["end-user"]}
-entity_tags: ["transfer"]
-keywords: ["record payment","transfer money","Debt Sync"]
-related_docs: ["doc-set-link-payment","doc-set-balances","doc-gs-settle","doc-pay-friend"]
-version_introduced: "v1.0.0"
-last_updated: "2026-10-19T00:00:00.000Z"
+available_locales: ["en", "hi", "zh"]
+summary: "Log that money moved from you to a person or a merchant, or the other way around."
+taxonomy:
+  domain: settlements
+  module: settlements
+  doc_type: how-to
+  audience: [end-user]
+entity_tags: [transfer]
+keywords: [record transfer, sender, recipient, merchant]
+related_docs:
+  - doc-settlements-index
+  - doc-set-expense-transfer
+  - doc-set-link-payment
+  - doc-plc-merchant-location
+  - doc-gs-settle
+version_introduced: v1.0.0
+last_updated: 2026-10-23
 ---
+
 # Record a transfer
 
-Log that money moved between people, or between a person and a merchant. Recording a transfer does **not** clear balances by itself — link it afterward if you want Debt Sync to update what people owe.
+Use this when you want a record of money that already moved. It does not clear what people owe on an expense. See [Does not clear a debt](/en/settlements/howto-link-payment-to-expense).
 
 ## Prerequisites
 
-- An active Split Smart account
-- Who paid whom (or which merchant), and how much
-- Optional: the group this transfer belongs with
+- You are signed in
+- Who the money moved between, and how much
 
 ## Steps
 
-1. Open transfers in Split Smart and start a new transfer.
-2. Choose **from** and **to**. **You (the current user) must be on one side** — either you paid, or you received. The other side is another person or a merchant.
-3. Each side is either a person **or** a merchant (not both on the same side).
-4. Enter the amount, date, and payment category. Add a group or description if it helps you find it later.
-5. Save the transfer.
-6. Confirm it appears in your transfer list with the correct parties and amount.
+1. On the home wallet, open the create sheet and choose **Transfer**. The same form opens from the **Transfer** button on home, or from **Activity**, on the **Transfers** tab, via **Add transfer**.
+2. **Sender** starts as **You**. You stay on one side. Set the other side under **Select Peer**. The tabs are **People** and **Merchants**. The swap arrows trade the two sides.
+3. Enter an amount greater than zero. The date starts as today. You cannot pick a future date.
+4. Pick a category so the form can save. This guide does not explain those choices.
+5. Optionally set a **Group**, a **Transfer Name**, or an attachment. If you leave the name blank, Split Smart names it from the recipient.
+6. If a side is a merchant, you can pick that merchant’s branch, or skip it. The branch is [On a transfer](/en/places/concept-place-on-transfer).
+7. Save.
 
-## Limits to know
-
-- **You are always a party.** You cannot log a transfer that is only between two other people or two merchants; one side is always you.
-- **Custom users cannot be the sender.** If someone without a full account paid, they cannot be on the “from” side.
-- For **settle-up**, use a person → person transfer in the direction of the debt (who owes → who is owed), with you as either sender or receiver. Merchant transfers are for funding or refunds, not peer settlement.
-- Saving the transfer only records cashflow. Open [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense) to clear debt or mark bill cover.
+A custom contact can be the person who was paid. They cannot be the person who paid.
 
 ## What good looks like
 
-The transfer shows the right from/to, amount, and date. Balances on related expenses stay the same until you create a settlement or payment link.
+The transfer appears under **Activity**, on **Transfers**, with the amount and who it was from and to. If you set a group, it also appears on that group’s **Transactions** tab. Opening the row does nothing. There is no screen to edit or delete it.
+
+The related expense is unchanged.
 
 ## Next steps
 
-- Clear what someone owes, or mark who funded the bill: [Link a payment to an expense](/en/settlements/howto-link-payment-to-expense)
-- Understand the model: [Balances and transfers](/en/settlements/concept-balances-and-transfers)
-- Send money in-app instead of only logging it: [Pay a friend](/en/payments/howto-pay-a-friend)
+- Pay a merchant while you log the expense: [On an expense](/en/settlements/concept-add-transfer-on-expense)
+- The dinner example: [Settle balances](/en/getting-started/tut-settle-balances)

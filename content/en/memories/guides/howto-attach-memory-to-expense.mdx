@@ -1,0 +1,69 @@
+---
+title: "Attach memory to an expense"
+description: "Keep, remove, or add Memories when you save an expense. The expense date must fall inside each Memory."
+id: "doc-mem-attach-expense"
+locale: "en"
+available_locales: ["en", "hi", "zh"]
+summary: "Keep, remove, or add Memories when you save an expense. The expense date must fall inside each Memory."
+taxonomy:
+  domain: memories
+  module: memories
+  doc_type: how-to
+  audience: [end-user]
+entity_tags: [memory, expense, smart-ledger]
+keywords: [attach memory, expense memory, deselect memory]
+related_docs:
+  - doc-mem-concept
+  - doc-mem-trip
+  - doc-exp-attach-place
+  - doc-exp-split-expense
+version_introduced: v1.0.0
+last_updated: 2026-10-21
+---
+
+# Attach memory to an expense
+
+Linking a **Memory** to an expense ties that spend to an experience (for example a trip). You choose the Memories when you create or edit an expense in Smart Ledger.
+
+## Prerequisites
+
+- An active Split Smart account
+- At least one Memory whose dates cover the expense date
+- Permission to add or edit the expense in the group (for group spend)
+
+## Date window rule
+
+The **expense date** must fall inside each selected Memory's **start–end** dates. If it does not, turn that Memory off or change the date. The expense will not save while it is still selected.
+
+If you later change the expense date or the Memory's window, or you complete the Memory so the window no longer fits, links that fall outside can be removed. Split Smart does not add a Memory to old expenses on its own.
+
+## Steps
+
+### When adding an expense
+
+1. Start a new expense and choose the group, if this spend belongs to one.
+2. Set the expense date inside the Memory's dates.
+3. Review the Memories Split Smart selected. Those are the ones that are active for that group.
+4. Turn off any Memory this expense should not use. Add another Memory if you want one that was not selected.
+5. Finish paid-by, sharers, and amount, then save. Only the Memories still selected are kept. Saving with none is allowed.
+
+### When editing an expense
+
+1. Open the expense.
+2. Add or remove Memories. Saving replaces the set you send.
+3. Removing a **Group** Memory removes it for the group. Removing your **Personal** or **Shared** Memory changes only your view.
+4. If a Memory will not stay, check that the expense date is still inside its dates and that the Memory is not archived or deleted.
+5. Save.
+
+## Who sees the link
+
+- A **Group** Memory is on the shared expense. The group sees it.
+- A **Personal** or **Shared** Memory is on your view of that expense. Other people do not see that link. Someone you invited to a Shared Memory can select it on their own expenses.
+
+You can still attach a **Place** or receipt on the same expense. That is separate from Memory links. See [Attach a place or receipt](/en/expenses/howto-attach-place-or-receipt).
+
+## Next steps
+
+- [What is a Memory](/en/memories/concept-what-is-a-memory)
+- [Split an expense](/en/expenses/howto-split-an-expense)
+- [Complete a memory](/en/memories/guides/howto-complete-a-memory)

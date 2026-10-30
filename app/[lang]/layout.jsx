@@ -2,6 +2,8 @@ import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
+import '../../styles/palette.css'
+import '../../styles/nextra-bridge.css'
 
 export const metadata = {
   title: {
@@ -18,6 +20,23 @@ const I18N = [
   { locale: 'zh', name: '中文' }
 ]
 
+/**
+ * Head colors must stay aligned with styles/palette.css:
+ * - backgroundColor ← --color-bg-primary (#F1F4F8 / #07090E)
+ * - color HSL ← --color-accent-sky (#0284C7 / #38BDF8), not emerald
+ * Change palette.css first, then update these values to match.
+ */
+const HEAD_BACKGROUND = {
+  light: '#F1F4F8',
+  dark: '#07090E'
+}
+
+const HEAD_ACCENT = {
+  hue: { light: 199, dark: 199 },
+  saturation: { light: 98, dark: 90 },
+  lightness: { light: 39, dark: 60 }
+}
+
 export default async function LangLayout({ children, params }) {
   const { lang } = await params
   const pageMap = await getPageMap(`/${lang}`)
@@ -31,7 +50,7 @@ export default async function LangLayout({ children, params }) {
 
   return (
     <html lang={lang} dir="ltr" suppressHydrationWarning>
-      <Head />
+      <Head backgroundColor={HEAD_BACKGROUND} color={HEAD_ACCENT} />
       <body>
         <Layout
           navbar={navbar}

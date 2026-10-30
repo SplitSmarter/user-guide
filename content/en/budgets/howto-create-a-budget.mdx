@@ -1,32 +1,52 @@
 ---
 title: "Create a budget"
-description: "Create a budget for yourself or a group."
+description: "Name a cap, choose who it covers, and save. Filters and dates are optional."
 id: "doc-bud-create"
 locale: "en"
-available_locales: ["en","hi","zh"]
-summary: "Create a budget for yourself or a group."
-taxonomy: {"domain":"budgets","module":"budgets","doc_type":"how-to","audience":["end-user"]}
-entity_tags: ["budget"]
-keywords: ["create budget"]
-related_docs: ["doc-bud-rules"]
-version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+available_locales: ["en", "hi", "zh"]
+summary: "Name a cap, choose who it covers, and save. Filters and dates are optional."
+taxonomy:
+  domain: budgets
+  module: budgets
+  doc_type: how-to
+  audience: [end-user]
+entity_tags: [budget]
+keywords: [create budget, spending cap, shared, group]
+related_docs:
+  - doc-budgets-index
+  - doc-bud-rules
+  - doc-ppl-connection-settings
+version_introduced: v1.0.0
+last_updated: 2026-10-24
 ---
-## Overview
 
-Create a budget for yourself or a group.
+# Create a budget
+
+A budget needs a name and an amount. Everything else can stay as it is.
 
 ## Prerequisites
 
-- An active Split Smart account (unless this page is about creating one).
+- You are signed in
 
 ## Steps
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+1. On the home wallet, open the create sheet and choose **Budget**. The same form opens from **Create New** under **Budgets & Goals**. On a group, open **Budgets** and choose **Create budget**. That path already sets **Who** to **Group** and fills the group.
+2. Enter a **Budget name**, such as Groceries.
+3. Enter a **Spending cap** greater than zero. The currency shown is yours. You do not pick a different one.
+4. Leave **Cap strength** on **Soft** unless you want a hard cap. See [What the cap does](/en/budgets/concept-budget-rules-and-caps).
+5. Under **Who**, keep **Just me**, or change it.
+   - **Shared** needs at least one other person. **You** stay on the budget. If that person only accepts an invite, they are not included until they accept. See [What a connection allows](/en/people/concept-connection-settings).
+   - **Group** needs a **Target group**.
+6. Under **What counts**, leave the tiles empty to watch expense shares in general. Or pick **Categories**, **Places**, **Merchants**, or **Memories** to narrow it.
+7. **Resets** starts on **Monthly**. You can choose **Daily**, **Quarterly**, or **Yearly**. The window starts on **Forever**. You can set **This month**, **90 days**, or **Custom**. The end cannot be before the start.
+8. Choose **Create budget**.
+
+You can also start from a saved place. **Budget** there puts that place under **Places** and fills the name. If the place is not saved yet, save it first.
+
+## What good looks like
+
+The form closes after the budget is saved. A group budget then appears on that group’s **Budgets** tab. A personal or shared budget does not appear in a list of its own.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- [What the cap does](/en/budgets/concept-budget-rules-and-caps)

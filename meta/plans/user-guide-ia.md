@@ -4,14 +4,15 @@ Source of truth for sidebar structure. Keep in sync with `content/{locale}/_meta
 
 ## Tree
 
-- Getting started — account, group, first expense, settle
-- Groups & people — roles, invites, custom users, relationships
+- Getting started — one dinner: account, group, first expense (paid-by vs sharers), settle
+- Groups — inside a group, roles and visibility, invites
+- People — relationship and relation, add a person, what a connection allows, custom contacts
 - Expenses (Smart Ledger) — paid-by vs sharers, split, items, recurring, receipts
-- Settlements (Debt Sync) — balances, transfers, payment links
-- Budgets — rules and creating a budget
-- Payments & UPI — accounts, link UPI, pay a friend
-- Places & memories — places, memories, trip memory
-- Account & privacy — password, Google, visibility
+- Settlements (Debt Sync) — record a transfer (person or merchant); the expense switch pays a merchant; a transfer alone does not clear debt
+- Budgets — create a cap (just me, shared, or a group); soft warns and hard can refuse a new expense; a group budget shows on the group’s Budgets tab
+- Memories — what a Memory is; components (identity, date window, scope, active memory, photos, expense links, lifecycle); guides (create a trip memory, activate or switch, attach to an expense, complete a memory)
+- Places — save a place; location on an expense; merchant branch on a transfer
+- Account & privacy — log in with Google, reset a password, a hidden profile cannot be discovered
 - Reference — glossary, statuses, FAQ
 
 ## Audiences

@@ -2,7 +2,9 @@ import { ImageResponse } from 'next/og'
 
 export const size = { width: 180, height: 180 }
 export const contentType = 'image/png'
+export const dynamic = 'force-static'
 
+/** Slate brand CTA (#0F172A) — matches styles/palette.css --palette-brand-hex */
 export default function AppleIcon() {
   return new ImageResponse(
     (
@@ -13,7 +15,7 @@ export default function AppleIcon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#0F766E',
+          background: '#0F172A',
           color: '#FFFFFF',
           fontSize: 112,
           fontWeight: 700,
