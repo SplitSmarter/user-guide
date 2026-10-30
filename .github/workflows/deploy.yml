@@ -1,0 +1,11 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    uses: SplitSmarter/ci-cd-workflows/.github/workflows/static-dir-deploy.yml@main
+    with:
+      branch_name: ${{ github.ref }}
+      service_name: user-guide

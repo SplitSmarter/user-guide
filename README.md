@@ -34,6 +34,8 @@ npm run build
 npm start
 ```
 
+`npm run build:export` writes a static site to `out/` with `basePath` `/guide`. Local `npm run dev` stays on `/en`. The website container serves that export at `/guide`.
+
 ## Later phases
 
 ```bash

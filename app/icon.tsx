@@ -2,6 +2,7 @@ import { ImageResponse } from 'next/og'
 
 export const size = { width: 32, height: 32 }
 export const contentType = 'image/png'
+export const dynamic = 'force-static'
 
 /** Slate brand CTA (#0F172A) — matches styles/palette.css --palette-brand-hex */
 export default function Icon() {

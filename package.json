@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "build:export": "node scripts/build-export.mjs",
     "start": "next start",
     "postinstall": "patch-package",
     "manifest": "node scripts/build-docs-manifest.mjs",
