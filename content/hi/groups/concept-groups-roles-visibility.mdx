@@ -1,27 +1,45 @@
 ---
-title: "Groups, roles, and visibility"
-description: "Admin, coordinator, and member, plus public and private groups. Translation pending."
+title: "समूह, भूमिकाएँ, और दृश्यता"
+description: "जो व्यक्ति समूह बनाता है वह admin है। सदस्य छोटी क्रियाओं से शुरू करते हैं। सार्वजनिक समूह तब मिल सकता है जब वह सदस्य ले रहा हो।"
 id: "doc-grp-roles-visibility"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Admin, coordinator, and member, plus public and private groups. Translation pending."
+summary: "जो व्यक्ति समूह बनाता है वह admin है। सदस्य छोटी क्रियाओं से शुरू करते हैं। सार्वजनिक समूह तब मिल सकता है जब वह सदस्य ले रहा हो।"
 taxonomy:
   domain: groups
   module: groups
   doc_type: concept
   audience: [end-user]
 entity_tags: [group, roles, visibility]
-keywords: [admin, coordinator, member, public group, private group]
+keywords: [admin, coordinator, member, सार्वजनिक, निजी]
 related_docs:
   - doc-groups-index
   - doc-grp-invite
   - doc-ppl-connection-settings
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Groups, roles, and visibility
+# समूह, भूमिकाएँ, और दृश्यता
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+जो व्यक्ति समूह बनाता है वह **admin** है। बाद में जोड़े गए लोग **members** से शुरू करते हैं। **coordinator** के पास admin जैसी अतिरिक्त क्रियाएँ होती हैं।
 
-The person who creates the group is the admin. People added later start as members. An admin or coordinator can edit the group and manage settlements and budgets. A member cannot. A public group can be found while it accepts members. A private group is only for members and people invited in. See the English page for the full explanation.
+किसी की भूमिका आप **Members** पर देखते हैं।
+
+## कौन क्या कर सकता है
+
+**Admin** और **coordinator** ये कर सकते हैं:
+
+- समूह संपादित करना
+- लोगों को बुलाना और जोड़ना
+- खर्च दर्ज करना
+- सदस्यों को मंजूरी देना
+- निपटान और बजट संभालना
+
+**member** समूह संपादित नहीं करता, और निपटान या बजट नहीं संभालता। सदस्य खर्च दर्ज कर सकता है, बुला सकता है, लोगों को जोड़ सकता है, और सदस्यों को मंजूरी दे सकता है, सिर्फ़ तब जब समूह वे क्रियाएँ खुली रखे।
+
+## सार्वजनिक और निजी
+
+**public** समूह तब मिल सकता है जब वह अभी भी सदस्य ले रहा हो। **private** समूह सिर्फ़ सदस्यों और बुलाए गए लोगों के लिए है। नया समूह public से शुरू होता है।
+
+कोई कैसे जुड़ता है, यह [सदस्यों को बुलाएँ](/hi/groups/howto-invite-members) में है। वे तुरंत जुड़ते हैं या निमंत्रण पाते हैं, यह उनकी सेटिंग पर निर्भर है: [कनेक्शन क्या करने देता है](/hi/people/concept-connection-settings)।

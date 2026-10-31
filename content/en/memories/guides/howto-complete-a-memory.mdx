@@ -1,58 +1,57 @@
 ---
 title: "Complete a memory"
-description: "Finish a Memory when the experience ends so it is no longer selected on new expenses."
+description: "Finish a Memory when the experience ends so it is deactivated and no longer used on new expenses."
 id: "doc-mem-complete"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "Finish a Memory when the experience ends so it is no longer selected on new expenses."
+summary: "Finish a Memory when the experience ends so it is deactivated and no longer used on new expenses."
 taxonomy:
   domain: memories
   module: memories
   doc_type: how-to
   audience: [end-user]
 entity_tags: [memory, complete, archive]
-keywords: [complete memory, archive memory, end trip]
+keywords: [complete memory, deactivate memory, end trip]
 related_docs:
   - doc-mem-concept
   - doc-mem-trip
   - doc-mem-activate
   - doc-mem-attach-expense
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Complete a memory
 
-When a trip or event is over, **complete** the Memory so it is no longer selected on new expenses and is marked finished (usually **Archived**).
+When a trip or event is over, **complete** the Memory so it is no longer used on new expenses. Completing deactivates it. It does not archive it, and it does not remove links already saved.
 
 ## Prerequisites
 
-- An active Split Smart account
+- An active Split Smarter account
 - A Memory you can edit (typically one you created or one the group can edit)
 
 ## What completion does
 
-1. Sets or confirms an **end date** (often today, if you do not pick another).
-2. Moves the Memory out of everyday use (typically to **Archived**).
-3. **Turns it off** so new expenses no longer select it. That applies whether it was the group's active Memory or your Personal Memory for a group.
-4. **Drops expense links** that no longer fit the final date window. It does not add new links.
+1. Sets or confirms an **end date**. That date must be today or a later day in your timezone, and after the start.
+2. **Deactivates** the Memory. Turning it off or archiving it does the same. It is no longer offered on new expenses.
+3. Leaves links already saved. It does not drop them because a date left the start and end, and it does not add new ones.
 
-Expenses themselves stay in Smart Ledger. A Memory link drops only when the dates no longer match.
+Expenses themselves stay in Smart Ledger. Only deleting the Memory removes its links.
 
 ## Steps
 
 1. Open the Memory you want to finish.
 2. Choose **Complete** (or the equivalent action in the app).
-3. Confirm the end date if prompted.
+3. Confirm the end date if prompted. It cannot be a day before today in your timezone.
 4. Save or confirm completion.
 5. Check that:
-   - The Memory shows as archived (or otherwise completed).
-   - A new expense in that group does not select it.
-   - Expenses that still fall inside the final window keep the Memory.
+   - The Memory shows as deactivated.
+   - A new expense does not use it.
+   - Expenses already linked to it still show it.
 
 ## Tips
 
-- Complete after the last expense date you care about, or set the end date before completing.
+- Deactivate alone also stops new expenses from using it, without setting a finished end. Complete when the experience is over.
 - For the next experience, create or turn on a different Memory.
 
 ## Next steps

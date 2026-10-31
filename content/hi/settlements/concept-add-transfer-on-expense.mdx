@@ -1,27 +1,29 @@
 ---
-title: "On an expense"
-description: "Add transfer on an expense pays a merchant. Translation pending."
+title: "खर्च पर"
+description: "खर्च पर Add transfer स्विच व्यापारी को भुगतान करता है। यह लोगों का निपटान नहीं है।"
 id: "doc-set-expense-transfer"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Add transfer on an expense pays a merchant. Translation pending."
+summary: "खर्च पर Add transfer स्विच व्यापारी को भुगतान करता है। यह लोगों का निपटान नहीं है।"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: concept
   audience: [end-user]
 entity_tags: [transfer, expense, merchant]
-keywords: [add transfer, merchant, expense]
+keywords: [add transfer, व्यापारी, खर्च]
 related_docs:
   - doc-set-record-transfer
   - doc-plc-merchant-location
   - doc-set-link-payment
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# On an expense
+# खर्च पर
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+**Add Expense** पर **Add transfer** बाँट के नीचे एक स्विच है। यह अकेला ट्रांसफ़र फ़ॉर्म नहीं है।
 
-The **Add transfer** switch on an expense pays a merchant and is saved with the bill. It does not settle what people owe. See the English page for the full explanation.
+इसे चालू करें, फिर एक व्यापारी चुनें। आप उस व्यापारी की शाखा चुन सकते हैं, या छोड़ सकते हैं। देखें [ट्रांसफ़र पर](/hi/places/concept-place-on-transfer)। एक **SUBMIT** खर्च और उस व्यापारी भुगतान को साथ सहेजता है। राशि वह है जो आपने खर्च पर दी।
+
+यह दर्ज करता है कि आपका भुगतान कहाँ गया। यह नहीं निपटाता कि दूसरे लोग आपके कितने देनदार हैं। लोगों के बीच भुगतान के लिए [ट्रांसफ़र दर्ज करें](/hi/settlements/howto-record-a-transfer) का उपयोग करें।

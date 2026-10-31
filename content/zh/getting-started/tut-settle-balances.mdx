@@ -1,28 +1,55 @@
 ---
-title: "Settle balances"
-description: "Record the ₹600 dinner payment. The expense still shows the debt. Translation pending."
+title: "结清余额"
+description: "记录晚餐的 ₹600 付款，然后在费用上结清它，让 Bob 的金额被抵上。"
 id: "doc-gs-settle"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Record the ₹600 dinner payment. The expense still shows the debt. Translation pending."
+summary: "记录晚餐的 ₹600 付款，然后在费用上结清它，让 Bob 的金额被抵上。"
 taxonomy:
   domain: getting-started
   module: getting-started
   doc_type: tutorial
   audience: [end-user]
 entity_tags: [settlement, debt-sync]
-keywords: [settle up, transfer, Debt Sync]
+keywords: [结清, 转账, Debt Sync]
 related_docs:
   - doc-gs-log-expense
   - doc-set-balances
   - doc-set-record-transfer
   - doc-set-link-payment
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Settle balances
+# 结清余额
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+这接上你刚记下的晚餐。Alice 付了 ₹1000。她的份额是 ₹400。Bob 的份额是 ₹600。**Bob 欠 Alice ₹600。**
 
-From home, choose **Transfer** for ₹600 from **You** to Alice. Saving it does not clear the debt. The dinner expense still shows that Bob owes Alice. See the English page for steps.
+记录钱已经移动，并不会抵上账单，直到你在费用上结清那笔付款。
+
+## 开始之前
+
+- [记下第一笔费用](/zh/getting-started/tut-log-first-expense) 里的晚餐
+- 你以 Bob 登录，也就是欠款的人，这样转账可以从 **You** 发出
+
+## 步骤
+
+1. 在首页钱包打开创建面板，选择 **Transfer**。
+2. 把金额设为 ₹600。
+3. 付款人保持 **You**。收款人设为 Alice，也就是应得钱的人。
+4. 选择一个分类，表单才能保存。
+5. 保存转账。在你把这笔付款结到账单上之前，晚餐费用仍显示 Bob 欠 Alice。
+6. 打开晚餐费用。在 **Settlement Path** 下选择 **Use Transfer**。
+7. 在 **Settle** 上，这笔 ₹600 付款在 **From past transfers** 下面。使用 **Autoselect** 或 **Choose**，然后 **Settle**。
+
+费用表单上的 **Add transfer** 开关不同：那是付给账单上的商户。见 [在费用上](/zh/settlements/concept-add-transfer-on-expense)。
+
+## 完成后
+
+- 存在一笔从你（Bob）到 Alice 的 ₹600 转账。
+- 晚餐费用的 **Settlement Path** 把这 ₹600 显示为已结清。
+
+## 下一步
+
+- 完整表单：[记录转账](/zh/settlements/howto-record-a-transfer)
+- 抵上账单：[在费用上结清](/zh/settlements/howto-link-payment-to-expense)

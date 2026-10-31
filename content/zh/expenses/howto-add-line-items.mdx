@@ -1,34 +1,39 @@
 ---
-title: "Add line items（中文译文即将推出）"
-description: "Break an expense into line items and shares. — 完整译文稍后补充。"
+title: "添加明细"
+description: "把费用拆成项目，然后说明每一行谁付的、谁分摊。"
 id: "doc-exp-line-items"
 locale: "zh"
 available_locales: ["en","hi","zh"]
-summary: "Break an expense into line items and shares. — 完整译文稍后补充。"
+summary: "把费用拆成项目，然后说明每一行谁付的、谁分摊。"
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"how-to","audience":["end-user"]}
 entity_tags: ["line-items"]
-keywords: ["line items","itemize"]
-related_docs: ["doc-exp-split-expense"]
+keywords: ["明细","项目","Assign items"]
+related_docs: ["doc-exp-split-expense","doc-exp-paid-by-vs-sharers"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Break an expense into line items and shares. — 完整译文稍后补充。
+# 添加明细
 
-## Prerequisites
+一行明细是账单上的一件东西，例如一道菜。你可以说明这一行谁付的、谁分摊。如果一行不指定人，费用那一侧已经在列的每个人都会分摊它。
 
-- An active Split Smart account (unless this page is about creating one).
+## 开始之前
 
-## Steps
+- 你在费用表单上，包括正在编辑的一笔已保存费用
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+## 步骤
 
-## Next steps
+1. 在费用上打开 **Assign items**。
+2. 从你的项目列表加入行。如果项目还不在列表里，可以新建。
+3. 在 **Paid by** 上指定每一项谁付的。留空则使用 **Paid by** 里已有的每个人。
+4. 在 **Split between** 上指定每一项谁分摊。留空则使用 **Split Between** 里已有的每个人。
+5. 费用总额跟随这些项目。保存费用。
 
-See related pages in the frontmatter `related_docs` list.
+## 完成后
 
-> 翻译进行中。产品专有名词（Split Smart、Smart Ledger、Debt Sync、UPI）保持拉丁写法。
+打开费用。**Line items** 列出每一行、金额，以及谁分摊。
 
+## 下一步
+
+- [分摊一笔费用](/zh/expenses/howto-split-an-expense)
+- [付款人与分摊人](/zh/expenses/concept-paid-by-vs-sharers)

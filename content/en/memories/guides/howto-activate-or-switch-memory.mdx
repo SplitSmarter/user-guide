@@ -1,10 +1,10 @@
 ---
 title: "Activate or switch memory"
-description: "Turn a Memory on so it is selected on the next expense, or turn it off without finishing it."
+description: "Turn a Memory on so expenses can use it, or turn it off without finishing it."
 id: "doc-mem-activate"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "Turn a Memory on so it is selected on the next expense, or turn it off without finishing it."
+summary: "Turn a Memory on so expenses can use it, or turn it off without finishing it."
 taxonomy:
   domain: memories
   module: memories
@@ -17,26 +17,26 @@ related_docs:
   - doc-mem-trip
   - doc-mem-complete
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Activate or switch memory
 
-**Activation** turns a Memory on so Split Smart selects it when you add an expense. You can turn it off on that expense before you save. Switching which Memory is on does not change expenses you already saved.
+**Activation** turns a Memory on. While it is on, expenses at that time can belong to it. Turning it off does not finish it and does not change expenses you already saved.
 
 ## Prerequisites
 
-- An active Split Smart account
+- An active Split Smarter account
 - At least one Memory you can use (usually with status Active)
-- Membership in the group, when the Memory is for that group
+- Membership in the group, when the Memory is a Group Memory
 
-## What gets selected
+## What gets applied
 
-| What you turn on | What happens on the next expense |
-|------------------|----------------------------------|
-| **Group Memory** | Selected for everyone adding an expense in that group. Creating a Group Memory for a group turns it on and replaces the previous one. The link is on the shared expense. |
-| **Personal Memory for a group** | Selected only on expenses you add in that group. The link stays on your view. Other members do not get it. |
-| **Shared Memory** | Not selected for you. A Shared Memory does not belong to a group. Choose it yourself on the expense. |
+| What you turn on | What happens |
+|------------------|--------------|
+| **Group Memory** | One is on for the group. Turning another on turns the previous one off. It is applied to expenses in that group. The link is on the shared expense. |
+| **Personal Memory** | Several can be on at once. They are yours, not stored on a group. On a bill dated today, you choose which of them stay. |
+| **Shared Memory** | Applied for you and for the people you invited while it is on. It is not a Personal Memory, and you do not pick it on the expense the way you pick a Personal one. |
 
 ## Steps
 
@@ -45,25 +45,31 @@ last_updated: 2026-10-21
 1. Open the group, or open the Memory and choose the group.
 2. Activate the Group Memory you want.
 3. Confirm it replaces the Group Memory that was on before.
-4. Add an expense in that group and check that this Memory is selected. Turn it off on that expense if this spend should not use it.
+4. On a bill dated today in that group, this Memory is applied. Turn the Memory off before you save if this spend should not use it.
 
-### Turn on a Personal Memory for a group
+### Turn on a Personal Memory
 
-1. Open the group.
-2. Choose a **Personal** Memory (or create one for that group).
-3. Activate it for that group.
-4. Add an expense in that group. Your Personal Memory is selected along with the group's active Memory, if the group has one. Turn either off before you save.
+1. Open your Memories.
+2. Choose a **Personal** Memory, or create one. It is not tied to a group.
+3. Activate it. Other Personal Memories that are already on stay on.
+4. On a bill dated today, choose which of your Personal Memories that are on should stay. You can leave all of them off.
+
+### Turn on a Shared Memory
+
+1. Open the Shared Memory, or create one and invite people.
+2. Activate it.
+3. While it is on, it is applied for you and for the people you invited. Turn it off before you save a bill dated today if that bill should not use it.
 
 ### Turn an active Memory off
 
-1. Open the Memory or the group's Memories.
-2. Deactivate it. This does not archive or delete the Memory.
-3. Add an expense in that group and confirm it is no longer selected.
+1. Open the Memory.
+2. Deactivate it. This does not complete or delete the Memory, and it does not remove links already saved.
+3. Add an expense dated today and confirm it is no longer applied.
 
 ## Tips
 
-- Turn on a Memory whose dates still cover the days you will log. An expense will not save while a selected Memory's dates do not cover the expense date.
-- To finish a Memory so it is no longer offered, [complete it](/en/memories/guides/howto-complete-a-memory) instead of only deactivating it.
+- A start in the future is rejected. A start in the past turns the Memory on from that time.
+- To finish a Memory so it is no longer offered, [complete it](/en/memories/guides/howto-complete-a-memory). That also deactivates it.
 
 ## Next steps
 

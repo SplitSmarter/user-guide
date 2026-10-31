@@ -1,27 +1,45 @@
 ---
-title: "What a connection allows"
-description: "Friends means they have connected with you. Translation pending."
+title: "कनेक्शन क्या करने देता है"
+description: "Friends का मतलब है कि उन्होंने आपसे जुड़ाव रखा है। इससे तय होता है कि कौन उन्हें समूह, Memory, या बजट में जोड़ सकता है।"
 id: "doc-ppl-connection-settings"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Friends means they have connected with you. Translation pending."
+summary: "Friends का मतलब है कि उन्होंने आपसे जुड़ाव रखा है। इससे तय होता है कि कौन उन्हें समूह, Memory, या बजट में जोड़ सकता है।"
 taxonomy:
   domain: people
   module: people
   doc_type: concept
   audience: [end-user]
 entity_tags: [relation, group, memory, budget]
-keywords: [friends, who can add, connection]
+keywords: [friends, कौन जोड़ सकता है, कनेक्शन]
 related_docs:
   - doc-grp-relationships
   - doc-ppl-add-person
   - doc-grp-roles-visibility
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# What a connection allows
+# कनेक्शन क्या करने देता है
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+**Friends** का मतलब है कि उनके पास एक ऐसा संबंध है जो आपका नाम लेता है। आपने उन पर जो रिश्ते का लेबल रखा, वह अपने आप नहीं गिना जाता।
 
-Friends means they have a relation that names you. That controls whether you can add them to a group, a Memory, or a budget, or whether they get an invite. See the English page for the full explanation.
+## समूह
+
+जब आप उन्हें समूह में जोड़ते हैं:
+
+- अगर वे सबको अनुमति देते हैं, तो आप उन्हें जोड़ते हैं।
+- अगर वे सिर्फ़ मित्रों को अनुमति देते हैं, और उन्होंने आपसे जुड़ाव रखा है, तो आप उन्हें जोड़ते हैं।
+- अगर वे अभी भी निमंत्रण स्वीकार करते हैं, और आप उन्हें सीधे नहीं जोड़ सकते, तो उन्हें निमंत्रण मिलता है।
+- अगर वे किसी को अनुमति नहीं देते, तो आप उन्हें नहीं जोड़ सकते।
+
+## Memories और बजट
+
+जब आप उन्हें किसी Memory या साझा बजट में जोड़ते हैं:
+
+- अगर वे सबको अनुमति देते हैं, तो आप उन्हें सीधे जोड़ते हैं।
+- अगर वे सिर्फ़ मित्रों को अनुमति देते हैं, तो आप उन्हें सीधे तभी जोड़ते हैं जब उन्होंने आपसे जुड़ाव रखा हो। नहीं तो उन्हें निमंत्रण मिलता है।
+- अगर वे सिर्फ़ निमंत्रण की अनुमति देते हैं, तो उन्हें निमंत्रण मिलता है।
+- अगर वे किसी को अनुमति नहीं देते, तो आप उन्हें नहीं जोड़ सकते।
+
+ये नियम किसी को समूह, Memory, या बजट में जोड़ने के बारे में हैं। ये भुगतान के बारे में नहीं हैं।

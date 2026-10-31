@@ -1,33 +1,46 @@
 ---
-title: "Split an expense (हिंदी अनुवाद शीघ्र)"
-description: "Choose who paid and how sharers split a group expense. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+title: "खर्च बाँटें"
+description: "खर्च फ़ॉर्म पर तय करें कि किसने भुगतान किया और कौन लागत बाँटता है।"
 id: "doc-exp-split-expense"
 locale: "hi"
 available_locales: ["en","hi","zh"]
-summary: "Choose who paid and how sharers split a group expense. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+summary: "खर्च फ़ॉर्म पर तय करें कि किसने भुगतान किया और कौन लागत बाँटता है।"
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"how-to","audience":["end-user"]}
 entity_tags: ["split","sharers","paid-by"]
-keywords: ["split bill","paid by","share expense"]
-related_docs: ["doc-exp-paid-by-vs-sharers","doc-set-record-transfer"]
+keywords: ["बिल बाँटें","भुगतानकर्ता","हिस्सा"]
+related_docs: ["doc-exp-paid-by-vs-sharers","doc-exp-category","doc-exp-scan-or-note","doc-set-expense-transfer","doc-gs-settle","doc-set-balances"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Choose who paid and how sharers split a group expense. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।
+# खर्च बाँटें
 
-## Prerequisites
+**भुगतानकर्ता** वह है जिसने पैसा दिया। **इनके बीच बाँटें** वे हैं जो लागत बाँटते हैं। ये वही लोग हो सकते हैं, या नहीं। देखें [भुगतानकर्ता और साझीदार](/hi/expenses/concept-paid-by-vs-sharers)।
 
-- An active Split Smart account (unless this page is about creating one).
+## पहले से
 
-## Steps
+- आप साइन इन हैं
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+## कदम
 
-## Next steps
+1. होम वॉलेट पर बनाने वाली शीट खोलें और **Expense** चुनें।
+2. बिल को नाम दें। विवरण वैकल्पिक है। राशि की मुद्रा चुनें, फिर राशि लिखें।
+3. **भुगतानकर्ता** के नीचे हर उस व्यक्ति को जोड़ें जिसने भुगतान किया, और उन्होंने कितना दिया।
+4. **इनके बीच बाँटें** के नीचे हर उस व्यक्ति को जोड़ें जो लागत बाँटता है, और उसका हिस्सा।
+5. हिस्सों का जोड़ राशि के बराबर होना चाहिए। हर व्यक्ति के लिए शुद्ध = भुगतान − हिस्सा। धनात्मक शुद्ध का मतलब है कि उन्हें पैसा मिलना है। ऋणात्मक शुद्ध का मतलब है कि वे देनदार हैं।
+6. अगर खर्च को समूह में रखते हैं, तो **भुगतानकर्ता** और **इनके बीच बाँटें** के नीचे हर व्यक्ति उस समूह में पहले से होना चाहिए, या सहेजते समय आप छूटे लोगों को समूह में जोड़ते हैं। अगर दोनों में से कुछ नहीं करते, तो सहेजना रुक जाता है।
+7. सहेजें।
 
-See related pages in the frontmatter `related_docs` list.
+साझा रात के खाने की पहली बार [पहला खर्च दर्ज करें](/hi/getting-started/tut-log-first-expense) है।
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync, UPI) Latin रूप में रहेंगे।
+## अच्छा परिणाम
+
+खर्च खोलें। यह दिखाता है कि किसने भुगतान किया, कौन बाँटता है, और कौन किसका देनदार है।
+
+## आगे
+
+- खर्च का लेबल चुनें: [Category](/hi/expenses/concept-category)
+- फ़ोटो या नोट से शुरू करें: [रसीद या नोट से खर्च जोड़ें](/hi/expenses/howto-add-from-receipt-or-note)
+- बिल को पंक्तियों में बाँटें: [लाइन आइटम जोड़ें](/hi/expenses/howto-add-line-items)
+- **Add transfer** स्विच: [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)
+- बकाया कवर करें: [खर्च निपटाएँ](/hi/settlements/howto-link-payment-to-expense)

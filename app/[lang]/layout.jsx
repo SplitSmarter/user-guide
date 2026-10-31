@@ -7,11 +7,11 @@ import '../../styles/nextra-bridge.css'
 
 export const metadata = {
   title: {
-    default: 'Split Smart Help',
-    template: '%s – Split Smart Help'
+    default: 'Split Smarter Help',
+    template: '%s – Split Smarter Help'
   },
   description:
-    'End-user guide for Split Smart: groups, expenses, settlements, budgets, and UPI.'
+    'End-user guide for Split Smarter: groups, expenses, settlements, budgets, and UPI.'
 }
 
 const I18N = [
@@ -43,8 +43,12 @@ export default async function LangLayout({ children, params }) {
 
   const navbar = (
     <Navbar
-      logo={<b>Split Smart Help</b>}
-      projectLink="https://github.com/SplitSmarter/user-guide"
+      logo={
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+          <img src="/brand/mark-tile-dark.svg" alt="" width={28} height={28} />
+          <b>Split Smarter Help</b>
+        </span>
+      }
     />
   )
 
@@ -59,7 +63,14 @@ export default async function LangLayout({ children, params }) {
           editLink="Edit this page"
           copyPageButton
           sidebar={{ defaultMenuCollapseLevel: 1 }}
-          footer={<Footer>Split Smart user guide</Footer>}
+          footer={
+            <Footer>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+                <img src="/brand/mark-tile-dark.svg" alt="" width={20} height={20} />
+                Split Smarter user guide
+              </span>
+            </Footer>
+          }
           i18n={I18N}
         >
           {children}

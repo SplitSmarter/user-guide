@@ -1,32 +1,33 @@
 ---
-title: "Settlements (Debt Sync)"
-description: "A transfer records that money moved. Translation pending."
+title: "निपटान (Debt Sync)"
+description: "ट्रांसफ़र दर्ज करता है कि पैसा हिला। उसे खर्च पर निपटाएँ ताकि बकाया कवर हो।"
 id: "doc-settlements-index"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "A transfer records that money moved. Translation pending."
+summary: "ट्रांसफ़र दर्ज करता है कि पैसा हिला। उसे खर्च पर निपटाएँ ताकि बकाया कवर हो।"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: reference
   audience: [end-user]
 entity_tags: [settlements, transfer, debt-sync]
-keywords: [transfer, Debt Sync, sender, merchant]
+keywords: [ट्रांसफ़र, Debt Sync, भेजने वाला, व्यापारी]
 related_docs:
   - doc-set-balances
   - doc-set-record-transfer
   - doc-set-expense-transfer
   - doc-set-link-payment
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Settlements (Debt Sync)
+# निपटान (Debt Sync)
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+**ट्रांसफ़र** इस बात का रिकॉर्ड है कि पैसा हिला। यह आपके और किसी व्यक्ति के बीच हो सकता है, या आपके और किसी व्यापारी के बीच। इसे अकेले सहेजना खर्च को वैसा ही छोड़ता है। खर्च खोलें और उस भुगतान को निपटाएँ ताकि कवर हुई राशि आगे बढ़े। देखें [खर्च निपटाएँ](/hi/settlements/howto-link-payment-to-expense)।
 
-A transfer records that money moved. Saving it does not change who owes whom. See the English page for the full explanation.
+आप इसे दो जगह शुरू करते हैं:
 
-- [Record a transfer](/hi/settlements/howto-record-a-transfer)
-- [On an expense](/hi/settlements/concept-add-transfer-on-expense)
-- [Does not clear a debt](/hi/settlements/howto-link-payment-to-expense)
+- अकेले, होम की बनाने वाली शीट से, होम के **Transfer** बटन से, या **Activity** के **Transfers** टैब से। देखें [ट्रांसफ़र दर्ज करें](/hi/settlements/howto-record-a-transfer)।
+- खर्च पर, **Add transfer** स्विच से, जो व्यापारी को भुगतान करता है। देखें [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)।
+
+रात के खाने का बिल “बॉब ऐलिस का देनदार है” कैसे बनता है, यह [बकाया और ट्रांसफ़र](/hi/settlements/concept-balances-and-transfers) में है। वह भुगतान बिल को कैसे कवर करता है, यह [खर्च निपटाएँ](/hi/settlements/howto-link-payment-to-expense) में है।

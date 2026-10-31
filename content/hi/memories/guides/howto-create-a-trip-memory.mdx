@@ -1,28 +1,85 @@
 ---
-title: "Create a trip memory"
-description: "Create a group Memory for a trip. Translation pending."
+title: "यात्रा की Memory बनाएँ"
+description: "यात्रा के लिए Group Memory बनाएँ। वह आपके तय किए शुरू से चालू होती है, पिछला शुरू भी मान्य है।"
 id: "doc-mem-trip"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Create a group Memory for a trip. Translation pending."
+summary: "यात्रा के लिए Group Memory बनाएँ। वह आपके तय किए शुरू से चालू होती है, पिछला शुरू भी मान्य है।"
 taxonomy:
   domain: memories
   module: memories
   doc_type: how-to
   audience: [end-user]
-entity_tags: [memory, trip]
-keywords: ['create trip memory']
+entity_tags: [memory, trip, group]
+keywords: [यात्रा memory बनाएँ, group memory]
 related_docs:
   - doc-mem-concept
   - doc-mem-activate
   - doc-mem-attach-expense
   - doc-mem-complete
+  - doc-gs-log-expense
 version_introduced: v1.0.0
-last_updated: 2026-10-20
+last_updated: 2026-10-30
 ---
 
-> पूर्ण अनुवाद शीघ्र। उत्पाद नाम (Split Smart, Memory, Smart Ledger) Latin रूप में रहेंगे.
+# यात्रा की Memory बनाएँ
 
-# Create a trip memory
+यह तरीका तब अपनाएँ जब आप और समूह साथ यात्रा करें। आप यात्रा के लिए एक **Group Memory** बनाते हैं। बनाने पर वह उस समूह के लिए चालू हो जाती है और पहले चालू Group Memory बंद हो जाती है। यात्रा खत्म होने पर उसे पूरा करें, ताकि नए खर्च उसका उपयोग न करें।
 
-Create a Group Memory for the trip. It turns on for that group, so new expenses there select it. Turn it off on an expense before you save if that spend is not part of the trip. Complete it when you return. See the English page for steps.
+## पहले से चाहिए
+
+- सक्रिय Split Smarter खाता
+- यात्रा का समूह (या पहले एक बनाएँ)
+- यात्रा शुरू होने का दिन, या आज अगर वह आज शुरू होती है
+
+## कदम
+
+### 1. Memory बनाएँ
+
+1. अपने खाते की Memories खोलें, या यात्रा समूह से।
+2. नई Memory बनाएँ।
+3. साफ़ शीर्षक रखें (जैसे जगह या यात्रा का नाम)।
+4. **Group** दायरा चुनें और यात्रा का समूह चुनें।
+5. **शुरू** यात्रा के पहले दिन पर रखें। पिछला शुरू मान्य है। भविष्य का शुरू नहीं।
+6. **अंत** तभी रखें जब आपको पता हो। वह आपकी समय-क्षेत्र में आज या बाद का दिन होना चाहिए, और शुरू के बाद। अगर समय-क्षेत्र नहीं है, तो आज UTC का दिन है।
+7. सहेजें। Memory उस शुरू से चालू होती है। अगर इस समूह की कोई और Group Memory चालू थी, वह बंद हो जाती है।
+
+### 2. फ़ोटो जोड़ें (वैकल्पिक)
+
+1. अभी बनी Memory खोलें।
+2. यात्रा की तस्वीरें जोड़ें (पल, हर रसीद नहीं—रसीदें खर्च पर जाती हैं)।
+
+### 3. पुष्टि करें कि वह समूह के लिए चालू है
+
+1. अगर Memory समूह के लिए पहले से चालू नहीं है, तो उसे सक्रिय करें।
+2. आज की तारीख का यात्रा खर्च जोड़ें और देखें कि यह Memory लगी है। उस बिल से हटाना हो तो सहेजने से पहले Memory बंद करें।
+
+विवरण: [Memory चालू करें या बदलें](/hi/memories/guides/howto-activate-or-switch-memory)।
+
+### 4. यात्रा के खर्च लिखें
+
+1. Smart Ledger में हमेशा की तरह खर्च जोड़ें, यह समूह चुना हुआ हो।
+2. आज की तारीख वाले बिल पर यह Group Memory तब लगती है जब वह चालू हो। अगर वह खर्च नहीं गिनना है, तो सहेजने से पहले उसे बंद करें।
+3. पिछले दिन के बिल पर उस समय चालू हर Memory जुड़ती है, यह भी अगर तब चालू थी।
+4. पिछला शुरू उस अवधि का पहले से सहेजा खर्च भी जोड़ता है। वह काम सिर्फ़ लिंक जोड़ता है।
+
+विवरण: [खर्च पर Memory जोड़ें](/hi/memories/guides/howto-attach-memory-to-expense) और [पहला खर्च लिखें](/hi/getting-started/tut-log-first-expense)।
+
+### 5. लौटने पर Memory पूरी करें
+
+1. Memory खोलें और पूरा करें (या समान क्रिया)।
+2. अंत की तारीख की पुष्टि करें। वह आपकी समय-क्षेत्र में आज या बाद की होनी चाहिए।
+3. देखें कि Memory deactivated है और समूह के नए खर्च अब उसका उपयोग नहीं करते। पहले से जुड़े खर्च उसे रखे रहते हैं।
+
+विवरण: [Memory पूरी करें](/hi/memories/guides/howto-complete-a-memory)।
+
+## अच्छा परिणाम
+
+- जब यह Memory चालू थी, तब सहेजे यात्रा खर्च अब भी उसे दिखाते हैं।
+- पूरा करने के बाद Memory deactivated है और नए खर्चों पर नहीं लगती।
+- Memory की फ़ोटो अब भी यात्रा बताती हैं। निपटान और शेष खर्चों पर रहते हैं।
+
+## आगे
+
+- दायरे और नियम: [Memory क्या है](/hi/memories/concept-what-is-a-memory)
+- जो आप पर बकाया है: [शेष निपटाएँ](/hi/getting-started/tut-settle-balances)

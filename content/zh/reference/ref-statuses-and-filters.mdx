@@ -1,34 +1,55 @@
 ---
-title: "Statuses and filters（中文译文即将推出）"
-description: "Common expense and settlement statuses and list filters. — 完整译文稍后补充。"
+title: "状态和筛选"
+description: "费用仍欠着、已部分抵上、正在重复，或预算仍在运行时你会看到什么，以及 Activity 的筛选。"
 id: "doc-ref-statuses"
 locale: "zh"
 available_locales: ["en","hi","zh"]
-summary: "Common expense and settlement statuses and list filters. — 完整译文稍后补充。"
+summary: "费用仍欠着、已部分抵上、正在重复，或预算仍在运行时你会看到什么，以及 Activity 的筛选。"
 taxonomy: {"domain":"reference","module":"reference","doc_type":"reference","audience":["end-user"]}
 entity_tags: ["status","filter"]
-keywords: ["expense status","filters"]
-related_docs: ["doc-ref-glossary"]
+keywords: ["费用状态","已结清","重复","预算"]
+related_docs: ["doc-ref-glossary","doc-set-link-payment","doc-bud-rules","doc-exp-recurring"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Common expense and settlement statuses and list filters. — 完整译文稍后补充。
+# 状态和筛选
 
-## Prerequisites
+这些是你在费用或预算上能看到的状态。
 
-- An active Split Smart account (unless this page is about creating one).
+## 仍欠着的费用
 
-## Steps
+打开费用。还没有付款被应用时，**Settlement Path** 显示 **No settlement links on this expense yet.** 剩余金额就是仍欠的金额。
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+## 结清之后已抵上
 
-## Next steps
+[在费用上结清](/zh/settlements/howto-link-payment-to-expense) 之后，**Settlement Path** 显示已抵金额。
 
-See related pages in the frontmatter `related_docs` list.
+- **Partially Settled** 表示一部分已抵上，还有剩余。
+- **All Settled** 表示这条路径上没有剩余。
+- **Settled** 是已抵金额上的标签。
 
-> 翻译进行中。产品专有名词（Split Smart、Smart Ledger、Debt Sync、UPI）保持拉丁写法。
+你保存了、却从未在费用上结清的转账，不会改变这些。
 
+## 付了钱和结清不是一回事
+
+挂在某个人付了多少上的钱，不会清掉谁还欠着。当账单上剩下的人既不被欠、也不再欠时，这笔费用才算结清。
+
+## 重复费用
+
+费用显示 **Recurring**。**Schedule** 显示 **Active** 或 **Paused**、从哪一天开始，以及下一次日期。见 [设置重复费用](/zh/expenses/howto-recurring-expenses)。
+
+## 仍在运行的预算
+
+预算在没有结束日期，或结束是今天或更晚时，仍在运行。它按 **Daily**、**Weekly**、**Monthly**、**Quarterly** 或 **Yearly** 重置。
+
+结束日期已经过去的预算不再运行。创建表单不提供早于今天的结束日期。见 [上限做什么](/zh/budgets/concept-budget-rules-and-caps)。
+
+## Activity 筛选
+
+在 **Activity** 上，筛选是 **All**、**Groups**、**Expenses** 和 **Transfers**。
+
+## 下一步
+
+- [术语](/zh/reference/ref-glossary)
+- [常见问题](/zh/reference/ref-faq)

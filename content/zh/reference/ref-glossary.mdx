@@ -1,52 +1,85 @@
 ---
-title: "Glossary"
-description: "Definitions of Split Smart terms for end users."
+title: "术语"
+description: "面向最终用户的 Split Smarter 术语定义。"
 id: "doc-ref-glossary"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Definitions of Split Smart terms for end users."
+summary: "面向最终用户的 Split Smarter 术语定义。"
 taxonomy:
   domain: reference
   module: reference
   doc_type: reference
   audience: [end-user]
 entity_tags: [glossary]
-keywords: ['glossary', 'definitions', 'memory']
+keywords: [术语, 定义, memory]
 related_docs:
   - doc-ref-faq
   - doc-mem-concept
 version_introduced: v1.0.0
-last_updated: 2026-10-20
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 术语
 
-# Glossary
+Split Smarter 常用词的简短定义。
 
 ## Memory
 
-A **Memory** is a time-bounded experience with Personal, Group, or Shared scope. See English [Memories](/en/memories/concept-what-is-a-memory).
+**Memory** 是一次经历（例如旅行或活动），范围是 **Personal**、**Group** 或 **Shared**。花费在它开启期间才归属于它，并不只因为日期落在你填写的开始和结束之间。日期为今天的账单上，你选择哪些 Personal Memories 保留。已开启的 Group 和 Shared Memories 会被加上，除非你先关闭它们。完成会使它停用，已经保存的关联会留下。见 [什么是 Memory](/zh/memories/concept-what-is-a-memory)。
 
-## Group
+## 地点
 
-The shared place for one set of people. The person who creates it is the admin. See English [Groups](/en/groups).
+**地点**是一个已保存的位置。在费用上，它是那笔花费的 Location。在转账上，它是商户的分店。它和 Memory 是分开的。见 [地点](/zh/places)。
 
-## Transfer
+## Smart Ledger
 
-A record that money moved. Saving it does not clear what people owe. See English [Settlements](/en/settlements).
+记录共享和个人花费的体验：谁付了钱，谁分摊，一个 category，一笔重复费用，以及收据或备注。
 
-## Budget
+## Category
 
-A spending cap. **Soft** warns. **Hard** can refuse a new expense. See English [Budgets](/en/budgets).
+账单上的标签。除非你在自己的副本上保留另一个，否则每个人看到的都是共享 category。一个 category 可以放在另一个 category 下面。见 [Category](/zh/expenses/concept-category)。
 
-## Place
+## Debt Sync
 
-A saved location. On an expense it is the Location. On a transfer it is a merchant’s branch. See English [Places](/en/places).
+共同花费之后谁欠谁。转账记录钱已经移动。只保存它不会抵上账单。在费用上 **Settle** 才会抵上。见 [结算](/zh/settlements)。
 
-## Account
+## 转账
 
-How you sign in. A **Hidden** profile means other people cannot discover you. See English [Account & privacy](/en/account).
+钱在你和一个人之间移动，或你和一个商户之间移动的记录。费用上的 **Add transfer** 付给商户，并和账单一起保存。**Use Transfer** 把人对人的付款用到仍欠的金额上。见 [结算](/zh/settlements)。
 
-## Relationship
+## 预算
 
-The kind of connection, such as Friend or Family. A **relation** is that kind on one person. A **custom contact** is someone without an account yet. See English [People](/en/people).
+一段时间的花费上限。可以只覆盖你、你共享的人，或一个小组。它按日、周、月、季或年重置。开始可以是过去。结束可以保持开放，或者必须是今天或更晚。**Soft** 会提醒。**Hard** 可以拒绝一笔会超过上限的新费用。在 **What counts** 里选择 Memory 会限定哪些花费计入。见 [预算](/zh/budgets)。
+
+## Paid by
+
+最初为这笔费用付了钱的人。不一定是最终欠下那一份的人。
+
+## 分摊人
+
+分摊一笔费用的人。
+
+## 小组
+
+同一批人的共享之处：费用、结算、成员和预算。创建它的人是 admin。见 [小组](/zh/groups)。
+
+## 关系
+
+连接的种类，例如 Friend、Family，或你自己创建的一种。见 [关系和关联](/zh/people/concept-relationship-and-relation)。
+
+## 关联
+
+用在一个人身上的关系。你添加他们时选择它。
+
+## 自定义联系人
+
+你在对方还没有 Split Smarter 账户时添加的人。以后把他们关联到自己的账户时，用过那个占位的历史会跟着走。见 [自定义联系人](/zh/people/howto-custom-contacts)。
+
+## 账户
+
+你登录的方式。**Signup** 使用邮箱和验证码，或者你使用 **Login with Google**。**Forgot Password?** 会发送重置链接。**Hidden** 资料表示其他人不能发现你。见 [账户与隐私](/zh/account)。
+
+## 下一步
+
+- [常见问题](/zh/reference/ref-faq)
+- [什么是 Memory](/zh/memories/concept-what-is-a-memory)

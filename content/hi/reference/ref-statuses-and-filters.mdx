@@ -1,34 +1,55 @@
 ---
-title: "Statuses and filters (हिंदी अनुवाद शीघ्र)"
-description: "Common expense and settlement statuses and list filters. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+title: "स्थितियाँ और फ़िल्टर"
+description: "जब खर्च अभी बकाया हो, कुछ कवर हो, आवर्ती हो, या बजट अभी चल रहा हो, और Activity के फ़िल्टर।"
 id: "doc-ref-statuses"
 locale: "hi"
 available_locales: ["en","hi","zh"]
-summary: "Common expense and settlement statuses and list filters. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+summary: "जब खर्च अभी बकाया हो, कुछ कवर हो, आवर्ती हो, या बजट अभी चल रहा हो, और Activity के फ़िल्टर।"
 taxonomy: {"domain":"reference","module":"reference","doc_type":"reference","audience":["end-user"]}
 entity_tags: ["status","filter"]
-keywords: ["expense status","filters"]
-related_docs: ["doc-ref-glossary"]
+keywords: ["खर्च स्थिति","निपटाया","आवर्ती","बजट"]
+related_docs: ["doc-ref-glossary","doc-set-link-payment","doc-bud-rules","doc-exp-recurring"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Common expense and settlement statuses and list filters. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।
+# स्थितियाँ और फ़िल्टर
 
-## Prerequisites
+ये वे स्थितियाँ हैं जो आप खर्च या बजट पर देख सकते हैं।
 
-- An active Split Smart account (unless this page is about creating one).
+## अभी भी बकाया खर्च
 
-## Steps
+खर्च खोलें। जब कुछ लागू नहीं हुआ, **निपटान पथ** कहता है **इस खर्च पर अभी कोई निपटान लिंक नहीं है।** शेष राशि वह है जो अभी भी बकाया है।
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+## निपटाने के बाद कवर
 
-## Next steps
+[खर्च निपटाएँ](/hi/settlements/howto-link-payment-to-expense) के बाद **निपटान पथ** कवर हुई राशि दिखाता है।
 
-See related pages in the frontmatter `related_docs` list.
+- **आंशिक रूप से निपटाया** का मतलब है कुछ राशि कवर हुई और कुछ शेष है।
+- **सब निपटाया** का मतलब है उस पथ पर कुछ शेष नहीं।
+- **निपटाया** कवर हुई राशि का लेबल है।
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync, UPI) Latin रूप में रहेंगे।
+जो ट्रांसफ़र आपने सहेजा और खर्च पर नहीं निपटाया, वह इन्हें नहीं बदलता।
 
+## भुगतान और निपटान एक नहीं
+
+किसी के भुगतान से जुड़ा पैसा यह नहीं मिटाता कि कौन अभी भी देनदार है। खर्च तब निपटा होता है जब उस पर बचे किसी व्यक्ति को पैसा नहीं मिलना हो और न ही वह देनदार हो।
+
+## आवर्ती खर्च
+
+खर्च **आवर्ती** दिखाता है। **Schedule** **Active** या **Paused** दिखाता है, यह किस तारीख से चलता है, और अगली तारीख। देखें [दोहराए जाने वाले खर्च](/hi/expenses/howto-recurring-expenses)।
+
+## चल रहा बजट
+
+बजट तब चल रहा है जब उसकी कोई समाप्ति नहीं है, या समाप्ति आज या उसके बाद है। यह **दैनिक**, **साप्ताहिक**, **मासिक**, **त्रैमासिक**, या **वार्षिक** रीसेट होता है।
+
+जिस बजट की समाप्ति पहले ही निकल चुकी है, वह अब नहीं चल रहा। बनाने वाला फ़ॉर्म आज से पहले की समाप्ति नहीं देता। देखें [सीमा क्या करती है](/hi/budgets/concept-budget-rules-and-caps)।
+
+## Activity फ़िल्टर
+
+**Activity** पर फ़िल्टर हैं **All**, **Groups**, **Expenses**, और **Transfers**।
+
+## आगे
+
+- [शब्दावली](/hi/reference/ref-glossary)
+- [प्रश्न](/hi/reference/ref-faq)

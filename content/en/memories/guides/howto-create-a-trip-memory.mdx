@@ -1,10 +1,10 @@
 ---
 title: "Create a trip memory"
-description: "Create a group Memory for a trip so it is selected on trip expenses, then complete it when you return."
+description: "Create a Group Memory for a trip. It turns on from the start you set, including a start in the past."
 id: "doc-mem-trip"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "Create a group Memory for a trip so it is selected on trip expenses, then complete it when you return."
+summary: "Create a Group Memory for a trip. It turns on from the start you set, including a start in the past."
 taxonomy:
   domain: memories
   module: memories
@@ -19,18 +19,18 @@ related_docs:
   - doc-mem-complete
   - doc-gs-log-expense
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Create a trip memory
 
-Use this flow when you and a group travel together. You create one **Group Memory** for the trip dates. Split Smart then selects it on expenses in that group. Turn it off on any expense that is not part of the trip. Complete the Memory when the trip ends.
+Use this flow when you and a group travel together. You create one **Group Memory** for the trip. Creating it turns it on for that group and turns off the Group Memory that was on before. Complete it when the trip ends so new expenses no longer use it.
 
 ## Prerequisites
 
-- An active Split Smart account
+- An active Split Smarter account
 - A group for the trip (or create one first)
-- Rough start and end dates for the trip
+- The day the trip started, or the day it starts if that day is today
 
 ## Steps
 
@@ -40,8 +40,9 @@ Use this flow when you and a group travel together. You create one **Group Memor
 2. Create a new Memory.
 3. Set a clear title (for example, the destination or trip name).
 4. Choose **Group** scope and select the trip group.
-5. Set the **start** and **end** dates so they cover every day you expect to spend on the trip.
-6. Save. Creating a Group Memory for a group turns it on and replaces the Group Memory that was on before.
+5. Set the **start** to the first day of the trip. A past start is allowed. A future start is not.
+6. Set an **end** only if you know it. It must be today or a later day in your timezone, and after the start. If you have no timezone, today is a UTC day.
+7. Save. The Memory turns on from that start. If another Group Memory was on for this group, that one turns off.
 
 ### 2. Add photos (optional)
 
@@ -51,30 +52,31 @@ Use this flow when you and a group travel together. You create one **Group Memor
 ### 3. Confirm it is on for the group
 
 1. If the Memory is not already on for the group, activate it.
-2. Add a trip expense and confirm this Memory is selected. Turn it off before saving if that expense is not part of the trip.
+2. Add a trip expense dated today and confirm this Memory is applied. To leave it off that bill, turn the Memory off before you save.
 
 Details: [Activate or switch memory](/en/memories/guides/howto-activate-or-switch-memory).
 
 ### 4. Log expenses on the trip
 
 1. Add expenses as usual in Smart Ledger, with this group selected.
-2. Use expense dates that fall inside the Memory's date window. The expense will not save while a selected Memory's dates do not cover that date.
-3. Leave this Memory selected on trip expenses. Turn it off on spending that should not count.
+2. On a bill dated today, this Group Memory is applied while it is on. Turn it off before saving if that spend should not count.
+3. On a bill dated on a past day, every Memory that was on at that time is attached, including this one if it was on then.
+4. A start in the past also links spending already saved in that stretch. That pass only adds links.
 
 Details: [Attach memory to an expense](/en/memories/guides/howto-attach-memory-to-expense) and [Log your first expense](/en/getting-started/tut-log-first-expense).
 
 ### 5. Complete the Memory when you return
 
 1. Open the Memory and choose complete (or equivalent).
-2. Confirm the end date (often today) and that the Memory becomes archived.
-3. Check that new expenses in the group no longer select it.
+2. Confirm the end date. It must be today or later in your timezone.
+3. Check that the Memory is deactivated and that new expenses in the group no longer use it. Expenses already linked keep it.
 
 Details: [Complete a memory](/en/memories/guides/howto-complete-a-memory).
 
 ## What good looks like
 
-- Trip expenses you saved with this Memory still show it when their dates fall in the window.
-- After completion, the Memory is archived and is not selected on new expenses.
+- Trip expenses saved while this Memory was on still show it.
+- After completion, the Memory is deactivated and is not applied to new expenses.
 - Photos on the Memory still describe the trip. Settlement and balances stay on the expenses themselves.
 
 ## Next steps

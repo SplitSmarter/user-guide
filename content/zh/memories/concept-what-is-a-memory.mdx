@@ -1,17 +1,17 @@
 ---
-title: "What is a Memory"
-description: "A Memory is a time-bounded experience you can apply to spending, independent of Place. Translation pending."
+title: "什么是 Memory"
+description: "Memory 收集一次经历的花费和照片。费用在它开启期间才属于它。"
 id: "doc-mem-concept"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "A Memory is a time-bounded experience you can apply to spending, independent of Place. Translation pending."
+summary: "Memory 收集一次经历的花费和照片。费用在它开启期间才属于它。"
 taxonomy:
   domain: memories
   module: memories
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory]
-keywords: ['memory', 'what is a memory']
+keywords: [memory, 旅行 memory, 什么是 memory]
 related_docs:
   - doc-mem-identity
   - doc-mem-dates
@@ -21,20 +21,41 @@ related_docs:
   - doc-mem-expense-links
   - doc-mem-lifecycle
   - doc-mem-trip
+  - doc-bud-create
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 什么是 Memory
 
-# What is a Memory
+**Memory** 收集一次经历的花费和照片。同一条 Memory 可以从小组、费用和预算里使用。它不绑在某一个画面上。
 
-A **Memory** is a time-bounded experience you attach to spending in Split Smart. It is not a Place. When a Memory is active, it is selected on the next expense. You can turn it off before you save. See the English page for the full explanation.
+“旅行 Memory”只是常见例子。任何 Memory 的组成部分都一样。
 
-- [Identity and icon](/zh/memories/components/concept-identity)
-- [Date window](/zh/memories/components/concept-date-window)
-- [Scope](/zh/memories/components/concept-scope)
-- [Active memory](/zh/memories/components/concept-current-context)
-- [Photos](/zh/memories/components/concept-photos)
-- [Expense links](/zh/memories/components/concept-expense-links)
-- [Lifecycle](/zh/memories/components/concept-lifecycle)
+费用在那条 Memory 当时开启时才属于它。你填写的开始和结束标出这次经历。它们本身不决定哪些账单属于它。
+
+## Memory 用在哪里
+
+- **小组** — 一个小组同时可以有一条开启的 Group Memory。它开启期间会加到该小组的费用上。
+- **费用** — 日期为今天的账单上，你可以选择哪些已开启的 Personal Memories 保留。已开启的 Group 和 Shared Memories 会被加上。如果这张账单不该使用某条 Group 或 Shared Memory，请在保存前先关闭它。
+- **一段日期** — 这段日期的列表会显示在你的时区里当时开启的 Memories。按小组筛选时，只显示这些小组的 Memories。
+- **预算** — 创建预算时，在 **What counts** 里选择这条 Memory。只有和它关联的花费会计入该上限。见 [创建预算](/zh/budgets/howto-create-a-budget)。
+- **照片** — 图片在 Memory 上，和费用上的收据分开。
+
+**Place** 是保存的地点。一张费用可以同时有两者。它们保持独立。
+
+## Memory 的部分
+
+| 部分 | 作用 |
+|------|----------------|
+| [名称和图标](/zh/memories/components/concept-identity) | 标题、说明、可选图标 |
+| [日期范围](/zh/memories/components/concept-date-window) | 经历的开始和结束。开始可以是过去。 |
+| [范围](/zh/memories/components/concept-scope) | Personal、Group 或 Shared |
+| [开启中的 Memory](/zh/memories/components/concept-current-context) | Memory 何时开启，因此哪些费用属于它 |
+| [照片](/zh/memories/components/concept-photos) | 经历的照片 |
+| [费用关联](/zh/memories/components/concept-expense-links) | Memory 开启期间附上的花费 |
+| [状态](/zh/memories/components/concept-lifecycle) | Active、deactivated 或 deleted |
+
+## 下一步
+
+走一遍旅行：[创建旅行 Memory](/zh/memories/guides/howto-create-a-trip-memory)。

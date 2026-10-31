@@ -1,10 +1,10 @@
 ---
 title: "Expense links"
-description: "Active Memories are selected when you add an expense. You can turn them off before you save."
+description: "On a bill dated today you choose Personal Memories. Group and Shared ones that are on are applied. A past day keeps every Memory that was on."
 id: "doc-mem-expense-links"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "Active Memories are selected when you add an expense. You can turn them off before you save."
+summary: "On a bill dated today you choose Personal Memories. Group and Shared ones that are on are applied. A past day keeps every Memory that was on."
 taxonomy:
   domain: memories
   module: components
@@ -17,20 +17,32 @@ related_docs:
   - doc-mem-attach-expense
   - doc-mem-scope
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Expense links
 
-A Memory becomes useful when an **expense** points at it. When you add an expense and choose a group, Split Smart selects the Memories that are [active](/en/memories/components/concept-current-context) for that group. Turn any of them off, or add another Memory that is not active, before you save. Saving keeps only what you left selected.
+A Memory becomes useful when an **expense** points at it. Which Memories are attached depends on whether the expense day is today in your timezone.
+
+**Today**
+
+- You choose which of your [Personal Memories](/en/memories/components/concept-scope) that are on should stay. You can save with none.
+- Group and Shared Memories that are on are applied. To leave one off, turn it off before you save.
+
+**A past day**
+
+Your choice is ignored. Every Personal, Shared, and Group Memory that was on at that time is attached.
+
+**Editing**
+
+An expense that stays on a past day keeps the Memory links it already has. Moving its day onto today lets you change the Personal ones. Group and Shared ones are taken from what is on now.
 
 - A **Group** Memory is stored with the shared expense. The group sees it.
-- A **Personal** or **Shared** Memory is stored on your view of that expense. Other people do not see that link.
+- A **Personal** Memory is stored on your view. Other people do not see that link.
+- A **Shared** Memory is stored for you and for each person it is shared with.
 
-The expense date must sit inside the Memory’s [date window](/en/memories/components/concept-date-window). If it does not, leave that Memory off or change the date. The expense will not save while a Memory outside its dates is still selected.
+The start and end you typed are not what keeps or drops the link. Turning a Memory off or completing it leaves links already saved. Deleting the Memory removes them.
 
-Editing an expense replaces the Memories you send. Removing a Group Memory removes it for the group. Removing your Personal or Shared Memory changes only your view.
-
-Changing dates later can drop a link that no longer fits. Split Smart does not go back and attach a Memory to old expenses on its own.
+If you create a Memory with a start in the past, spending already saved in that stretch is linked later. That pass only adds links.
 
 An expense can also have a Place and a receipt. Those are separate from the Memory link. Steps: [Attach memory to an expense](/en/memories/guides/howto-attach-memory-to-expense).

@@ -1,22 +1,45 @@
 ---
-title: "Log your first expense (हिंदी अनुवाद शीघ्र)"
-description: "Log the ₹1000 dinner so Bob owes Alice ₹600. Translation pending."
+title: "पहला खर्च दर्ज करें"
+description: "₹1000 का रात का खाना दर्ज करें, ताकि Bob, Alice का ₹600 देनदार हो।"
 id: "doc-gs-log-expense"
 locale: "hi"
 available_locales: ["en","hi","zh"]
-summary: "Log the ₹1000 dinner so Bob owes Alice ₹600. Translation pending."
+summary: "₹1000 का रात का खाना दर्ज करें, ताकि Bob, Alice का ₹600 देनदार हो।"
 taxonomy: {"domain":"getting-started","module":"getting-started","doc_type":"tutorial","audience":["end-user"]}
 entity_tags: ["expense","smart-ledger"]
-keywords: ["add expense","paid by","split between","first expense"]
+keywords: ["खर्च जोड़ें","भुगतानकर्ता","बाँट","पहला खर्च"]
 related_docs: ["doc-exp-paid-by-vs-sharers","doc-gs-settle","doc-gs-create-group"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-22"
+last_updated: "2026-10-30"
 ---
 
-# Log your first expense
+# पहला खर्च दर्ज करें
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync, UPI) Latin रूप में रहेंगे।
+रात का खाना Smart Ledger में दर्ज करें। Alice ने ₹1000 दिए। उसका हिस्सा ₹400 है। Bob का हिस्सा ₹600 है। सहेजने के बाद **Bob, Alice का ₹600 देनदार है**।
 
-Choose **Expense**. Set **Paid by** to Alice for ₹1000 and **Split Between** to ₹400 and ₹600. Bob then owes Alice ₹600. The **Add transfer** switch on that screen is not how you settle. See the English page for steps.
+किसने भुगतान किया और कौन लागत बाँटता है, ये अलग हैं। देखें [भुगतानकर्ता और साझीदार](/hi/expenses/concept-paid-by-vs-sharers)।
 
-Next: [Settle balances](/hi/getting-started/tut-settle-balances).
+## पहले से
+
+- [समूह बनाएँ और लोगों को बुलाएँ](/hi/getting-started/tut-create-group-and-invite) वाला रात के खाने का समूह
+- आप बिल पर मौजूद किसी व्यक्ति के रूप में साइन इन हैं
+
+## कदम
+
+1. होम वॉलेट पर बनाने वाली शीट खोलें और **Expense** चुनें।
+2. रात के खाने का समूह चुनें।
+3. राशि ₹1000 रखें और तारीख आज रखें।
+4. **भुगतानकर्ता** के नीचे Alice को वह व्यक्ति बनाएँ जिसने ₹1000 दिए।
+5. **इनके बीच बाँटें** के नीचे Alice का हिस्सा ₹400 और Bob का हिस्सा ₹600 रखें।
+6. Place बंद छोड़ें। आज की तारीख वाले बिल पर Personal Memories बंद छोड़ें, अगर यह रात का खाना उनमें से किसी का हिस्सा नहीं है। जो Group या Shared Memory पहले से चालू है, वह लग जाती है, जब तक आप सहेजने से पहले उसे बंद न करें।
+7. सहेजें।
+
+इस स्क्रीन पर **Add transfer** स्विच का उपयोग न करें। वह स्विच बिल पर व्यापारी को भुगतान दर्ज करता है। यह नहीं निपटाता कि Bob, Alice का कितना देनदार है।
+
+## अच्छा परिणाम
+
+खर्च खोलें। Bob, Alice का ₹600 देनदार है। **Settlement Path** अभी भी उस राशि को लंबित दिखाता है।
+
+## आगे
+
+[बकाया निपटाएँ](/hi/getting-started/tut-settle-balances)।

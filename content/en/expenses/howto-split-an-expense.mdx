@@ -1,31 +1,46 @@
 ---
 title: "Split an expense"
-description: "Choose who paid and how sharers split a group expense."
+description: "Set who paid and who shares the cost on the expense form."
 id: "doc-exp-split-expense"
 locale: "en"
 available_locales: ["en","hi","zh"]
-summary: "Choose who paid and how sharers split a group expense."
+summary: "Set who paid and who shares the cost on the expense form."
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"how-to","audience":["end-user"]}
 entity_tags: ["split","sharers","paid-by"]
 keywords: ["split bill","paid by","share expense"]
-related_docs: ["doc-exp-paid-by-vs-sharers","doc-set-record-transfer","doc-gs-settle","doc-set-balances"]
+related_docs: ["doc-exp-paid-by-vs-sharers","doc-exp-category","doc-exp-scan-or-note","doc-set-expense-transfer","doc-gs-settle","doc-set-balances"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Choose who paid and how sharers split a group expense.
+# Split an expense
+
+**Paid by** is who put the money in. **Split Between** is who shares the cost. They can be the same people, or not. See [Paid by vs sharers](/en/expenses/concept-paid-by-vs-sharers).
 
 ## Prerequisites
 
-- An active Split Smart account (unless this page is about creating one).
+- You are signed in
 
 ## Steps
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+1. On the home wallet, open the create sheet and choose **Expense**.
+2. Give the bill a name. A description is optional. Choose the currency for the amount, then enter the amount.
+3. Under **Paid by**, add each person who paid and how much they paid.
+4. Under **Split Between**, add each person who shares the cost and their share.
+5. The shares should add up to the amount. For each person, net is the amount they paid minus their share. A positive net means they are owed. A negative net means they owe.
+6. If you put the expense in a group, everyone under **Paid by** and **Split Between** must already be in that group, or you add the missing people to the group as you save. If you do neither, the save is refused.
+7. Save.
+
+The first time through a shared dinner is [Log your first expense](/en/getting-started/tut-log-first-expense).
+
+## What good looks like
+
+Open the expense. It shows who paid, who shares, and who owes whom.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
+- Choose a label for the spend: [Category](/en/expenses/concept-category)
+- Start from a photo or a note: [Add an expense from a receipt or a note](/en/expenses/howto-add-from-receipt-or-note)
+- Break the bill into lines: [Add line items](/en/expenses/howto-add-line-items)
+- The **Add transfer** switch: [On an expense](/en/settlements/concept-add-transfer-on-expense)
+- Cover what is owed: [Settle an expense](/en/settlements/howto-link-payment-to-expense)

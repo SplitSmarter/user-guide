@@ -1,32 +1,39 @@
 ---
 title: "Add line items"
-description: "Break an expense into line items and shares."
+description: "Break an expense into items, then say who paid for each line and who shares it."
 id: "doc-exp-line-items"
 locale: "en"
 available_locales: ["en","hi","zh"]
-summary: "Break an expense into line items and shares."
+summary: "Break an expense into items, then say who paid for each line and who shares it."
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"how-to","audience":["end-user"]}
 entity_tags: ["line-items"]
-keywords: ["line items","itemize"]
-related_docs: ["doc-exp-split-expense"]
+keywords: ["line items","itemize","assign items"]
+related_docs: ["doc-exp-split-expense","doc-exp-paid-by-vs-sharers"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Break an expense into line items and shares.
+# Add line items
+
+A line item is one thing on the bill, such as a dish. You can say who paid for that line and who shares it. If you leave a line unassigned, everyone already on that side of the expense shares it.
 
 ## Prerequisites
 
-- An active Split Smart account (unless this page is about creating one).
+- You are on the expense form, including a saved expense you are editing
 
 ## Steps
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+1. On the expense, open **Assign items**.
+2. Add the lines from your item list. You can add a new item if it is not there yet.
+3. On **Paid by**, assign who funded each item. Leave a line empty to use everyone already under **Paid by**.
+4. On **Split between**, assign who shares each item. Leave a line empty to use everyone already under **Split Between**.
+5. The expense total follows the items. Save the expense.
+
+## What good looks like
+
+Open the expense. **Line items** lists each line, its amount, and who shares it.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- [Split an expense](/en/expenses/howto-split-an-expense)
+- [Paid by vs sharers](/en/expenses/concept-paid-by-vs-sharers)

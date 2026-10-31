@@ -5,7 +5,7 @@ export default function NotFound() {
     <div style={{ padding: '4rem 1.5rem', textAlign: 'center' }}>
       <h1>Page not found</h1>
       <p>
-        <a href={home}>Back to Split Smart Help</a>
+        <a href={home}>Back to Split Smarter Help</a>
       </p>
     </div>
   )

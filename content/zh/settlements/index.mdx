@@ -1,32 +1,33 @@
 ---
-title: "Settlements (Debt Sync)"
-description: "A transfer records that money moved. Translation pending."
+title: "结算 (Debt Sync)"
+description: "转账记录钱已经移动。在费用上结清它，才会抵上仍欠的金额。"
 id: "doc-settlements-index"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "A transfer records that money moved. Translation pending."
+summary: "转账记录钱已经移动。在费用上结清它，才会抵上仍欠的金额。"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: reference
   audience: [end-user]
 entity_tags: [settlements, transfer, debt-sync]
-keywords: [transfer, Debt Sync, sender, merchant]
+keywords: [转账, Debt Sync, 付款人, 商户]
 related_docs:
   - doc-set-balances
   - doc-set-record-transfer
   - doc-set-expense-transfer
   - doc-set-link-payment
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Settlements (Debt Sync)
+# 结算 (Debt Sync)
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+**转账** 是钱已经移动的记录。它可以是你和另一个人之间，或你和一个商户之间。单独保存它会让费用保持原样。打开费用并结清那笔付款，已抵金额才会变化。见 [在费用上结清](/zh/settlements/howto-link-payment-to-expense)。
 
-A transfer records that money moved. Saving it does not change who owes whom. See the English page for the full explanation.
+你可以在两个地方开始：
 
-- [Record a transfer](/zh/settlements/howto-record-a-transfer)
-- [On an expense](/zh/settlements/concept-add-transfer-on-expense)
-- [Does not clear a debt](/zh/settlements/howto-link-payment-to-expense)
+- 单独开始：首页的创建面板、首页的 **Transfer** 按钮，或 **Activity** 的 **Transfers** 标签。见 [记录转账](/zh/settlements/howto-record-a-transfer)。
+- 在费用上，用 **Add transfer** 开关付给商户。见 [在费用上](/zh/settlements/concept-add-transfer-on-expense)。
+
+晚餐账单如何变成“Bob 欠 Alice”，见 [余额和转账](/zh/settlements/concept-balances-and-transfers)。那笔付款如何抵上账单，见 [在费用上结清](/zh/settlements/howto-link-payment-to-expense)。

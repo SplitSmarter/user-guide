@@ -1,27 +1,48 @@
 ---
-title: "Expense links"
-description: "Active Memories are selected when you add an expense. You can turn them off before you save. Translation pending."
+title: "खर्च के लिंक"
+description: "आज के बिल पर आप Personal Memories चुनते हैं। चालू Group और Shared लग जाती हैं। पिछले दिन हर वह Memory जुड़ती है जो तब चालू थी।"
 id: "doc-mem-expense-links"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Active Memories are selected when you add an expense. You can turn them off before you save. Translation pending."
+summary: "आज के बिल पर आप Personal Memories चुनते हैं। चालू Group और Shared लग जाती हैं। पिछले दिन हर वह Memory जुड़ती है जो तब चालू थी।"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, expense]
-keywords: ['attach memory', 'expense memory']
+keywords: [memory जोड़ना, खर्च memory]
 related_docs:
   - doc-mem-dates
   - doc-mem-attach-expense
   - doc-mem-scope
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> पूर्ण अनुवाद शीघ्र। उत्पाद नाम (Split Smart, Memory, Smart Ledger) Latin रूप में रहेंगे.
+# खर्च के लिंक
 
-# Expense links
+Memory तब उपयोगी होती है जब कोई **खर्च** उसकी ओर इशारा करे। कौन सी Memories जुड़ेंगी, यह इस पर निर्भर है कि खर्च का दिन आपकी समय-क्षेत्र में आज है या नहीं।
 
-When you add an expense in a group, active Memories are selected. You can turn them off before you save. A Group Memory link is on the shared expense. A Personal or Shared Memory link stays on your view. The expense will not save while a selected Memory's dates do not cover it. See the English page for the full explanation.
+**आज**
+
+- आप चुनते हैं कि आपकी कौन सी चालू [Personal Memories](/hi/memories/components/concept-scope) रहें। आप बिना किसी के भी सहेज सकते हैं।
+- जो Group और Shared Memories चालू हैं, वे लग जाती हैं। किसी को छोड़ना हो तो सहेजने से पहले उसे बंद करें।
+
+**पिछला दिन**
+
+आपकी पसंद अनदेखी होती है। उस समय चालू हर Personal, Shared, और Group Memory जुड़ जाती है।
+
+**संपादन**
+
+जो खर्च पिछले दिन पर रहता है, उसके Memory लिंक वैसे ही रहते हैं। दिन को आज पर ले जाने से आप Personal वाले बदल सकते हैं। Group और Shared वाले अब जो चालू हैं, उनसे लिए जाते हैं।
+
+- **Group** Memory साझा खर्च के साथ रहती है। समूह उसे देखता है।
+- **Personal** Memory आपके दृश्य पर रहती है। दूसरे लोग वह लिंक नहीं देखते।
+- **Shared** Memory आपके और हर उस व्यक्ति के लिए रहती है जिसके साथ वह साझा है।
+
+जो शुरू और अंत आपने लिखे, वे लिंक को नहीं रखते और नहीं हटाते। Memory बंद करने या पूरा करने पर पहले से सहेजे लिंक रह जाते हैं। Memory मिटाने पर वे हट जाते हैं।
+
+अगर आप पिछली शुरू वाली Memory बनाते हैं, तो उस अवधि का पहले से सहेजा खर्च बाद में जुड़ता है। वह काम सिर्फ़ लिंक जोड़ता है।
+
+खर्च पर Place और रसीद भी हो सकते हैं। वे Memory लिंक से अलग हैं। कदम: [खर्च पर Memory जोड़ें](/hi/memories/guides/howto-attach-memory-to-expense)।

@@ -1,10 +1,10 @@
 ---
 title: "Date window"
-description: "A Memory covers spending only between its start and end dates."
+description: "The start and end mark the experience. Spending belongs while the Memory is turned on."
 id: "doc-mem-dates"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "A Memory covers spending only between its start and end dates."
+summary: "The start and end mark the experience. Spending belongs while the Memory is turned on."
 taxonomy:
   domain: memories
   module: components
@@ -17,13 +17,15 @@ related_docs:
   - doc-mem-expense-links
   - doc-mem-lifecycle
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Date window
 
-Every Memory has a **start** date and an **end** date. Together they are the date window: the days when spending can belong to that experience.
+Every Memory has a **start**. An **end** is optional. Together they describe the experience. They are not the rule for which expenses belong. An expense belongs while the Memory was turned on. See [Active memory](/en/memories/components/concept-current-context).
 
-An expense stays linked only if its **expense date** falls inside that window. If you try to save an expense while a Memory outside that window is still selected, the expense will not save. Turn that Memory off or change the date. If you later move the expense date, shorten the window, or complete the Memory so the end date no longer covers the expense, Split Smart drops the link. It does not add links when a date newly falls inside the window.
+The start may be in the past, when the trip or event began. It cannot be in the future. Creating the Memory turns it on from that start. If the start is in the past, spending already saved in that stretch is linked later. That pass only adds links. It does not remove ones already stored.
 
-Set the window wide enough for the whole trip or event before you log spend. You can still complete the Memory early and confirm the final end date. See [Lifecycle](/en/memories/components/concept-lifecycle) and [Expense links](/en/memories/components/concept-expense-links).
+An end, when you set one, must be today or a later day in your timezone, and it must be after the start. If you have no timezone, today is a UTC day. Today is that timezone’s calendar day, not the date written in front of a stored time.
+
+You can still [complete](/en/memories/guides/howto-complete-a-memory) a Memory early. Completing turns it off. Links already saved stay. See [Lifecycle](/en/memories/components/concept-lifecycle) and [Expense links](/en/memories/components/concept-expense-links).

@@ -1,27 +1,78 @@
 ---
-title: "Activate or switch memory"
-description: "Turn a Memory on so it is selected on the next expense. Translation pending."
+title: "Memory चालू करें या बदलें"
+description: "Memory चालू करें ताकि खर्च उसका उपयोग कर सकें, या उसे पूरा किए बिना बंद करें।"
 id: "doc-mem-activate"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Turn a Memory on so it is selected on the next expense. Translation pending."
+summary: "Memory चालू करें ताकि खर्च उसका उपयोग कर सकें, या उसे पूरा किए बिना बंद करें।"
 taxonomy:
   domain: memories
   module: memories
   doc_type: how-to
   audience: [end-user]
-entity_tags: [memory, activation]
-keywords: ['activate memory']
+entity_tags: [memory, activation, group]
+keywords: [memory चालू करें, memory बदलें]
 related_docs:
   - doc-mem-concept
   - doc-mem-trip
   - doc-mem-complete
 version_introduced: v1.0.0
-last_updated: 2026-10-20
+last_updated: 2026-10-30
 ---
 
-> पूर्ण अनुवाद शीघ्र। उत्पाद नाम (Split Smart, Memory, Smart Ledger) Latin रूप में रहेंगे.
+# Memory चालू करें या बदलें
 
-# Activate or switch memory
+**सक्रिय करना** Memory को चालू करता है। जब तक वह चालू है, उस समय के खर्च उससे जुड़ सकते हैं। बंद करने से वह पूरी नहीं होती और पहले से सहेजे खर्च नहीं बदलते।
 
-Turn on a Group Memory so expenses in that group select it, or turn on a Personal Memory so only your expenses select it. You can turn either off before you save. A Shared Memory is not selected for you. See the English page for steps.
+## पहले से चाहिए
+
+- सक्रिय Split Smarter खाता
+- कम से कम एक Memory जिसका आप उपयोग कर सकें (आमतौर पर स्थिति Active)
+- समूह की सदस्यता, जब Memory एक Group Memory हो
+
+## क्या लगता है
+
+| आप क्या चालू करते हैं | क्या होता है |
+|------------------|--------------|
+| **Group Memory** | समूह के लिए एक चालू होती है। दूसरी चालू करने पर पिछली बंद हो जाती है। वह उस समूह के खर्चों पर लगती है। लिंक साझा खर्च पर होता है। |
+| **Personal Memory** | कई एक साथ चालू हो सकती हैं। वे आपकी हैं, समूह पर सहेजी नहीं। आज के बिल पर आप चुनते हैं कि कौन सी रहें। |
+| **Shared Memory** | जब तक चालू है, आपके और बुलाए लोगों के लिए लगती है। यह Personal Memory नहीं है, और आप उसे खर्च पर वैसे नहीं चुनते जैसे Personal को। |
+
+## कदम
+
+### Group Memory चालू करें
+
+1. समूह खोलें, या Memory खोलकर समूह चुनें।
+2. जो Group Memory चाहिए, उसे सक्रिय करें।
+3. पुष्टि करें कि वह पहले चालू Group Memory की जगह लेती है।
+4. उस समूह में आज के बिल पर यह Memory लगती है। अगर यह खर्च उसका नहीं है, तो सहेजने से पहले Memory बंद करें।
+
+### Personal Memory चालू करें
+
+1. अपनी Memories खोलें।
+2. एक **Personal** Memory चुनें, या बनाएँ। वह समूह से बँधी नहीं है।
+3. उसे सक्रिय करें। जो Personal Memories पहले से चालू हैं, वे चालू रहती हैं।
+4. आज के बिल पर चुनें कि चालू Personal Memories में से कौन सी रहें। आप सभी को छोड़ सकते हैं।
+
+### Shared Memory चालू करें
+
+1. Shared Memory खोलें, या बनाकर लोगों को बुलाएँ।
+2. उसे सक्रिय करें।
+3. जब तक चालू है, वह आपके और बुलाए लोगों के लिए लगती है। आज के बिल पर न लगाना हो तो सहेजने से पहले बंद करें।
+
+### चालू Memory बंद करें
+
+1. Memory खोलें।
+2. उसे निष्क्रिय करें। इससे Memory पूरी या मिटती नहीं, और पहले से सहेजे लिंक नहीं हटते।
+3. आज का खर्च जोड़ें और देखें कि वह अब नहीं लगती।
+
+## सुझाव
+
+- भविष्य का शुरू अस्वीकार होता है। पिछला शुरू Memory को उस समय से चालू करता है।
+- Memory को खत्म करना हो ताकि नए खर्च न लें, तो [उसे पूरा करें](/hi/memories/guides/howto-complete-a-memory)। उससे भी वह deactivated होती है।
+
+## आगे
+
+- [यात्रा की Memory बनाएँ](/hi/memories/guides/howto-create-a-trip-memory)
+- [खर्च पर Memory जोड़ें](/hi/memories/guides/howto-attach-memory-to-expense)
+- [Memory पूरी करें](/hi/memories/guides/howto-complete-a-memory)

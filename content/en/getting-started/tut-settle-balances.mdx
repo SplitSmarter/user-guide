@@ -1,10 +1,10 @@
 ---
 title: "Settle balances"
-description: "Record the ₹600 dinner payment. The expense still shows that Bob owes Alice."
+description: "Record the ₹600 dinner payment, then settle it on the expense so Bob’s amount is covered."
 id: "doc-gs-settle"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "Record the ₹600 dinner payment. The expense still shows that Bob owes Alice."
+summary: "Record the ₹600 dinner payment, then settle it on the expense so Bob’s amount is covered."
 taxonomy:
   domain: getting-started
   module: getting-started
@@ -18,14 +18,14 @@ related_docs:
   - doc-set-record-transfer
   - doc-set-link-payment
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
 # Settle balances
 
 This continues the dinner you just logged. Alice paid ₹1000. Her share is ₹400. Bob’s share is ₹600. **Bob owes Alice ₹600.**
 
-Recording that money moved does not clear that debt.
+Recording that money moved does not cover the bill until you settle that payment on the expense.
 
 ## Prerequisites
 
@@ -38,16 +38,18 @@ Recording that money moved does not clear that debt.
 2. Set the amount to ₹600.
 3. Leave the sender as **You**. Set the recipient to Alice, the person who is owed.
 4. Pick a category so the form can save.
-5. Save the transfer. The dinner expense still shows Bob owing Alice.
+5. Save the transfer. The dinner expense still shows Bob owing Alice until you settle this payment on the bill.
+6. Open the dinner expense. Under **Settlement Path**, choose **Use Transfer**.
+7. On **Settle**, the ₹600 payment is under **From past transfers**. Use **Autoselect** or **Choose**, then **Settle**.
 
 The **Add transfer** switch on the expense form is different: that one pays a merchant on the bill. See [On an expense](/en/settlements/concept-add-transfer-on-expense).
 
 ## What good looks like
 
 - A transfer exists from you (Bob) to Alice for ₹600.
-- The dinner expense still shows that Bob owes Alice.
+- On the dinner expense, **Settlement Path** shows that ₹600 as settled.
 
 ## Next steps
 
 - The form in full: [Record a transfer](/en/settlements/howto-record-a-transfer)
-- Why the debt stays: [Does not clear a debt](/en/settlements/howto-link-payment-to-expense)
+- Cover the bill: [Settle an expense](/en/settlements/howto-link-payment-to-expense)

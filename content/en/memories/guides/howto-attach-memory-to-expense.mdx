@@ -1,10 +1,10 @@
 ---
 title: "Attach memory to an expense"
-description: "Keep, remove, or add Memories when you save an expense. The expense date must fall inside each Memory."
+description: "On a bill dated today, choose Personal Memories. Group and Shared ones that are on are applied. A past day attaches every Memory that was on."
 id: "doc-mem-attach-expense"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "Keep, remove, or add Memories when you save an expense. The expense date must fall inside each Memory."
+summary: "On a bill dated today, choose Personal Memories. Group and Shared ones that are on are applied. A past day attaches every Memory that was on."
 taxonomy:
   domain: memories
   module: memories
@@ -18,47 +18,57 @@ related_docs:
   - doc-exp-attach-place
   - doc-exp-split-expense
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Attach memory to an expense
 
-Linking a **Memory** to an expense ties that spend to an experience (for example a trip). You choose the Memories when you create or edit an expense in Smart Ledger.
+Linking a **Memory** to an expense ties that spend to an experience (for example a trip). What you can choose depends on whether the expense day is today in your timezone.
 
 ## Prerequisites
 
-- An active Split Smart account
-- At least one Memory whose dates cover the expense date
-- Permission to add or edit the expense in the group (for group spend)
+- An active Split Smarter account
+- Permission to add or edit the expense
+- For a bill dated today, the Personal Memories you want must already be turned on
 
-## Date window rule
+## Today and a past day
 
-The **expense date** must fall inside each selected Memory's **start–end** dates. If it does not, turn that Memory off or change the date. The expense will not save while it is still selected.
+**Today** is your timezone’s calendar day. If you have no timezone, today is a UTC day.
 
-If you later change the expense date or the Memory's window, or you complete the Memory so the window no longer fits, links that fall outside can be removed. Split Smart does not add a Memory to old expenses on its own.
+On a bill dated today:
+
+- Choose which of your Personal Memories that are on should stay. You can save with none.
+- Group and Shared Memories that are on are applied. To leave one off, turn it off before you save. You cannot clear it only on this expense.
+
+On a bill dated on a past day, that choice is ignored. Every Personal, Shared, and Group Memory that was on at that time is attached.
 
 ## Steps
 
-### When adding an expense
+### When adding an expense dated today
 
 1. Start a new expense and choose the group, if this spend belongs to one.
-2. Set the expense date inside the Memory's dates.
-3. Review the Memories Split Smart selected. Those are the ones that are active for that group.
-4. Turn off any Memory this expense should not use. Add another Memory if you want one that was not selected.
-5. Finish paid-by, sharers, and amount, then save. Only the Memories still selected are kept. Saving with none is allowed.
+2. Set the expense date to today.
+3. Choose the Personal Memories that should stay. Leave them all off if none of them fit.
+4. Group and Shared Memories that are on will be applied. Turn one off first if this bill should not use it.
+5. Finish paid-by, sharers, and amount, then save.
+
+### When adding an expense on a past day
+
+1. Set the expense date to that past day.
+2. Save. Memories you pick on the form are not used. Split Smarter attaches every Memory that was on at that time.
 
 ### When editing an expense
 
 1. Open the expense.
-2. Add or remove Memories. Saving replaces the set you send.
-3. Removing a **Group** Memory removes it for the group. Removing your **Personal** or **Shared** Memory changes only your view.
-4. If a Memory will not stay, check that the expense date is still inside its dates and that the Memory is not archived or deleted.
-5. Save.
+2. If its day stays in the past, leave the Memory links as they are. Saving does not add or remove them.
+3. If you move the day onto today, choose the Personal Memories again. Group and Shared ones are taken from what is on now.
+4. Save.
 
 ## Who sees the link
 
 - A **Group** Memory is on the shared expense. The group sees it.
-- A **Personal** or **Shared** Memory is on your view of that expense. Other people do not see that link. Someone you invited to a Shared Memory can select it on their own expenses.
+- A **Personal** Memory is on your view. Other people do not see that link.
+- A **Shared** Memory is kept for you and for each person it is shared with.
 
 You can still attach a **Place** or receipt on the same expense. That is separate from Memory links. See [Attach a place or receipt](/en/expenses/howto-attach-place-or-receipt).
 

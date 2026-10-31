@@ -1,22 +1,45 @@
 ---
-title: "Log your first expense（中文译文即将推出）"
-description: "Log the ₹1000 dinner so Bob owes Alice ₹600. Translation pending."
+title: "记下第一笔费用"
+description: "记下 ₹1000 的晚餐，使 Bob 欠 Alice ₹600。"
 id: "doc-gs-log-expense"
 locale: "zh"
 available_locales: ["en","hi","zh"]
-summary: "Log the ₹1000 dinner so Bob owes Alice ₹600. Translation pending."
+summary: "记下 ₹1000 的晚餐，使 Bob 欠 Alice ₹600。"
 taxonomy: {"domain":"getting-started","module":"getting-started","doc_type":"tutorial","audience":["end-user"]}
 entity_tags: ["expense","smart-ledger"]
-keywords: ["add expense","paid by","split between","first expense"]
+keywords: ["添加费用","Paid by","分摊","第一笔费用"]
 related_docs: ["doc-exp-paid-by-vs-sharers","doc-gs-settle","doc-gs-create-group"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-22"
+last_updated: "2026-10-30"
 ---
 
-# Log your first expense
+# 记下第一笔费用
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+在 Smart Ledger 里记下这顿晚餐。Alice 付了 ₹1000。她的份额是 ₹400。Bob 的份额是 ₹600。保存之后，**Bob 欠 Alice ₹600**。
 
-Choose **Expense**. Set **Paid by** to Alice for ₹1000 and **Split Between** to ₹400 and ₹600. Bob then owes Alice ₹600. The **Add transfer** switch on that screen is not how you settle. See the English page for steps.
+谁付了钱和谁分摊费用是两件事。见 [付款人与分摊人](/zh/expenses/concept-paid-by-vs-sharers)。
 
-Next: [Settle balances](/zh/getting-started/tut-settle-balances).
+## 开始之前
+
+- [创建小组并邀请他人](/zh/getting-started/tut-create-group-and-invite) 里的晚餐小组
+- 你以账单上的一个人登录
+
+## 步骤
+
+1. 在首页钱包打开创建面板，选择 **Expense**。
+2. 选择晚餐小组。
+3. 金额设为 ₹1000，日期设为今天。
+4. 在 **Paid by** 下把 Alice 设为付了 ₹1000 的人。
+5. 在 **Split Between** 下把 Alice 的份额设为 ₹400，Bob 的份额设为 ₹600。
+6. 让 Place 保持关闭。日期为今天的账单上，如果这顿晚餐不属于某条 Personal Memory，就让它们保持关闭。已经开启的 Group 或 Shared Memory 会被加上，除非你在保存前先关闭它。
+7. 保存。
+
+不要使用这个屏幕上的 **Add transfer** 开关。那个开关记录付给账单上商家的钱。它不会结清 Bob 欠 Alice 的金额。
+
+## 完成后
+
+打开费用。Bob 欠 Alice ₹600。**Settlement Path** 仍把这笔金额显示为待结。
+
+## 下一步
+
+[结清余额](/zh/getting-started/tut-settle-balances)。

@@ -1,33 +1,33 @@
 ---
 title: "Lifecycle"
-description: "A Memory is active while you use it, archived when you complete it, or deleted when you remove it."
+description: "A Memory is active while you use it, deactivated when you turn it off or complete it, or deleted when you remove it."
 id: "doc-mem-lifecycle"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "A Memory is active while you use it, archived when you complete it, or deleted when you remove it."
+summary: "A Memory is active while you use it, deactivated when you turn it off or complete it, or deleted when you remove it."
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, status]
-keywords: [archive memory, complete memory, memory status]
+keywords: [deactivate memory, complete memory, memory status]
 related_docs:
   - doc-mem-concept
   - doc-mem-complete
   - doc-mem-context
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Lifecycle
 
 | Status | Meaning |
 |--------|---------|
-| **Active** | You can use the Memory, turn it on so new expenses offer it, and attach expenses that fit the date window. |
-| **Archived** | The experience is finished. Completing a Memory usually archives it, sets or confirms the end date, and stops offering it on new expenses. |
-| **Deleted** | The Memory is removed from normal use. It is no longer offered on new expenses. |
+| **Active** | The Memory can be turned on. While it is on, new expenses can use it. |
+| **Deactivated** | You turned it off, completed it, or archived it. It is no longer offered on new expenses. Links already saved stay. |
+| **Deleted** | The Memory is removed from normal use. Its links on expenses are removed too. |
 
-Most Memories are ones you create. Split Smart may rarely add a system Memory; you can ignore those unless the app shows one.
+Most Memories are ones you create. Split Smarter may rarely add a system Memory; you can ignore those unless the app shows one.
 
-Completing does not delete expenses. It can drop Memory links whose expense dates fall outside the final window. See [Complete a memory](/en/memories/guides/howto-complete-a-memory).
+Completing does not delete expenses, and it does not drop links because a date left the start and end. See [Complete a memory](/en/memories/guides/howto-complete-a-memory).

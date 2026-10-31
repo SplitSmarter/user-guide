@@ -1,27 +1,31 @@
 ---
-title: "On a transfer"
-description: "A merchant on a transfer has a branch. Translation pending."
+title: "在转账上"
+description: "在转账上选择商户之后，你挑选的地点就是那个商户的分店。"
 id: "doc-plc-merchant-location"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "A merchant on a transfer has a branch. Translation pending."
+summary: "在转账上选择商户之后，你挑选的地点就是那个商户的分店。"
 taxonomy:
   domain: places
   module: places
   doc_type: concept
   audience: [end-user]
 entity_tags: [place, transfer, merchant]
-keywords: [merchant location, branch, transfer place]
+keywords: [商户地点, 分店, 转账地点]
 related_docs:
   - doc-plc-expense
   - doc-plc-save-place
   - doc-gs-settle
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# On a transfer
+# 在转账上
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+转账有一个付款方和一个收款方。任何一方都可以是人或商户。
 
-After you pick a merchant, choose the branch: a saved place, a place from the map, or an address you name. That is where the money went. It does not settle what people owe. See the English page for the full explanation.
+当一方是商户时，你再选择那个商户的位置。那就是分店：一个已保存的地点、地图上的一个地点，或你命名的地址，例如 Downtown Branch。商户下面的名称就是那个位置。钱去了那里。
+
+这不是费用上的 **Location** 芯片。它也不会结清人们互相欠多少。记录人对人的付款见 [结清余额](/zh/getting-started/tut-settle-balances)。保存它不会改变人们欠多少。
+
+费用上的 **Add transfer** 开关就是这笔付给商户的钱。它不是结清。见 [在费用上](/zh/settlements/concept-add-transfer-on-expense)。

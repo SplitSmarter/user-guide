@@ -1,27 +1,33 @@
 ---
-title: "Lifecycle"
-description: "Active, archived, and deleted Memories. Translation pending."
+title: "अवस्था"
+description: "Memory इस्तेमाल के दौरान active रहती है, बंद या पूरा करने पर deactivated होती है, और हटाने पर deleted होती है।"
 id: "doc-mem-lifecycle"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Active, archived, and deleted Memories. Translation pending."
+summary: "Memory इस्तेमाल के दौरान active रहती है, बंद या पूरा करने पर deactivated होती है, और हटाने पर deleted होती है।"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, status]
-keywords: ['archive memory', 'complete memory']
+keywords: [memory बंद करें, memory पूरी करें, memory अवस्था]
 related_docs:
   - doc-mem-concept
   - doc-mem-complete
   - doc-mem-context
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> पूर्ण अनुवाद शीघ्र। उत्पाद नाम (Split Smart, Memory, Smart Ledger) Latin रूप में रहेंगे.
+# अवस्था
 
-# Lifecycle
+| अवस्था | अर्थ |
+|--------|---------|
+| **Active** | Memory चालू की जा सकती है। जब तक चालू है, नए खर्च उसका उपयोग कर सकते हैं। |
+| **Deactivated** | आपने उसे बंद किया, पूरा किया, या संग्रहित किया। वह नए खर्चों पर नहीं आती। पहले से सहेजे लिंक रह जाते हैं। |
+| **Deleted** | Memory सामान्य उपयोग से हट जाती है। खर्चों पर उसके लिंक भी हट जाते हैं। |
 
-A Memory is active, archived, or deleted. Completing it archives the Memory, stops offering it on new expenses, and does not delete expenses. Most Memories are ones you create. A system Memory is rare. See the English page for the full explanation.
+अधिकतर Memories आप बनाते हैं। Split Smarter कभी-कभी एक सिस्टम Memory जोड़ सकता है; जब तक ऐप उसे न दिखाए, उन्हें छोड़ दें।
+
+पूरा करने से खर्च नहीं मिटते, और शुरू-अंत छोड़ने की वजह से लिंक नहीं हटते। देखें [Memory पूरी करें](/hi/memories/guides/howto-complete-a-memory)।

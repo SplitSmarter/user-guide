@@ -1,30 +1,55 @@
 ---
-title: "Does not clear a debt"
-description: "Saving a transfer leaves the expense as it was. The expense screen has no control to tie a person-to-person transfer to the bill."
+title: "Settle an expense"
+description: "Apply a transfer to the bill so the amount still owed is covered. A transfer you never settle against the expense does not cover it."
 id: "doc-set-link-payment"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "Saving a transfer leaves the expense as it was. The expense screen has no control to tie a person-to-person transfer to the bill."
+summary: "Apply a transfer to the bill so the amount still owed is covered. A transfer you never settle against the expense does not cover it."
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: how-to
   audience: [end-user]
 entity_tags: [transfer, expense]
-keywords: [transfer, debt, expense]
+keywords: [settle, transfer, covered, remind]
 related_docs:
   - doc-set-record-transfer
   - doc-set-expense-transfer
   - doc-set-balances
   - doc-gs-settle
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Does not clear a debt
+# Settle an expense
 
-A saved transfer does not clear the dinner debt. After Bob records ₹600 to Alice, the expense still shows that Bob owes Alice.
+Saving a transfer records that money moved. It does not, by itself, cover what someone still owes on a bill. Open the expense and settle that payment so the covered amount moves.
 
-The expense screen has no control to tie that person-to-person transfer to the bill.
+## Prerequisites
 
-The **Add transfer** switch on an expense is a merchant payment, saved with the bill. It is not this tie. See [On an expense](/en/settlements/concept-add-transfer-on-expense).
+- The expense is saved
+- You are signed in as the person who owes, when you are covering your own share
+
+## Steps
+
+1. Open the expense. Under **Settlement Path**, the amount still owed stays open until it is covered. Before any payment is applied, that section says **No settlement links on this expense yet.**
+2. If you already recorded a payment with that person, choose **Use Transfer**. On **Settle**, that payment is listed under **From past transfers**. Use **Autoselect** or **Choose**, then **Settle**.
+3. Or, on **Settle**, choose **New transfer**, enter the amount, pick a payment category, and choose **Settle**.
+4. **Settlement Path** then shows **Settled** or **Partially Settled**, and the covered amount.
+
+A transfer you save on its own, and never settle against the expense, still leaves the bill open. See [Record a transfer](/en/settlements/howto-record-a-transfer).
+
+**Add transfer** on the expense form pays a merchant. It is not this step. See [On an expense](/en/settlements/concept-add-transfer-on-expense).
+
+## Remind someone
+
+On a group, **REMIND** opens **Send Payment Reminder**. **Custom WhatsApp Text** opens WhatsApp. **Send Anonymous Push** sends a notification in Split Smarter. Reminding does not cover the amount.
+
+## What good looks like
+
+The expense shows the applied amount as settled. Anything still unpaid stays as remaining.
+
+## Next steps
+
+- [Balances and transfers](/en/settlements/concept-balances-and-transfers)
+- [Settle balances](/en/getting-started/tut-settle-balances)

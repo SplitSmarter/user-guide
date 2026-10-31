@@ -1,27 +1,55 @@
 ---
-title: "Does not clear a debt"
-description: "A saved transfer leaves the expense as it was. Translation pending."
+title: "खर्च निपटाएँ"
+description: "ट्रांसफ़र को बिल पर लगाएँ ताकि बकाया राशि कवर हो। जिस ट्रांसफ़र को खर्च पर नहीं निपटाया, वह बिल को कवर नहीं करता।"
 id: "doc-set-link-payment"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "A saved transfer leaves the expense as it was. Translation pending."
+summary: "ट्रांसफ़र को बिल पर लगाएँ ताकि बकाया राशि कवर हो। जिस ट्रांसफ़र को खर्च पर नहीं निपटाया, वह बिल को कवर नहीं करता।"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: how-to
   audience: [end-user]
 entity_tags: [transfer, expense]
-keywords: [transfer, debt, expense]
+keywords: [निपटान, ट्रांसफ़र, कवर, याद दिलाना]
 related_docs:
   - doc-set-record-transfer
   - doc-set-expense-transfer
   - doc-set-balances
+  - doc-gs-settle
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Does not clear a debt
+# खर्च निपटाएँ
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+ट्रांसफ़र सहेजना दर्ज करता है कि पैसा हिला। यह अपने आप यह कवर नहीं करता कि किसी बिल पर अभी भी कौन कितना देनदार है। खर्च खोलें और उस भुगतान को निपटाएँ, ताकि कवर हुई राशि आगे बढ़े।
 
-Saving a transfer does not clear what people owe. The expense screen has no control to tie a person-to-person transfer to the bill. See the English page for the full explanation.
+## पहले से
+
+- खर्च सहेजा जा चुका है
+- जब आप अपना हिस्सा कवर कर रहे हों, तो आप देनदार व्यक्ति के रूप में साइन इन हैं
+
+## कदम
+
+1. खर्च खोलें। **निपटान पथ** में बकाया राशि तब तक खुली रहती है जब तक वह कवर न हो। कोई भुगतान लगने से पहले वहाँ लिखा होता है: **इस खर्च पर अभी कोई निपटान लिंक नहीं है।**
+2. अगर आप उस व्यक्ति के साथ भुगतान पहले ही दर्ज कर चुके हैं, तो **ट्रांसफ़र इस्तेमाल करें** चुनें। **निपटान** पर वह भुगतान **पुराने ट्रांसफ़र से** के नीचे दिखता है। **स्वतः चुनें** या **चुनें** इस्तेमाल करें, फिर **निपटान**।
+3. या **निपटान** पर **नया ट्रांसफ़र** चुनें, राशि लिखें, भुगतान श्रेणी चुनें, और **निपटान** चुनें।
+4. **निपटान पथ** तब **निपटाया** या **आंशिक रूप से निपटाया** दिखाता है, और कवर हुई राशि भी।
+
+जो ट्रांसफ़र आप अकेले सहेजते हैं और खर्च पर नहीं निपटाते, वह बिल को खुला छोड़ता है। देखें [ट्रांसफ़र दर्ज करें](/hi/settlements/howto-record-a-transfer)।
+
+खर्च फ़ॉर्म पर **Add transfer** व्यापारी को भुगतान करता है। यह यह कदम नहीं है। देखें [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)।
+
+## किसी को याद दिलाएँ
+
+समूह पर **याद दिलाएँ** **भुगतान अनुस्मारक भेजें** खोलता है। **कस्टम WhatsApp टेक्स्ट** WhatsApp खोलता है। **गुमनाम पुश भेजें** Split Smarter में सूचना भेजता है। याद दिलाने से राशि कवर नहीं होती।
+
+## अच्छा परिणाम
+
+खर्च लागू राशि को निपटाया हुआ दिखाता है। जो अभी भी unpaid है वह शेष रहता है।
+
+## आगे
+
+- [बकाया और ट्रांसफ़र](/hi/settlements/concept-balances-and-transfers)
+- [बकाया निपटाएँ](/hi/getting-started/tut-settle-balances)

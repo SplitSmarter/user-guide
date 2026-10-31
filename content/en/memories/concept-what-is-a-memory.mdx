@@ -1,10 +1,10 @@
 ---
 title: "What is a Memory"
-description: "A Memory is a time-bounded experience you can apply to spending across Split Smart, independent of Place."
+description: "A Memory collects spending and photos for one experience. Expenses belong while it is turned on."
 id: "doc-mem-concept"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "A Memory is a time-bounded experience you can apply to spending across Split Smart, independent of Place."
+summary: "A Memory collects spending and photos for one experience. Expenses belong while it is turned on."
 taxonomy:
   domain: memories
   module: memories
@@ -21,21 +21,25 @@ related_docs:
   - doc-mem-expense-links
   - doc-mem-lifecycle
   - doc-mem-trip
+  - doc-bud-create
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # What is a Memory
 
-A **Memory** collects spending and photos for one experience over a date range. You use the same Memory from a group, from an expense, and later from a budget. It is not tied to a single screen.
+A **Memory** collects spending and photos for one experience. You use the same Memory from a group, from an expense, and from a budget. It is not tied to a single screen.
 
 “Trip memory” is only a common example. Any Memory has the same parts.
 
+An expense belongs to a Memory when that Memory was turned on at the expense’s time. The start and end you type mark the experience. They do not, by themselves, decide which bills belong.
+
 ## Where a Memory applies
 
-- **Groups** — when a Group Memory is active, it is selected on the next expense in that group. You can also turn on a Personal Memory so it is selected on expenses you add there.
-- **Expenses** — the active Memories are selected for you. Turn any off before you save. The expense date must fall inside the window.
-- **Budgets** — the same Memory can limit or label a budget later; that guide is not written yet.
+- **Groups** — one Group Memory can be on for the group. It is applied to expenses in that group while it is on.
+- **Expenses** — Personal Memories that are on can be chosen on a bill dated today. Group and Shared Memories that are on are applied. Turn a Group or Shared Memory off before you save if that bill should not use it.
+- **A span of days** — a list for those days shows the Memories that were on then, in your timezone. Filtering by groups shows only those groups’ Memories.
+- **Budgets** — pick the Memory under **What counts** when you [create a budget](/en/budgets/howto-create-a-budget). Only spending linked to it counts toward that cap.
 - **Photos** — images live on the Memory itself, separate from receipts on an expense.
 
 A **Place** is a saved location. An expense can have both. They stay independent.
@@ -45,12 +49,12 @@ A **Place** is a saved location. An expense can have both. They stay independent
 | Part | What it does |
 |------|----------------|
 | [Identity and icon](/en/memories/components/concept-identity) | Title, description, optional icon |
-| [Date window](/en/memories/components/concept-date-window) | Which days of spending belong |
+| [Date window](/en/memories/components/concept-date-window) | Start and end of the experience. Start may be in the past. |
 | [Scope](/en/memories/components/concept-scope) | Personal, Group, or Shared |
-| [Active memory](/en/memories/components/concept-current-context) | Which Memory is selected on the next expense |
+| [Active memory](/en/memories/components/concept-current-context) | When the Memory is turned on, and so which expenses it covers |
 | [Photos](/en/memories/components/concept-photos) | Pictures of the experience |
-| [Expense links](/en/memories/components/concept-expense-links) | Spend attached to the Memory |
-| [Lifecycle](/en/memories/components/concept-lifecycle) | Active, archived, or deleted |
+| [Expense links](/en/memories/components/concept-expense-links) | Spend attached while the Memory was on |
+| [Lifecycle](/en/memories/components/concept-lifecycle) | Active, deactivated, or deleted |
 
 ## Next steps
 

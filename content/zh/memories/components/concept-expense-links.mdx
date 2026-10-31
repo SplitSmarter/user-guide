@@ -1,27 +1,48 @@
 ---
-title: "Expense links"
-description: "Active Memories are selected when you add an expense. You can turn them off before you save. Translation pending."
+title: "费用关联"
+description: "日期为今天的账单上你选择 Personal Memories。已开启的 Group 和 Shared 会被加上。过去的一天会附上当时开启的每一条。"
 id: "doc-mem-expense-links"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Active Memories are selected when you add an expense. You can turn them off before you save. Translation pending."
+summary: "日期为今天的账单上你选择 Personal Memories。已开启的 Group 和 Shared 会被加上。过去的一天会附上当时开启的每一条。"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, expense]
-keywords: ['attach memory', 'expense memory']
+keywords: [附加 memory, 费用 memory]
 related_docs:
   - doc-mem-dates
   - doc-mem-attach-expense
   - doc-mem-scope
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 费用关联
 
-# Expense links
+当一张**费用**指向 Memory 时，这条 Memory 才有用。附上哪些 Memories，取决于费用的日期在你的时区里是不是今天。
 
-When you add an expense in a group, active Memories are selected. You can turn them off before you save. A Group Memory link is on the shared expense. A Personal or Shared Memory link stays on your view. The expense will not save while a selected Memory's dates do not cover it. See the English page for the full explanation.
+**今天**
+
+- 你选择哪些已开启的 [Personal Memories](/zh/memories/components/concept-scope) 保留。可以一条都不留。
+- 已开启的 Group 和 Shared Memories 会被加上。要排除一条，请在保存前关闭它。
+
+**过去的一天**
+
+你的选择会被忽略。当时开启的每一条 Personal、Shared 和 Group Memory 都会附上。
+
+**编辑**
+
+费用如果仍停在过去的一天，会保留已有的 Memory 关联。把日期改到今天后，你可以改 Personal 的选择。Group 和 Shared 取自现在开启的那些。
+
+- **Group** Memory 存在共享费用上。小组看得到。
+- **Personal** Memory 在你的视图上。其他人看不到这条关联。
+- **Shared** Memory 为你以及每个被分享的人保存。
+
+你填写的开始和结束并不决定关联留还是去掉。关闭或完成 Memory 会留下已经保存的关联。删除 Memory 才会移除它们。
+
+如果创建 Memory 时开始在过去，那段时间里已经保存的花费会在之后被关联。这一步只添加关联。
+
+费用也可以有 Place 和收据。它们与 Memory 关联是分开的。步骤：[把 Memory 加到费用](/zh/memories/guides/howto-attach-memory-to-expense)。

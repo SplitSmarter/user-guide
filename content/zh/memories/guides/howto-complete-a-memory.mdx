@@ -1,27 +1,60 @@
 ---
-title: "Complete a memory"
-description: "Finish a Memory so it is no longer selected on new expenses. Translation pending."
+title: "完成 Memory"
+description: "经历结束时完成 Memory，使它 deactivated，不再用于新费用。"
 id: "doc-mem-complete"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Finish a Memory so it is no longer selected on new expenses. Translation pending."
+summary: "经历结束时完成 Memory，使它 deactivated，不再用于新费用。"
 taxonomy:
   domain: memories
   module: memories
   doc_type: how-to
   audience: [end-user]
-entity_tags: [memory, complete]
-keywords: ['complete memory']
+entity_tags: [memory, complete, archive]
+keywords: [完成 memory, 停用 memory, 结束旅行]
 related_docs:
   - doc-mem-concept
   - doc-mem-trip
   - doc-mem-activate
+  - doc-mem-attach-expense
 version_introduced: v1.0.0
-last_updated: 2026-10-20
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 完成 Memory
 
-# Complete a memory
+旅行或活动结束时，**完成**这条 Memory，这样新费用就不再使用它。完成会使它 deactivated。它不会被归档，也不会移除已经保存的关联。
 
-Completing archives the Memory, stops offering it on new expenses, and may drop expense links outside the final dates. See the English page for steps.
+## 前提
+
+- 一个可用的 Split Smarter 账户
+- 一条你可以编辑的 Memory（通常是你创建的，或小组可以编辑的）
+
+## 完成会做什么
+
+1. 设置或确认**结束**日期。该日期必须是你的时区里的今天或更晚，并且晚于开始。
+2. 使 Memory **deactivated**。关闭或归档也会如此。它不再出现在新费用上。
+3. 留下已经保存的关联。不会因为日期离开开始和结束而丢掉它们，也不会添加新的。
+
+费用仍留在 Smart Ledger。只有删除这条 Memory 才会移除它的关联。
+
+## 步骤
+
+1. 打开要结束的 Memory。
+2. 选择 **Complete**（或应用里的同等操作）。
+3. 如果有提示，确认结束日期。它不能是你的时区里今天之前的一天。
+4. 保存或确认完成。
+5. 检查：
+   - Memory 显示为 deactivated。
+   - 新费用不再使用它。
+   - 已经关联它的费用仍然显示它。
+
+## 提示
+
+- 只停用也会让新费用不再使用它，而不设置一个结束日。经历结束时再完成。
+- 下一次经历，创建或开启另一条 Memory。
+
+## 下一步
+
+- 下一次旅行：[开启或切换 Memory](/zh/memories/guides/howto-activate-or-switch-memory)
+- 范围和状态：[什么是 Memory](/zh/memories/concept-what-is-a-memory)

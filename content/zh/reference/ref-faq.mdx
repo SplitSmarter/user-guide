@@ -1,34 +1,82 @@
 ---
-title: "FAQ（中文译文即将推出）"
-description: "Frequently asked questions for Split Smart users. — 完整译文稍后补充。"
+title: "常见问题"
+description: "关于账单、转账、预算、Memory，以及谁能找到你的简短回答。"
 id: "doc-ref-faq"
 locale: "zh"
 available_locales: ["en","hi","zh"]
-summary: "Frequently asked questions for Split Smart users. — 完整译文稍后补充。"
+summary: "关于账单、转账、预算、Memory，以及谁能找到你的简短回答。"
 taxonomy: {"domain":"reference","module":"reference","doc_type":"reference","audience":["end-user"]}
 entity_tags: ["faq"]
-keywords: ["FAQ","help"]
-related_docs: ["doc-ref-glossary"]
+keywords: ["常见问题","分摊","明细","category","收据","重复","转账","预算","memory","hidden"]
+related_docs:
+  - doc-ref-glossary
+  - doc-exp-split-expense
+  - doc-exp-line-items
+  - doc-exp-category
+  - doc-exp-scan-or-note
+  - doc-exp-change
+  - doc-exp-recurring
+  - doc-exp-scheduled
+  - doc-set-expense-transfer
+  - doc-bud-create
+  - doc-bud-rules
+  - doc-mem-concept
+  - doc-acc-visibility
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Frequently asked questions for Split Smart users. — 完整译文稍后补充。
+# 常见问题
 
-## Prerequisites
+## 记录转账会抵上账单吗？
 
-- An active Split Smart account (unless this page is about creating one).
+不会。保存转账只记录钱已经移动。账单保持未结。
 
-## Steps
+## 谁付了钱，谁分摊费用？
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+**Paid by** 是把钱付出去的人。**Split Between** 是分摊这笔费用的人。他们可以是同一批人，也可以不是。见 [分摊一笔费用](/zh/expenses/howto-split-an-expense)。
 
-## Next steps
+## 明细是什么？
 
-See related pages in the frontmatter `related_docs` list.
+明细是账单上的一件东西，例如一道菜。你可以说明谁为这一行付了钱、谁分摊这一行。见 [添加明细](/zh/expenses/howto-add-line-items)。
 
-> 翻译进行中。产品专有名词（Split Smart、Smart Ledger、Debt Sync、UPI）保持拉丁写法。
+## Category 是什么？
 
+Category 是账单的标签。你可以在自己的副本上保留另一个。见 [Category](/zh/expenses/concept-category)。
+
+## 照片或备注会保存这笔费用吗？
+
+不会。账单照片或写下的备注只填一份草稿。在你确认之前，什么都不会保存。见 [从收据或备注添加费用](/zh/expenses/howto-add-from-receipt-or-note)。
+
+## 费用保存之后还能改吗？
+
+可以。打开它，改你需要改的地方。保存后会重新计算每个人还欠多少。见 [修改已保存的费用](/zh/expenses/howto-change-a-saved-expense)。
+
+## 重复费用是什么？
+
+规则就是重复费用。已排期列表是这条规则已经生成的日期，以及之后的每一个日期。见 [设置重复费用](/zh/expenses/howto-recurring-expenses) 和 [查看已排期的费用](/zh/expenses/howto-scheduled-expenses)。
+
+## Add transfer 是人们用来结清的吗？
+
+不是。费用上的 **Add transfer** 是付给商家的。它和账单一起保存。它不是人们结清欠款的方式。见 [在费用上](/zh/settlements/concept-add-transfer-on-expense)。
+
+## 预算可以从过去开始吗？
+
+可以。开始可以是任何一天，包括已经过去的一天。已经落在那个开始日期里的花费会计入上限。结束可以保持开放，或者必须是今天或更晚。结束不能早于开始。见 [创建预算](/zh/budgets/howto-create-a-budget)。
+
+## 硬上限做什么？
+
+**Soft** 在大约 80% 和达到上限时提醒。费用仍会保存。**Hard** 可以拒绝一笔会超过上限的新费用。它不会阻止转账。见 [上限做什么](/zh/budgets/concept-budget-rules-and-caps)。
+
+## Memory 是什么？
+
+Memory 是一次经历，例如一次旅行，在它开启期间附上花费和照片。你也可以在预算的 **What counts** 里选择它，让只有那些花费计入。见 [什么是 Memory](/zh/memories/concept-what-is-a-memory)。
+
+## Hidden 是什么意思？
+
+**Hidden** 表示其他人不能发现你。他们搜索要添加的人时，你不会出现。见 [谁能找到你](/zh/account/howto-manage-profile-visibility)。
+
+## 下一步
+
+- [术语](/zh/reference/ref-glossary)
+- [状态和筛选](/zh/reference/ref-statuses-and-filters)

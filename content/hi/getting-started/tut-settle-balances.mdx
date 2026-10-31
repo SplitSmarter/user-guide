@@ -1,28 +1,55 @@
 ---
-title: "Settle balances"
-description: "Record the ₹600 dinner payment. The expense still shows the debt. Translation pending."
+title: "बकाया निपटाएँ"
+description: "रात के खाने का ₹600 भुगतान दर्ज करें, फिर उसे खर्च पर निपटाएँ ताकि बॉब की राशि कवर हो।"
 id: "doc-gs-settle"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Record the ₹600 dinner payment. The expense still shows the debt. Translation pending."
+summary: "रात के खाने का ₹600 भुगतान दर्ज करें, फिर उसे खर्च पर निपटाएँ ताकि बॉब की राशि कवर हो।"
 taxonomy:
   domain: getting-started
   module: getting-started
   doc_type: tutorial
   audience: [end-user]
 entity_tags: [settlement, debt-sync]
-keywords: [settle up, transfer, Debt Sync]
+keywords: [निपटान, ट्रांसफ़र, Debt Sync]
 related_docs:
   - doc-gs-log-expense
   - doc-set-balances
   - doc-set-record-transfer
   - doc-set-link-payment
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Settle balances
+# बकाया निपटाएँ
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+यह उसी रात के खाने को आगे बढ़ाता है जिसे आपने अभी दर्ज किया। ऐलिस ने ₹1000 दिए। उसका हिस्सा ₹400 है। बॉब का हिस्सा ₹600 है। **बॉब ऐलिस का ₹600 देनदार है।**
 
-From home, choose **Transfer** for ₹600 from **You** to Alice. Saving it does not clear the debt. The dinner expense still shows that Bob owes Alice. See the English page for steps.
+पैसे के हिलने का रिकॉर्ड बिल को तब तक कवर नहीं करता जब तक आप उस भुगतान को खर्च पर नहीं निपटाते।
+
+## पहले से
+
+- [पहला खर्च दर्ज करें](/hi/getting-started/tut-log-first-expense) वाला रात का खाना
+- आप बॉब के रूप में साइन इन हैं, जो देनदार है, ताकि ट्रांसफ़र **आप** की ओर से भेजा जा सके
+
+## कदम
+
+1. होम वॉलेट पर बनाने वाली शीट खोलें और **Transfer** चुनें।
+2. राशि ₹600 रखें।
+3. भेजने वाले को **You** रहने दें। पाने वाले को ऐलिस रखें, जिसे पैसा मिलना है।
+4. श्रेणी चुनें ताकि फ़ॉर्म सहेज सके।
+5. ट्रांसफ़र सहेजें। जब तक आप इस भुगतान को बिल पर नहीं निपटाते, रात के खाने का खर्च बॉब को ऐलिस का देनदार दिखाता है।
+6. रात के खाने का खर्च खोलें। **निपटान पथ** के नीचे **ट्रांसफ़र इस्तेमाल करें** चुनें।
+7. **निपटान** पर ₹600 भुगतान **पुराने ट्रांसफ़र से** के नीचे है। **स्वतः चुनें** या **चुनें** इस्तेमाल करें, फिर **निपटान**।
+
+खर्च फ़ॉर्म पर **Add transfer** अलग है: वह बिल पर व्यापारी को भुगतान करता है। देखें [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)।
+
+## अच्छा परिणाम
+
+- आप (बॉब) से ऐलिस को ₹600 का ट्रांसफ़र मौजूद है।
+- रात के खाने के खर्च पर **निपटान पथ** उस ₹600 को निपटाया हुआ दिखाता है।
+
+## आगे
+
+- पूरा फ़ॉर्म: [ट्रांसफ़र दर्ज करें](/hi/settlements/howto-record-a-transfer)
+- बिल कवर करें: [खर्च निपटाएँ](/hi/settlements/howto-link-payment-to-expense)
