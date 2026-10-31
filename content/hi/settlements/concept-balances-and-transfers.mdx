@@ -1,27 +1,53 @@
 ---
-title: "Balances and transfers"
-description: "Who owes whom, and why a transfer does not clear that. Translation pending."
+title: "बकाया और ट्रांसफ़र"
+description: "साझा खर्च के बाद कौन किसका देनदार है, और ट्रांसफ़र उसे तभी कवर करता है जब आप उसे बिल पर निपटाएँ।"
 id: "doc-set-balances"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Who owes whom, and why a transfer does not clear that. Translation pending."
+summary: "साझा खर्च के बाद कौन किसका देनदार है, और ट्रांसफ़र उसे तभी कवर करता है जब आप उसे बिल पर निपटाएँ।"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: concept
   audience: [end-user]
 entity_tags: [balance, transfer, debt-sync]
-keywords: [balances, net, who owes whom]
+keywords: [बकाया, शुद्ध, कौन किसका देनदार]
 related_docs:
   - doc-set-record-transfer
   - doc-set-link-payment
   - doc-gs-settle
+  - doc-exp-paid-by-vs-sharers
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Balances and transfers
+# बकाया और ट्रांसफ़र
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+साझा खर्च दर्ज करने के बाद Debt Sync दिखाता है **कौन किसका देनदार है**।
 
-Net is amount paid minus share. Alice paid ₹1000, her share ₹400, Bob’s share ₹600, so Bob owes Alice ₹600. A transfer does not change that. See the English page for the full explanation.
+## बकाया कैसे बनता है
+
+हर साझा खर्च में कुछ लोग **भुगतान** करते हैं और कुछ लोग लागत **बाँटते** हैं। उस खर्च पर हर व्यक्ति के लिए:
+
+**शुद्ध = भुगतान की राशि − हिस्सा**
+
+- धनात्मक शुद्ध का मतलब है कि उन्हें पैसा मिलना है।
+- ऋणात्मक शुद्ध का मतलब है कि वे देनदार हैं।
+
+**उदाहरण:** ऐलिस रात के खाने के ₹1000 देती है। ऐलिस का हिस्सा ₹400 है। बॉब का हिस्सा ₹600 है।
+
+| व्यक्ति | भुगतान | हिस्सा | शुद्ध |
+|--------|------|-------|-----|
+| ऐलिस  | ₹1000 | ₹400 | **+₹600** (बॉब उसका देनदार है) |
+| बॉब    | ₹0    | ₹600 | **−₹600** (ऐलिस का देनदार) |
+
+भुगतानकर्ता और साझीदार के लिए देखें [भुगतानकर्ता और साझीदार](/hi/expenses/concept-paid-by-vs-sharers)।
+
+## ट्रांसफ़र क्या बदलता है
+
+ट्रांसफ़र दर्ज करता है कि पैसा हिला। देखें [ट्रांसफ़र दर्ज करें](/hi/settlements/howto-record-a-transfer)। खर्च तब तक दिखाता है कि कौन किसका देनदार है, जब तक आप उस ट्रांसफ़र को बिल पर नहीं निपटाते। देखें [खर्च निपटाएँ](/hi/settlements/howto-link-payment-to-expense)।
+
+## आगे
+
+- रात के खाने का भुगतान: [बकाया निपटाएँ](/hi/getting-started/tut-settle-balances)
+- खर्च फ़ॉर्म से व्यापारी को भुगतान: [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)

@@ -1,27 +1,33 @@
 ---
-title: "Lifecycle"
-description: "Active, archived, and deleted Memories. Translation pending."
+title: "状态"
+description: "Memory 在使用时是 active，关闭或完成时是 deactivated，删除时是 deleted。"
 id: "doc-mem-lifecycle"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Active, archived, and deleted Memories. Translation pending."
+summary: "Memory 在使用时是 active，关闭或完成时是 deactivated，删除时是 deleted。"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, status]
-keywords: ['archive memory', 'complete memory']
+keywords: [停用 memory, 完成 memory, memory 状态]
 related_docs:
   - doc-mem-concept
   - doc-mem-complete
   - doc-mem-context
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 状态
 
-# Lifecycle
+| 状态 | 含义 |
+|--------|---------|
+| **Active** | Memory 可以被开启。它开启期间，新费用可以使用它。 |
+| **Deactivated** | 你关闭了它、完成了它，或归档了它。它不再出现在新费用上。已经保存的关联会留下。 |
+| **Deleted** | Memory 从日常使用中移除。费用上的关联也会被移除。 |
 
-A Memory is active, archived, or deleted. Completing it archives the Memory, stops offering it on new expenses, and does not delete expenses. Most Memories are ones you create. A system Memory is rare. See the English page for the full explanation.
+大多数 Memory 是你创建的。Split Smarter 偶尔可能添加一条系统 Memory；除非应用显示它，否则可以忽略。
+
+完成不会删除费用，也不会因为日期离开开始和结束而丢掉关联。参见 [完成 Memory](/zh/memories/guides/howto-complete-a-memory)。

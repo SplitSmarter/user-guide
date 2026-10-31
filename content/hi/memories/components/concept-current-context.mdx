@@ -1,27 +1,37 @@
 ---
-title: "Active memory"
-description: "An active Memory is selected when you add an expense. You can turn it off before you save. Translation pending."
+title: "चालू Memory"
+description: "Memory खर्चों को तब कवर करती है जब वह चालू हो। आज के बिल पर चालू Group और Shared Memories लग जाती हैं।"
 id: "doc-mem-context"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "An active Memory is selected when you add an expense. You can turn it off before you save. Translation pending."
+summary: "Memory खर्चों को तब कवर करती है जब वह चालू हो। आज के बिल पर चालू Group और Shared Memories लग जाती हैं।"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, activation]
-keywords: ['active memory', 'activate memory']
+keywords: [चालू memory, memory चालू करें]
 related_docs:
   - doc-mem-concept
   - doc-mem-scope
   - doc-mem-activate
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> पूर्ण अनुवाद शीघ्र। उत्पाद नाम (Split Smart, Memory, Smart Ledger) Latin रूप में रहेंगे.
+# चालू Memory
 
-# Active memory
+Memory उस क्षण से **चालू** है जब आप उसे चालू करते हैं, जब तक आप उसे बंद न करें। बनाने पर वह चालू हो जाती है। जिस समय वह चालू थी, उस समय के खर्च उससे जुड़ सकते हैं। उससे पहले के, या बंद करने के बाद के, नहीं जुड़ते।
 
-An active Memory is selected when you add an expense in that group. You can turn it off before you save. A Group Memory is selected for the group. A Personal Memory you turned on for that group is selected only on expenses you add, and stays on your view. A Shared Memory is not selected for you; you choose it on the expense. See the English page for the full explanation.
+आपके लिए क्या चालू है:
+
+- समूह के लिए **एक Group Memory**। उस समूह के लिए Group Memory बनाने पर वह चालू होती है और पिछली बंद हो जाती है। जब तक चालू है, समूह में खर्च जोड़ने वाला हर व्यक्ति इसे पाता है। लिंक साझा खर्च पर रहता है।
+- **आपकी Personal Memories।** कई एक साथ चालू हो सकती हैं। वे समूह की सदस्यता पर सहेजी नहीं जातीं। आज की तारीख वाले बिल पर आप चुनते हैं कि उनमें से कौन सी रहें। आप सभी को छोड़ सकते हैं।
+- **Shared Memories** जो आपकी हैं या जो आपके साथ साझा की गईं। वे Personal Memories नहीं हैं। जब एक चालू हो, तो वह आपके और जिनके साथ साझा है उनके लिए लगती है।
+
+आज की तारीख वाले बिल से किसी Group या Shared Memory को हटाने के लिए, सहेजने से पहले उस Memory को बंद करें। आप उसे खर्च पर से नहीं हटाते।
+
+कुछ दिनों की सूची आपकी समय-क्षेत्र में उन दिनों चालू रही Memories दिखाती है। अगर समय-क्षेत्र नहीं है, तो वे दिन UTC के दिन हैं। उस सूची को समूहों से छानने पर सिर्फ़ उन समूहों की Memories दिखती हैं।
+
+दूसरी Memory चालू करने से पहले सहेजे खर्च नहीं बदलते। एक को बंद करने से वह पूरी नहीं होती और पहले से सहेजे लिंक नहीं हटते। पूरा करने या संग्रहित करने पर वह deactivated हो जाती है, इसलिए नए खर्चों पर नहीं आती। मिटाने पर उसके लिंक हट जाते हैं। देखें [Memory चालू करें या बदलें](/hi/memories/guides/howto-activate-or-switch-memory)।

@@ -11,7 +11,7 @@ Apply to `hi` and `zh` (and any future locales).
 
 Use the allowlist in `meta/taxonomy.schema.json` `proper_nouns_allowlist`, including:
 
-- `Split Smart`
+- `Split Smarter`
 - `Smart Ledger`
 - `Debt Sync`
 - `UPI`

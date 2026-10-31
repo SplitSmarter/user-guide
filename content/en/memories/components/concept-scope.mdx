@@ -1,10 +1,10 @@
 ---
 title: "Scope"
-description: "A Memory is Personal, Group, or Shared, which decides who it is for and who sees it on an expense."
+description: "A Memory is Personal, Group, or Shared. That decides who it is for while it is turned on."
 id: "doc-mem-scope"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "A Memory is Personal, Group, or Shared, which decides who it is for and who sees it on an expense."
+summary: "A Memory is Personal, Group, or Shared. That decides who it is for while it is turned on."
 taxonomy:
   domain: memories
   module: components
@@ -16,19 +16,19 @@ related_docs:
   - doc-mem-concept
   - doc-mem-context
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Scope
 
-**Scope** decides who a Memory is for and who sees it on an expense. It does not change the date window or the photos.
+**Scope** decides who a Memory is for and who sees it on an expense. It does not change the photos, and it is not stored as a membership setting.
 
 | Scope | Who it is for |
 |-------|----------------|
-| **Personal** | Only you. If you turn it on for a group, it is selected on expenses you add in that group. The link stays on your view. |
-| **Group** | The whole group you attach it to. The one that is active is selected for everyone adding an expense in that group. The link is on the shared expense. |
-| **Shared** | You plus the people you invite. It does not belong to a group, and it is not selected for you automatically. You attach it on the expense. The link stays on your view. |
+| **Personal** | Only you. Several can be on at once. They apply to your expenses whether or not the bill is in a group. On a bill dated today, you choose which of the ones that are on should stay. |
+| **Group** | The group you attach it to. One Group Memory is on for that group. It is applied to expenses in the group while it is on. The link is on the shared expense. |
+| **Shared** | You plus the people you invite. It is not a Personal Memory, and it is not tied to a group. While it is on, it is applied for you and for the people you invited. |
 
 Group Memories need a group. Shared Memories use the people you invite and cannot be tied to one group. Personal Memories stay yours.
 
-Scope is separate from whether a Memory is [active](/en/memories/components/concept-current-context). A Group Memory can be the one the group offers, and you can also turn on a Personal Memory for that same group. Both can show up selected on an expense you add. Turn either off before you save.
+Scope is separate from whether a Memory is [on](/en/memories/components/concept-current-context). A Group Memory can be the one the group offers, and your Personal Memories can be on at the same time. On a bill dated today, Group and Shared Memories that are on are applied. Turn one off before you save if that bill should not use it.

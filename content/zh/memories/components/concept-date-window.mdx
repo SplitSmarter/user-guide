@@ -1,27 +1,31 @@
 ---
-title: "Date window"
-description: "Start and end dates decide which expenses can stay linked. Translation pending."
+title: "日期范围"
+description: "开始和结束标出这次经历。花费在 Memory 开启期间才属于它。"
 id: "doc-mem-dates"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Start and end dates decide which expenses can stay linked. Translation pending."
+summary: "开始和结束标出这次经历。花费在 Memory 开启期间才属于它。"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, dates]
-keywords: ['memory dates', 'date window']
+keywords: [memory 日期, 日期范围, 开始结束]
 related_docs:
   - doc-mem-concept
   - doc-mem-expense-links
   - doc-mem-lifecycle
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 日期范围
 
-# Date window
+每条 Memory 都有**开始**。**结束**是可选的。它们一起描述这次经历。它们不是哪些费用属于它的规则。费用在 Memory 开启期间才属于它。参见 [开启中的 Memory](/zh/memories/components/concept-current-context)。
 
-A Memory has a start and an end. An expense will not save while a selected Memory's dates do not cover the expense date. Later, links outside the window can be removed. Split Smart does not add links to old expenses on its own. See the English page for the full explanation.
+开始可以是过去，也就是旅行或活动开始的那天。不能是将来。创建 Memory 会从那个开始把它开启。如果开始在过去，那段时间里已经保存的花费会在之后被关联。这一步只添加关联，不会移除已经保存的关联。
+
+结束如果填写，必须是你的时区里的今天或更晚的一天，并且晚于开始。如果没有时区，今天是 UTC 的一天。今天是该时区的日历日，不是存储时间前面写下的日期。
+
+你仍可以提前 [完成](/zh/memories/guides/howto-complete-a-memory) 一条 Memory。完成会把它关闭。已经保存的关联会留下。参见 [状态](/zh/memories/components/concept-lifecycle) 和 [费用关联](/zh/memories/components/concept-expense-links)。

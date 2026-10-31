@@ -1,33 +1,46 @@
 ---
-title: "Split an expense（中文译文即将推出）"
-description: "Choose who paid and how sharers split a group expense. — 完整译文稍后补充。"
+title: "分摊一笔费用"
+description: "在费用表单上设置谁付了钱、谁分摊费用。"
 id: "doc-exp-split-expense"
 locale: "zh"
 available_locales: ["en","hi","zh"]
-summary: "Choose who paid and how sharers split a group expense. — 完整译文稍后补充。"
+summary: "在费用表单上设置谁付了钱、谁分摊费用。"
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"how-to","audience":["end-user"]}
 entity_tags: ["split","sharers","paid-by"]
-keywords: ["split bill","paid by","share expense"]
-related_docs: ["doc-exp-paid-by-vs-sharers","doc-set-record-transfer"]
+keywords: ["分摊账单","Paid by","份额"]
+related_docs: ["doc-exp-paid-by-vs-sharers","doc-exp-category","doc-exp-scan-or-note","doc-set-expense-transfer","doc-gs-settle","doc-set-balances"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Choose who paid and how sharers split a group expense. — 完整译文稍后补充。
+# 分摊一笔费用
 
-## Prerequisites
+**Paid by** 是谁拿出了钱。**Split Between** 是谁分摊费用。他们可以是同一批人，也可以不是。见 [付款人与分摊人](/zh/expenses/concept-paid-by-vs-sharers)。
 
-- An active Split Smart account (unless this page is about creating one).
+## 开始之前
 
-## Steps
+- 你已登录
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+## 步骤
 
-## Next steps
+1. 在首页钱包打开创建面板，选择 **Expense**。
+2. 给账单一个名称。说明是可选的。为金额选择货币，然后填写金额。
+3. 在 **Paid by** 下加入每个付了钱的人，以及他们付了多少。
+4. 在 **Split Between** 下加入每个分摊费用的人，以及他们的份额。
+5. 份额应当加起来等于金额。对每个人，净额是已付金额减去份额。正净额表示别人欠他们。负净额表示他们欠别人。
+6. 如果把费用放进一个小组，**Paid by** 和 **Split Between** 下的每个人必须已经在那个小组里，或者你在保存时把缺少的人加进小组。如果两样都不做，保存会被拒绝。
+7. 保存。
 
-See related pages in the frontmatter `related_docs` list.
+第一次记一笔共享晚餐见 [记下第一笔费用](/zh/getting-started/tut-log-first-expense)。
 
-> 翻译进行中。产品专有名词（Split Smart、Smart Ledger、Debt Sync、UPI）保持拉丁写法。
+## 完成后
+
+打开费用。它显示谁付了钱、谁分摊，以及谁欠谁。
+
+## 下一步
+
+- 为这笔花费选一个标签：[Category](/zh/expenses/concept-category)
+- 从照片或备注开始：[从收据或备注添加费用](/zh/expenses/howto-add-from-receipt-or-note)
+- 把账单拆成行：[添加明细](/zh/expenses/howto-add-line-items)
+- **Add transfer** 开关：[在费用上](/zh/settlements/concept-add-transfer-on-expense)
+- 抵上欠款：[在费用上结清](/zh/settlements/howto-link-payment-to-expense)

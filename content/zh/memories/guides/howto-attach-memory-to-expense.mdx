@@ -1,27 +1,79 @@
 ---
-title: "Attach memory to an expense"
-description: "Active Memories are selected on an expense. You can turn them off before you save. Translation pending."
+title: "把 Memory 加到费用"
+description: "日期为今天的账单上选择 Personal Memories。已开启的 Group 和 Shared 会被加上。过去的一天会附上当时开启的每一条。"
 id: "doc-mem-attach-expense"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Active Memories are selected on an expense. You can turn them off before you save. Translation pending."
+summary: "日期为今天的账单上选择 Personal Memories。已开启的 Group 和 Shared 会被加上。过去的一天会附上当时开启的每一条。"
 taxonomy:
   domain: memories
   module: memories
   doc_type: how-to
   audience: [end-user]
-entity_tags: [memory, expense]
-keywords: ['attach memory']
+entity_tags: [memory, expense, smart-ledger]
+keywords: [附加 memory, 费用 memory]
 related_docs:
   - doc-mem-concept
   - doc-mem-trip
   - doc-exp-attach-place
+  - doc-exp-split-expense
 version_introduced: v1.0.0
-last_updated: 2026-10-20
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 把 Memory 加到费用
 
-# Attach memory to an expense
+把 **Memory** 连到费用上，是把这笔花费归到一次经历（例如旅行）。你能选择什么，取决于费用日期在你的时区里是不是今天。
 
-Active Memories are selected when you add an expense in a group. Turn any off before you save. The expense date must fall inside each Memory, or the expense will not save. See the English page for steps.
+## 前提
+
+- 一个可用的 Split Smarter 账户
+- 有权添加或编辑这张费用
+- 对日期为今天的账单，你想要的 Personal Memories 必须已经开启
+
+## 今天和过去的一天
+
+**今天**是你的时区的日历日。如果没有时区，今天是 UTC 的一天。
+
+日期为今天的账单：
+
+- 选择哪些已开启的 Personal Memories 保留。可以一条都不留。
+- 已开启的 Group 和 Shared Memories 会被加上。要排除一条，请在保存前关闭它。你不能只在这张费用上把它清掉。
+
+日期为过去某一天的账单上，这个选择会被忽略。当时开启的每一条 Personal、Shared 和 Group Memory 都会附上。
+
+## 步骤
+
+### 添加日期为今天的费用
+
+1. 开始一张新费用。如果这笔花费属于小组，就选择小组。
+2. 把费用日期设为今天。
+3. 选择应保留的 Personal Memories。如果都不合适，就全部不选。
+4. 已开启的 Group 和 Shared Memories 会被加上。如果这张账单不该使用某一条，请先关闭它。
+5. 填完付款人、分摊和金额，然后保存。
+
+### 添加过去某一天的费用
+
+1. 把费用日期设为那一天。
+2. 保存。表单上挑选的 Memories 不会被使用。Split Smarter 会附上当时开启的每一条 Memory。
+
+### 编辑费用
+
+1. 打开这张费用。
+2. 如果日期仍在过去，就保持已有的 Memory 关联。保存不会添加或移除它们。
+3. 如果把日期改到今天，再选择 Personal Memories。Group 和 Shared 取自现在开启的那些。
+4. 保存。
+
+## 谁看得到关联
+
+- **Group** Memory 在共享费用上。小组看得到。
+- **Personal** Memory 在你的视图上。其他人看不到这条关联。
+- **Shared** Memory 为你以及每个被分享的人保存。
+
+你仍可以在同一张费用上附加 **Place** 或收据。那与 Memory 关联是分开的。参见 [附加地点或收据](/zh/expenses/howto-attach-place-or-receipt)。
+
+## 下一步
+
+- [什么是 Memory](/zh/memories/concept-what-is-a-memory)
+- [分摊一笔费用](/zh/expenses/howto-split-an-expense)
+- [完成 Memory](/zh/memories/guides/howto-complete-a-memory)

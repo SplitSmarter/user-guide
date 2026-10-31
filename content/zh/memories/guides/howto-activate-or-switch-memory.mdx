@@ -1,27 +1,78 @@
 ---
-title: "Activate or switch memory"
-description: "Turn a Memory on so it is selected on the next expense. Translation pending."
+title: "开启或切换 Memory"
+description: "开启一条 Memory，让费用可以使用它，或在不结束它的情况下关闭它。"
 id: "doc-mem-activate"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Turn a Memory on so it is selected on the next expense. Translation pending."
+summary: "开启一条 Memory，让费用可以使用它，或在不结束它的情况下关闭它。"
 taxonomy:
   domain: memories
   module: memories
   doc_type: how-to
   audience: [end-user]
-entity_tags: [memory, activation]
-keywords: ['activate memory']
+entity_tags: [memory, activation, group]
+keywords: [开启 memory, 切换 memory]
 related_docs:
   - doc-mem-concept
   - doc-mem-trip
   - doc-mem-complete
 version_introduced: v1.0.0
-last_updated: 2026-10-20
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 开启或切换 Memory
 
-# Activate or switch memory
+**开启**会把 Memory 打开。它开启期间，那段时间的费用可以属于它。关闭它并不会结束它，也不会改变已经保存的费用。
 
-Turn on a Group Memory so expenses in that group select it, or turn on a Personal Memory so only your expenses select it. You can turn either off before you save. A Shared Memory is not selected for you. See the English page for steps.
+## 前提
+
+- 一个可用的 Split Smarter 账户
+- 至少一条你可以使用的 Memory（通常状态为 Active）
+- 当它是 Group Memory 时，你是该小组的成员
+
+## 会加上什么
+
+| 你开启的 | 会发生什么 |
+|------------------|--------------|
+| **Group Memory** | 小组同时只有一条开启。开启另一条会关闭之前那条。它会加到该小组的费用上。关联在共享费用上。 |
+| **Personal Memory** | 可以同时开启多条。它们是你的，不存在小组上。日期为今天的账单上，你选择哪些保留。 |
+| **Shared Memory** | 开启期间会为你和你邀请的人加上。它不是 Personal Memory，你也不会像选择 Personal 那样在费用上挑选它。 |
+
+## 步骤
+
+### 开启 Group Memory
+
+1. 打开小组，或打开 Memory 并选择小组。
+2. 激活你想要的 Group Memory。
+3. 确认它替换了之前开启的 Group Memory。
+4. 在该小组日期为今天的账单上，这条 Memory 会被加上。如果这笔花费不该使用它，请在保存前关闭这条 Memory。
+
+### 开启 Personal Memory
+
+1. 打开你的 Memories。
+2. 选择一条 **Personal** Memory，或新建一条。它不绑在小组上。
+3. 激活它。已经开启的其他 Personal Memories 仍保持开启。
+4. 在日期为今天的账单上，选择哪些已开启的 Personal Memories 保留。也可以全部不选。
+
+### 开启 Shared Memory
+
+1. 打开 Shared Memory，或创建一条并邀请别人。
+2. 激活它。
+3. 它开启期间会为你和被邀请的人加上。如果日期为今天的账单不该使用它，请在保存前关闭它。
+
+### 关闭一条开启中的 Memory
+
+1. 打开这条 Memory。
+2. 停用它。这不会完成或删除这条 Memory，也不会移除已经保存的关联。
+3. 添加一张日期为今天的费用，确认它不再被加上。
+
+## 提示
+
+- 将来的开始会被拒绝。过去的开始会从那个时间开启这条 Memory。
+- 要结束一条 Memory，使它不再被提供，请 [完成它](/zh/memories/guides/howto-complete-a-memory)。那也会使它 deactivated。
+
+## 下一步
+
+- [创建旅行 Memory](/zh/memories/guides/howto-create-a-trip-memory)
+- [把 Memory 加到费用](/zh/memories/guides/howto-attach-memory-to-expense)
+- [完成 Memory](/zh/memories/guides/howto-complete-a-memory)

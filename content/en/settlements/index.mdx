@@ -1,10 +1,10 @@
 ---
 title: "Settlements (Debt Sync)"
-description: "A transfer records that money moved. Saving it does not change who owes whom."
+description: "A transfer records that money moved. Settle it on the expense to cover what is still owed."
 id: "doc-settlements-index"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "A transfer records that money moved. Saving it does not change who owes whom."
+summary: "A transfer records that money moved. Settle it on the expense to cover what is still owed."
 taxonomy:
   domain: settlements
   module: settlements
@@ -18,16 +18,16 @@ related_docs:
   - doc-set-expense-transfer
   - doc-set-link-payment
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
 # Settlements (Debt Sync)
 
-A **transfer** is a record that money moved. It can be between you and another person, or between you and a merchant. Saving it leaves the expense as it was. The bill still shows who owes whom.
+A **transfer** is a record that money moved. It can be between you and another person, or between you and a merchant. Saving it on its own leaves the expense as it was. Open the expense and settle that payment so the covered amount moves. See [Settle an expense](/en/settlements/howto-link-payment-to-expense).
 
 You start one in two places:
 
 - On its own, from the home create sheet, the home **Transfer** button, or **Activity** on the **Transfers** tab. See [Record a transfer](/en/settlements/howto-record-a-transfer).
 - On an expense, with the **Add transfer** switch, which pays a merchant. See [On an expense](/en/settlements/concept-add-transfer-on-expense).
 
-How the dinner bill becomes “Bob owes Alice” is [Balances and transfers](/en/settlements/concept-balances-and-transfers). Why that debt stays after you save is [Does not clear a debt](/en/settlements/howto-link-payment-to-expense).
+How the dinner bill becomes “Bob owes Alice” is [Balances and transfers](/en/settlements/concept-balances-and-transfers). How that payment covers the bill is [Settle an expense](/en/settlements/howto-link-payment-to-expense).

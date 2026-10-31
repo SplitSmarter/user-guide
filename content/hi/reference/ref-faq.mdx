@@ -1,34 +1,82 @@
 ---
-title: "FAQ (हिंदी अनुवाद शीघ्र)"
-description: "Frequently asked questions for Split Smart users. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+title: "प्रश्न"
+description: "बिल, ट्रांसफ़र, बजट, Memory, और कौन आपको खोज सकता है, इनके छोटे उत्तर।"
 id: "doc-ref-faq"
 locale: "hi"
 available_locales: ["en","hi","zh"]
-summary: "Frequently asked questions for Split Smart users. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+summary: "बिल, ट्रांसफ़र, बजट, Memory, और कौन आपको खोज सकता है, इनके छोटे उत्तर।"
 taxonomy: {"domain":"reference","module":"reference","doc_type":"reference","audience":["end-user"]}
 entity_tags: ["faq"]
-keywords: ["FAQ","help"]
-related_docs: ["doc-ref-glossary"]
+keywords: ["प्रश्न","बाँट","लाइन","category","रसीद","आवर्ती","ट्रांसफ़र","बजट","memory","hidden"]
+related_docs:
+  - doc-ref-glossary
+  - doc-exp-split-expense
+  - doc-exp-line-items
+  - doc-exp-category
+  - doc-exp-scan-or-note
+  - doc-exp-change
+  - doc-exp-recurring
+  - doc-exp-scheduled
+  - doc-set-expense-transfer
+  - doc-bud-create
+  - doc-bud-rules
+  - doc-mem-concept
+  - doc-acc-visibility
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Frequently asked questions for Split Smart users. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।
+# प्रश्न
 
-## Prerequisites
+## क्या ट्रांसफ़र दर्ज करना बिल को कवर करता है?
 
-- An active Split Smart account (unless this page is about creating one).
+नहीं। ट्रांसफ़र सहेजना सिर्फ़ यह दर्ज करता है कि पैसा हिला। बिल खुला रहता है।
 
-## Steps
+## भुगतान किसने किया, और लागत कौन बाँटता है?
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+**Paid by** वह है जिसने पैसा दिया। **Split Between** वे हैं जो लागत बाँटते हैं। ये एक ही लोग हो सकते हैं, या नहीं। देखें [खर्च बाँटें](/hi/expenses/howto-split-an-expense)।
 
-## Next steps
+## लाइन आइटम क्या है?
 
-See related pages in the frontmatter `related_docs` list.
+लाइन आइटम बिल की एक चीज़ है, जैसे एक व्यंजन। उस लाइन के लिए कौन भुगतान करता है और कौन बाँटता है, यह बता सकते हैं। देखें [लाइन आइटम जोड़ें](/hi/expenses/howto-add-line-items)।
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync, UPI) Latin रूप में रहेंगे।
+## Category क्या है?
 
+Category बिल का लेबल है। अपनी प्रति पर अलग Category रख सकते हैं। देखें [Category](/hi/expenses/concept-category)।
+
+## क्या फ़ोटो या नोट खर्च सहेज देता है?
+
+नहीं। बिल की फ़ोटो या लिखा नोट एक मसौदा भरता है। जब तक आप पुष्टि नहीं करते, कुछ सहेजा नहीं जाता। देखें [रसीद या नोट से खर्च जोड़ें](/hi/expenses/howto-add-from-receipt-or-note)।
+
+## क्या सहेजा खर्च बदला जा सकता है?
+
+हाँ। उसे खोलें और जो बदलना हो बदलें। सहेजने पर यह फिर से गिना जाता है कि कौन अभी भी कितना देनदार है। देखें [सहेजा खर्च बदलें](/hi/expenses/howto-change-a-saved-expense)।
+
+## दोहराया जाने वाला खर्च क्या है?
+
+नियम ही दोहराया जाने वाला खर्च है। अनुसूचित सूची वे तारीखें हैं जो नियम पहले ही बना चुका है, और आगे की हर तारीख। देखें [दोहराए जाने वाले खर्च](/hi/expenses/howto-recurring-expenses) और [अनुसूचित खर्च देखें](/hi/expenses/howto-scheduled-expenses)।
+
+## क्या Add transfer लोगों का निपटान है?
+
+नहीं। खर्च पर **Add transfer** एक व्यापारी को भुगतान है। यह बिल के साथ सहेजा जाता है। यह लोगों का निपटान नहीं है। देखें [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)।
+
+## क्या बजट की शुरुआत पिछली तारीख हो सकती है?
+
+हाँ। आरंभ कोई भी दिन हो सकता है, जो निकल भी चुका हो। उस आरंभ के अंदर का खर्च सीमा में गिना जाता है। समाप्ति खुली रह सकती है, या आज या उसके बाद होनी चाहिए। समाप्ति आरंभ से पहले नहीं हो सकती। देखें [बजट बनाएँ](/hi/budgets/howto-create-a-budget)।
+
+## कड़ी सीमा क्या करती है?
+
+**नरम** लगभग 80% पर और सीमा पर चेतावनी देता है। खर्च फिर भी सहेजता है। **कड़ा** उस नए खर्च को रोक सकता है जो सीमा पार कर दे। यह ट्रांसफ़र नहीं रोकता। देखें [सीमा क्या करती है](/hi/budgets/concept-budget-rules-and-caps)।
+
+## Memory क्या है?
+
+Memory एक अनुभव है, जैसे यात्रा, जिसके खर्च और फ़ोटो तब जुड़ते हैं जब वह चालू हो। बजट के **What counts** में भी इसे चुन सकते हैं, ताकि सिर्फ़ वह खर्च गिने। देखें [Memory क्या है](/hi/memories/concept-what-is-a-memory)।
+
+## Hidden का क्या मतलब है?
+
+**Hidden** का मतलब है दूसरे लोग आपको खोज नहीं सकते। जब वे किसी को जोड़ने के लिए खोजते हैं, आप सूची में नहीं आते। देखें [आपको कौन खोज सकता है](/hi/account/howto-manage-profile-visibility)।
+
+## आगे
+
+- [शब्दावली](/hi/reference/ref-glossary)
+- [स्थितियाँ और फ़िल्टर](/hi/reference/ref-statuses-and-filters)

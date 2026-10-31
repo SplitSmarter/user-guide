@@ -1,26 +1,34 @@
 ---
-title: "Scope"
-description: "Personal, Group, or Shared decides who a Memory is for and who sees it on an expense. Translation pending."
+title: "范围"
+description: "Memory 是 Personal、Group 或 Shared。这决定它开启时为谁服务。"
 id: "doc-mem-scope"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Personal, Group, or Shared decides who a Memory is for and who sees it on an expense. Translation pending."
+summary: "Memory 是 Personal、Group 或 Shared。这决定它开启时为谁服务。"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, scope]
-keywords: ['personal memory', 'group memory', 'shared memory']
+keywords: [personal memory, group memory, shared memory]
 related_docs:
   - doc-mem-concept
   - doc-mem-context
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 范围
 
-# Scope
+**范围**决定 Memory 为谁服务，以及谁能在费用上看到它。它不改变照片，也不会存成成员资格上的一项设置。
 
-Scope is Personal, Group, or Shared. An active Group Memory is selected on expenses in that group. A Personal Memory you turn on for a group is selected only on expenses you add. A Shared Memory is not selected for you; you choose it on the expense. See the English page for the full explanation.
+| 范围 | 为谁 |
+|-------|----------------|
+| **Personal** | 只有你。可以同时开启多条。无论账单是否在小组里，它们都用于你的费用。日期为今天的账单上，你选择哪些已开启的保留。 |
+| **Group** | 你把它附上的那个小组。该小组同时只有一条 Group Memory 开启。它开启期间会加到小组费用上。关联在共享费用上。 |
+| **Shared** | 你以及你邀请的人。它不是 Personal Memory，也不绑在一个小组上。它开启期间会为你和被邀请的人加上。 |
+
+Group Memory 需要一个小组。Shared Memory 使用你邀请的人，不能绑到一个小组。Personal Memory 始终是你的。
+
+范围和 Memory 是否 [开启](/zh/memories/components/concept-current-context) 是两件事。一条 Group Memory 可以是小组提供的那条，同时你的 Personal Memories 也可以开启。日期为今天的账单上，已开启的 Group 和 Shared Memories 会被加上。如果这张账单不该使用其中一条，请在保存前先关闭它。

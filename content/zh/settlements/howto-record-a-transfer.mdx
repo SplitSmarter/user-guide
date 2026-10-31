@@ -1,27 +1,55 @@
 ---
-title: "Record a transfer"
-description: "Log that money moved. Translation pending."
+title: "记录转账"
+description: "记下钱从你转到一个人或商户，或反过来。"
 id: "doc-set-record-transfer"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Log that money moved. Translation pending."
+summary: "记下钱从你转到一个人或商户，或反过来。"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: how-to
   audience: [end-user]
 entity_tags: [transfer]
-keywords: [record transfer, sender, recipient, merchant]
+keywords: [记录转账, 付款方, 收款方, 商户]
 related_docs:
   - doc-settlements-index
   - doc-set-expense-transfer
   - doc-set-link-payment
+  - doc-plc-merchant-location
+  - doc-gs-settle
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Record a transfer
+# 记录转账
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+当你想要一份钱已经移动的记录时使用这个。在你到费用上结清之前，它不会抵上人们在费用上欠的金额。见 [在费用上结清](/zh/settlements/howto-link-payment-to-expense)。
 
-**Sender** starts as **You**. The other side is a person or a merchant. Enter the amount and today’s date, pick a category so the form can save, then save. The expense is unchanged. See the English page for steps.
+## 开始之前
+
+- 你已登录
+- 钱在谁和谁之间移动，以及多少
+
+## 步骤
+
+1. 在首页钱包打开创建面板，选择 **Transfer**。同一个表单也可以从首页的 **Transfer** 按钮打开，或从 **Activity** 的 **Transfers** 标签，经 **Add transfer** 打开。
+2. **Sender** 从 **You** 开始。你留在其中一方。在 **Select Peer** 下设置另一方。标签是 **People** 和 **Merchants**。交换箭头对调双方。
+3. 填写大于零的金额。日期从今天开始。不能选择未来的日期。
+4. 选择一个 category，表单才能保存。本指南不解释那些选项。
+5. 可以设置 **Group**、**Transfer Name** 或一个附件。如果名称留空，Split Smarter 会用收款方来命名。
+6. 如果一方是商户，你可以选择那个商户的分店，或跳过。分店见 [在转账上](/zh/places/concept-place-on-transfer)。
+7. 保存。
+
+自定义联系人可以是收到钱的人。他们不能是付出钱的人。
+
+## 完成后
+
+转账出现在 **Activity** 的 **Transfers** 下，带有金额以及从谁到谁。如果设置了小组，它也会出现在那个小组的 **Transactions** 标签上。打开那一行什么也不会发生。没有可以编辑或删除它的屏幕。
+
+相关的费用保持不变。
+
+## 下一步
+
+- 记费用时付给商户：[在费用上](/zh/settlements/concept-add-transfer-on-expense)
+- 晚餐的例子：[结清余额](/zh/getting-started/tut-settle-balances)

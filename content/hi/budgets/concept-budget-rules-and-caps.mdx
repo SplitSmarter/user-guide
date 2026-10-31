@@ -1,26 +1,49 @@
 ---
-title: "What the cap does"
-description: "A soft cap warns. A hard cap can refuse a new expense. Translation pending."
+title: "सीमा क्या करती है"
+description: "नरम सीमा चेतावनी देती है। कड़ी सीमा नया खर्च रोक सकती है। सीमा हिस्से को देखती है, यह नहीं कि किसने भुगतान किया।"
 id: "doc-bud-rules"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "A soft cap warns. A hard cap can refuse a new expense. Translation pending."
+summary: "नरम सीमा चेतावनी देती है। कड़ी सीमा नया खर्च रोक सकती है। सीमा हिस्से को देखती है, यह नहीं कि किसने भुगतान किया।"
 taxonomy:
   domain: budgets
   module: budgets
   doc_type: concept
   audience: [end-user]
 entity_tags: [budget, cap]
-keywords: [soft cap, hard cap]
+keywords: [नरम सीमा, कड़ी सीमा, बजट दायरा]
 related_docs:
   - doc-bud-create
   - doc-budgets-index
+  - doc-exp-paid-by-vs-sharers
 version_introduced: v1.0.0
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 ---
 
-# What the cap does
+# सीमा क्या करती है
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+सीमा वह राशि है जो आप [बजट बनाएँ](/hi/budgets/howto-create-a-budget) में सेट करते हैं।
 
-**Soft** warns and the expense still saves. **Hard** can refuse a new expense that would pass the cap. The cap follows each person’s share, not who paid. See the English page for the full explanation.
+## नरम और कड़ा
+
+**नरम** शुरुआत है। यह लगभग 80% पर और सीमा पर चेतावनी देता है। खर्च फिर भी सहेजता है।
+
+**कड़ा** उस नए खर्च को रोक सकता है जो सीमा पार कर दे। यह ट्रांसफ़र नहीं रोकता। बाद में खर्च बदलने की फिर जाँच नहीं होती।
+
+## यह क्या देखता है
+
+सीमा हर व्यक्ति के खर्च के **हिस्से** को देखती है, यह नहीं कि किसने भुगतान किया। देखें [भुगतानकर्ता और साझीदार](/hi/expenses/concept-paid-by-vs-sharers)।
+
+**क्या गिना जाएगा** में कुछ न चुना हो, तो वे हिस्से गिने जाते हैं। **श्रेणियाँ**, **स्थान**, **व्यापारी**, या **Memories** चुनने से यह संकीर्ण होता है। मूल श्रेणी उसके नीचे की श्रेणियों को भी कवर करती है।
+
+किसी व्यक्ति को भेजा पैसा नहीं गिना जाता। किसी व्यापारी को भेजा पैसा तब गिना जाता है जब वह व्यापारी आपने चुना हो। अगर वही भुगतान उसी खर्च का है, तो वह हिस्से के ऊपर दोबारा नहीं जुड़ता।
+
+**सिर्फ़ मैं** आपके हिस्से इस्तेमाल करता है। **साझा** उन लोगों के हिस्से भी इस्तेमाल करता है जो जुड़ चुके हैं। **समूह** उस समूह के लोगों के हिस्से इस्तेमाल करता है, उस समूह के खर्चों पर।
+
+## यह कब रीसेट होता है
+
+**दैनिक**, **साप्ताहिक**, **मासिक**, **त्रैमासिक**, या **वार्षिक**। **मासिक** शुरुआत है।
+
+**हमेशा** का मतलब है कोई निश्चित समाप्ति नहीं। सीमा आपके चुने अंतराल पर रीसेट होती रहती है।
+
+**यह महीना** या **90 दिन** जैसी अवधि उस सीमा के अंत पर खत्म होती है। आरंभ पिछली तारीख हो सकती है, और उस अवधि का खर्च गिना जाता है। समाप्ति खुली रह सकती है, या आज या उसके बाद होनी चाहिए। जिस बजट की समाप्ति पहले ही निकल चुकी है, वह अब नहीं चल रहा।

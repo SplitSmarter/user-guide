@@ -1,32 +1,55 @@
 ---
 title: "Statuses and filters"
-description: "Common expense and settlement statuses and list filters."
+description: "What you see when an expense is still owed, partly covered, recurring, or when a budget is still running, and the Activity filters."
 id: "doc-ref-statuses"
 locale: "en"
 available_locales: ["en","hi","zh"]
-summary: "Common expense and settlement statuses and list filters."
+summary: "What you see when an expense is still owed, partly covered, recurring, or when a budget is still running, and the Activity filters."
 taxonomy: {"domain":"reference","module":"reference","doc_type":"reference","audience":["end-user"]}
 entity_tags: ["status","filter"]
-keywords: ["expense status","filters"]
-related_docs: ["doc-ref-glossary"]
+keywords: ["expense status","settled","recurring","budget","activity filter"]
+related_docs: ["doc-ref-glossary","doc-set-link-payment","doc-bud-rules","doc-exp-recurring"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Common expense and settlement statuses and list filters.
+# Statuses and filters
 
-## Prerequisites
+These are the states you can see on an expense or a budget.
 
-- An active Split Smart account (unless this page is about creating one).
+## An expense still owed
 
-## Steps
+Open the expense. **Settlement Path** says **No settlement links on this expense yet** while nothing has been applied. The remaining amount is what is still owed.
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+## Covered after you settle
+
+After you [settle an expense](/en/settlements/howto-link-payment-to-expense), **Settlement Path** shows the covered amount.
+
+- **Partially Settled** means some of the amount is covered and some remains.
+- **All Settled** means nothing remains on that path.
+- **Settled** is the label on the covered amount.
+
+A transfer you saved and never settled against the expense does not change these.
+
+## Paid is not the same as settled
+
+Money tied to what someone paid does not clear who still owes. The expense is settled when nobody still on it is owed or still owes.
+
+## A recurring expense
+
+The expense shows **Recurring**. **Schedule** shows **Active** or **Paused**, the date it runs from, and the next date. See [Set up recurring expenses](/en/expenses/howto-recurring-expenses).
+
+## A budget that is running
+
+A budget is running when it has no end date, or the end is today or later. It resets on **Daily**, **Weekly**, **Monthly**, **Quarterly**, or **Yearly**.
+
+A budget whose end has already passed is no longer running. The create form does not offer an end before today. See [What the cap does](/en/budgets/concept-budget-rules-and-caps).
+
+## Activity filters
+
+On **Activity**, the filters are **All**, **Groups**, **Expenses**, and **Transfers**.
 
 ## Next steps
 
-See related pages in the frontmatter `related_docs` list.
-
+- [Glossary](/en/reference/ref-glossary)
+- [FAQ](/en/reference/ref-faq)

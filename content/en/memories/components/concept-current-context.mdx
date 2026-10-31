@@ -1,10 +1,10 @@
 ---
 title: "Active memory"
-description: "An active Memory is selected for you when you add an expense. You can turn it off before you save."
+description: "A Memory covers expenses while it is turned on. Group and Shared ones that are on are applied to a bill dated today."
 id: "doc-mem-context"
 locale: "en"
 available_locales: ["en", "hi", "zh"]
-summary: "An active Memory is selected for you when you add an expense. You can turn it off before you save."
+summary: "A Memory covers expenses while it is turned on. Group and Shared ones that are on are applied to a bill dated today."
 taxonomy:
   domain: memories
   module: components
@@ -17,20 +17,21 @@ related_docs:
   - doc-mem-scope
   - doc-mem-activate
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
 # Active memory
 
-An **active** Memory is selected for you on the next expense. You can turn it off before you save. Split Smart keeps only the Memories you leave selected. You can save an expense with none.
+A Memory is **on** from the moment you turn it on until you turn it off. Creating it turns it on. Expenses at a time when it was on can belong to it. Expenses from before that, or after you turned it off, do not.
 
-When you choose a group, Split Smart can offer:
+What is on for you:
 
-- **The group's active Memory.** One Group Memory for the whole group. Creating a Group Memory for a group turns it on and replaces the previous one. Anyone adding an expense in that group sees it selected. The link sits on the shared expense, so the group sees it.
-- **Your active Personal Memory for that group**, if you turned one on. It is selected only on expenses you add. The link stays on your view. Other members do not see it, and they do not get it on expenses they add.
+- **One Group Memory** for a group. Creating a Group Memory for that group turns it on and turns the previous one off. Anyone adding an expense in the group gets it while it is on. The link sits on the shared expense.
+- **Your Personal Memories.** Several can be on at once. They are not stored on a group membership. On a bill dated today, you choose which of those should stay. You can leave all of them off.
+- **Shared Memories** you own or that were shared with you. They are not Personal Memories. While one is on, it is applied for you and for the people it was shared with.
 
-A **Shared** Memory does not belong to a group. Turning it on does not select it for the group. Choose it yourself on the expense. The link stays on your view. People you invited can select that same Memory on their own expenses.
+To leave a Group or Shared Memory off a bill dated today, turn that Memory off before you save. You do not clear it on the expense itself.
 
-Turning a different Memory on does not change expenses you already saved. Those keep the Memories they were saved with until someone edits them.
+A list for a span of days shows the Memories that were on during those days in your timezone. If you have no timezone, those days are UTC days. Filtering that list by groups shows only those groups’ Memories.
 
-You can turn an active Memory off without finishing it. Completing, archiving, or deleting it also stops offering it on new expenses. See [Activate or switch memory](/en/memories/guides/howto-activate-or-switch-memory).
+Turning a different Memory on does not rewrite expenses you already saved. Turning one off does not finish it and does not remove links already saved. Completing or archiving deactivates it, so it is no longer offered on new expenses. Deleting it removes its links. See [Activate or switch memory](/en/memories/guides/howto-activate-or-switch-memory).

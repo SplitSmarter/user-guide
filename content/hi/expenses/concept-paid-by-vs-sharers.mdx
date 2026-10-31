@@ -1,20 +1,38 @@
 ---
-title: "Paid by vs sharers (हिंदी अनुवाद शीघ्र)"
-description: "Who paid is not the same as who shares the cost. Translation pending."
+title: "भुगतानकर्ता और साझीदार"
+description: "जिसने भुगतान किया, वह वही नहीं है जो लागत बाँटता है।"
 id: "doc-exp-paid-by-vs-sharers"
 locale: "hi"
 available_locales: ["en","hi","zh"]
-summary: "Who paid is not the same as who shares the cost. Translation pending."
+summary: "जिसने भुगतान किया, वह वही नहीं है जो लागत बाँटता है।"
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"concept","audience":["end-user"]}
 entity_tags: ["paid-by","sharers"]
-keywords: ["who paid","split with","paid by","split between"]
+keywords: ["किसने भुगतान किया","बाँटना","भुगतानकर्ता","इनके बीच बाँटें"]
 related_docs: ["doc-gs-log-expense","doc-set-balances","doc-exp-split-expense"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-22"
+last_updated: "2026-10-30"
 ---
 
-# Paid by vs sharers
+# भुगतानकर्ता और साझीदार
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync, UPI) Latin रूप में रहेंगे।
+**भुगतानकर्ता** वह है जिसने पैसा दिया। **इनके बीच बाँटें** वे हैं जो लागत बाँटते हैं। ये वही लोग हो सकते हैं, या नहीं।
 
-**Paid by** is who handed over the money. **Split Between** is who shares the cost. Net = amount paid − share. In the dinner, Alice paid ₹1000, her share is ₹400, and Bob’s share is ₹600, so Bob owes Alice ₹600. See the English page for the full explanation.
+खर्च पर हर व्यक्ति के लिए:
+
+**शुद्ध = भुगतान − हिस्सा**
+
+- धनात्मक शुद्ध का मतलब है कि उन्हें पैसा मिलना है।
+- ऋणात्मक शुद्ध का मतलब है कि वे देनदार हैं।
+
+## रात का खाना
+
+Alice ₹1000 देती है। Alice का हिस्सा ₹400 है। Bob का हिस्सा ₹600 है। Bob ने कुछ नहीं दिया।
+
+| व्यक्ति | भुगतान | हिस्सा | शुद्ध |
+|--------|------|-------|-----|
+| Alice | ₹1000 | ₹400 | **+₹600** (मिलना है) |
+| Bob | ₹0 | ₹600 | **−₹600** (Alice का देनदार) |
+
+इसलिए सहेजा खर्च कहता है कि Bob, Alice का ₹600 देनदार है। रेस्तरां को भुगतान करने का यह मतलब नहीं कि Alice का हिस्सा पूरा बिल था।
+
+खर्च फ़ॉर्म पर ये **भुगतानकर्ता** और **इनके बीच बाँटें** खंड हैं। पहली बार इन्हें सेट करना [पहला खर्च दर्ज करें](/hi/getting-started/tut-log-first-expense) है। कर्ज कैसे चुकाया जाता है, यह [शेष और ट्रांसफ़र](/hi/settlements/concept-balances-and-transfers) में है।

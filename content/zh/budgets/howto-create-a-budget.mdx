@@ -1,26 +1,52 @@
 ---
-title: "Create a budget"
-description: "Name a cap and choose who it covers. Translation pending."
+title: "创建预算"
+description: "为上限命名，选择它覆盖谁，然后保存。筛选和日期是可选的。"
 id: "doc-bud-create"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Name a cap and choose who it covers. Translation pending."
+summary: "为上限命名，选择它覆盖谁，然后保存。筛选和日期是可选的。"
 taxonomy:
   domain: budgets
   module: budgets
   doc_type: how-to
   audience: [end-user]
 entity_tags: [budget]
-keywords: [create budget, spending cap]
+keywords: [创建预算, 花费上限, 共享, 小组]
 related_docs:
   - doc-budgets-index
   - doc-bud-rules
+  - doc-ppl-connection-settings
 version_introduced: v1.0.0
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 ---
 
-# Create a budget
+# 创建预算
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+预算需要名称和金额。其余可以保持原样。
 
-From home, choose **Budget**. Enter a name and a **Spending cap**. **Just me**, **Soft**, **Monthly**, and **Forever** can stay as they are. **Shared** needs another person. **Group** needs a group. See the English page for steps.
+## 开始之前
+
+- 你已登录
+
+## 步骤
+
+1. 在首页钱包打开创建面板，选择 **Budget**。**Budgets & Goals** 下的 **Create New** 也会打开同一张表单。在小组里打开 **Budgets**，选择 **Create budget**。这条路径会把 **Who** 设为 **Group** 并填入该小组。
+2. 填写 **Budget name**，例如 Groceries。
+3. 填写大于零的 **Spending cap**。显示的货币是你的货币。你不能另选一种。
+4. 除非你要硬上限，否则把 **Cap strength** 留在 **Soft**。见 [上限做什么](/zh/budgets/concept-budget-rules-and-caps)。
+5. 在 **Who** 下保持 **Just me**，或改掉它。
+   - **Shared** 至少需要另一个人。**You** 留在预算上。如果对方只会接受邀请，他们接受之前不算在内。见 [连接允许什么](/zh/people/concept-connection-settings)。
+   - **Group** 需要一个 **Target group**。
+6. **What counts** 的方块留空，就会按费用份额来计算。或者选择 **Categories**、**Places**、**Merchants** 或 **Memories** 来缩小范围。
+7. **Resets** 从 **Monthly** 开始。你可以选 **Daily**、**Weekly**、**Quarterly** 或 **Yearly**。窗口从 **Forever** 开始。点它可选 **This month**、**90 days** 或 **Custom**。开始可以是过去。结束可以保持开放，或者必须是今天或更晚。结束不能早于开始。**Apply window** 会保存这个选择。已经落在过去开始日期里的花费会计入上限。
+8. 选择 **Create budget**。
+
+你也可以从已保存的地点开始。那里的 **Budget** 会把该地点放进 **Places** 并填上名称。如果地点还没保存，请先保存。
+
+## 完成后
+
+保存后表单会关闭。小组预算会出现在该小组的 **Budgets** 标签。个人或共享预算没有自己的列表。
+
+## 下一步
+
+- [上限做什么](/zh/budgets/concept-budget-rules-and-caps)

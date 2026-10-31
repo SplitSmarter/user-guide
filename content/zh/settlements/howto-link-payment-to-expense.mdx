@@ -1,27 +1,55 @@
 ---
-title: "Does not clear a debt"
-description: "A saved transfer leaves the expense as it was. Translation pending."
+title: "在费用上结清"
+description: "把转账用到账单上，让仍欠的金额被抵上。从未在费用上结清的转账不会抵上账单。"
 id: "doc-set-link-payment"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "A saved transfer leaves the expense as it was. Translation pending."
+summary: "把转账用到账单上，让仍欠的金额被抵上。从未在费用上结清的转账不会抵上账单。"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: how-to
   audience: [end-user]
 entity_tags: [transfer, expense]
-keywords: [transfer, debt, expense]
+keywords: [settle, transfer, covered, remind]
 related_docs:
   - doc-set-record-transfer
   - doc-set-expense-transfer
   - doc-set-balances
+  - doc-gs-settle
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Does not clear a debt
+# 在费用上结清
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+保存转账只记录钱已经移动。它本身不会抵上账单上仍欠的金额。打开费用并结清那笔付款，已抵金额才会变化。
 
-Saving a transfer does not clear what people owe. The expense screen has no control to tie a person-to-person transfer to the bill. See the English page for the full explanation.
+## 开始之前
+
+- 费用已保存
+- 当你在抵自己的份额时，你以欠款的人登录
+
+## 步骤
+
+1. 打开费用。在 **Settlement Path** 下，仍欠的金额在被抵上之前保持未结。还没有任何付款被应用时，这里显示 **No settlement links on this expense yet.**
+2. 如果你已经和这个人记录过一笔付款，选择 **Use Transfer**。在 **Settle** 上，这笔付款列在 **From past transfers** 下面。使用 **Autoselect** 或 **Choose**，然后 **Settle**。
+3. 或者在 **Settle** 上选择 **New transfer**，填写金额，选择付款分类，然后选择 **Settle**。
+4. **Settlement Path** 随后显示 **Settled** 或 **Partially Settled**，以及已抵金额。
+
+你单独保存、却从未在费用上结清的转账，仍会让账单保持未结。见 [记录转账](/zh/settlements/howto-record-a-transfer)。
+
+费用表单上的 **Add transfer** 是付给商户。那不是这一步。见 [在费用上](/zh/settlements/concept-add-transfer-on-expense)。
+
+## 提醒某人
+
+在小组里，**REMIND** 打开 **Send Payment Reminder**。**Custom WhatsApp Text** 打开 WhatsApp。**Send Anonymous Push** 在 Split Smarter 里发送通知。提醒不会抵上金额。
+
+## 完成后
+
+费用把已应用的金额显示为已结清。仍未支付的部分留在剩余里。
+
+## 下一步
+
+- [余额和转账](/zh/settlements/concept-balances-and-transfers)
+- [结清余额](/zh/getting-started/tut-settle-balances)

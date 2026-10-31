@@ -1,27 +1,45 @@
 ---
-title: "What a connection allows"
-description: "Friends means they have connected with you. Translation pending."
+title: "连接允许什么"
+description: "Friends 表示他们已经和你建立了连接。这决定谁可以把他们加进小组、Memory 或预算。"
 id: "doc-ppl-connection-settings"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Friends means they have connected with you. Translation pending."
+summary: "Friends 表示他们已经和你建立了连接。这决定谁可以把他们加进小组、Memory 或预算。"
 taxonomy:
   domain: people
   module: people
   doc_type: concept
   audience: [end-user]
 entity_tags: [relation, group, memory, budget]
-keywords: [friends, who can add, connection]
+keywords: [friends, 谁可以添加, 连接]
 related_docs:
   - doc-grp-relationships
   - doc-ppl-add-person
   - doc-grp-roles-visibility
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# What a connection allows
+# 连接允许什么
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+**Friends** 表示他们有一条指向你的关联。你给他们贴的关系标签本身不算。
 
-Friends means they have a relation that names you. That controls whether you can add them to a group, a Memory, or a budget, or whether they get an invite. See the English page for the full explanation.
+## 小组
+
+当你把他们加进小组：
+
+- 如果他们允许所有人，你就添加他们。
+- 如果他们只允许朋友，并且已经和你建立了连接，你就添加他们。
+- 如果他们仍接受邀请，而你不能直接添加他们，他们会收到邀请。
+- 如果他们不允许任何人，你不能添加他们。
+
+## Memories 和预算
+
+当你把他们加进一条 Memory 或你共享的预算：
+
+- 如果他们允许所有人，你直接添加他们。
+- 如果他们只允许朋友，只有在他们已经和你建立连接时你才能直接添加。否则他们会收到邀请。
+- 如果他们只允许邀请，他们会收到邀请。
+- 如果他们不允许任何人，你不能添加他们。
+
+这些规则是关于把某人加进小组、Memory 或预算。它们不是关于付款。

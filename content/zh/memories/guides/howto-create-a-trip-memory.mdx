@@ -1,28 +1,85 @@
 ---
-title: "Create a trip memory"
-description: "Create a group Memory for a trip. Translation pending."
+title: "创建旅行 Memory"
+description: "为旅行创建一条 Group Memory。它会从你设置的开始开启，开始可以是过去。"
 id: "doc-mem-trip"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Create a group Memory for a trip. Translation pending."
+summary: "为旅行创建一条 Group Memory。它会从你设置的开始开启，开始可以是过去。"
 taxonomy:
   domain: memories
   module: memories
   doc_type: how-to
   audience: [end-user]
-entity_tags: [memory, trip]
-keywords: ['create trip memory']
+entity_tags: [memory, trip, group]
+keywords: [创建旅行 memory, group memory]
 related_docs:
   - doc-mem-concept
   - doc-mem-activate
   - doc-mem-attach-expense
   - doc-mem-complete
+  - doc-gs-log-expense
 version_introduced: v1.0.0
-last_updated: 2026-10-20
+last_updated: 2026-10-30
 ---
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Memory、Smart Ledger）保持拉丁写法。
+# 创建旅行 Memory
 
-# Create a trip memory
+当你和小组一起旅行时用这个流程。你为这次旅行创建一条 **Group Memory**。创建后它会为该小组开启，并关闭之前开启的那条 Group Memory。旅行结束时完成它，这样新费用就不再使用它。
 
-Create a Group Memory for the trip. It turns on for that group, so new expenses there select it. Turn it off on an expense before you save if that spend is not part of the trip. Complete it when you return. See the English page for steps.
+## 前提
+
+- 一个可用的 Split Smarter 账户
+- 旅行小组（或先创建一个）
+- 旅行开始的那天；如果今天开始，就是今天
+
+## 步骤
+
+### 1. 创建 Memory
+
+1. 从你的账户或旅行小组打开 Memories。
+2. 创建一条新 Memory。
+3. 写一个清楚的标题（例如目的地或旅行名称）。
+4. 选择 **Group** 范围，并选择旅行小组。
+5. 把**开始**设为旅行的第一天。过去的开始可以。将来的开始不行。
+6. 只有在你知道时才设置**结束**。它必须是你的时区里的今天或更晚，并且晚于开始。如果没有时区，今天是 UTC 的一天。
+7. 保存。Memory 从那个开始开启。如果这个小组还有另一条 Group Memory 开着，那一条会关闭。
+
+### 2. 添加照片（可选）
+
+1. 打开刚创建的 Memory。
+2. 附上属于这次旅行的照片（记录时刻，不是每张收据——收据放在费用上）。
+
+### 3. 确认它已为小组开启
+
+1. 如果这条 Memory 还没有为小组开启，就激活它。
+2. 添加一张日期为今天的旅行费用，确认这条 Memory 已加上。如果这张账单不该使用它，请在保存前关闭这条 Memory。
+
+详情：[开启或切换 Memory](/zh/memories/guides/howto-activate-or-switch-memory)。
+
+### 4. 记录旅行费用
+
+1. 在 Smart Ledger 里照常添加费用，并选中这个小组。
+2. 日期为今天的账单上，这条 Group Memory 在开启期间会被加上。如果这笔花费不该计入，请在保存前关闭它。
+3. 日期为过去某一天的账单上，当时开启的每一条 Memory 都会附上，包括当时开启的这一条。
+4. 过去的开始也会关联那段时间里已经保存的花费。这一步只添加关联。
+
+详情：[把 Memory 加到费用](/zh/memories/guides/howto-attach-memory-to-expense) 和 [记录第一笔费用](/zh/getting-started/tut-log-first-expense)。
+
+### 5. 回来后完成 Memory
+
+1. 打开 Memory 并选择完成（或同等操作）。
+2. 确认结束日期。它必须是你的时区里的今天或更晚。
+3. 确认 Memory 已 deactivated，并且小组里的新费用不再使用它。已经关联的费用仍保留它。
+
+详情：[完成 Memory](/zh/memories/guides/howto-complete-a-memory)。
+
+## 做好之后
+
+- 在这条 Memory 开启期间保存的旅行费用仍然显示它。
+- 完成后，Memory 是 deactivated，不会加到新费用上。
+- Memory 上的照片仍描述这次旅行。结算和余额留在费用本身。
+
+## 下一步
+
+- 了解范围和规则：[什么是 Memory](/zh/memories/concept-what-is-a-memory)
+- 结清欠款：[结算余额](/zh/getting-started/tut-settle-balances)

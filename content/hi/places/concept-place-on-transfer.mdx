@@ -1,27 +1,31 @@
 ---
-title: "On a transfer"
-description: "A merchant on a transfer has a branch. Translation pending."
+title: "ट्रांसफ़र पर"
+description: "ट्रांसफ़र पर व्यापारी चुनने के बाद जो जगह आप चुनते हैं, वह उस व्यापारी की शाखा है।"
 id: "doc-plc-merchant-location"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "A merchant on a transfer has a branch. Translation pending."
+summary: "ट्रांसफ़र पर व्यापारी चुनने के बाद जो जगह आप चुनते हैं, वह उस व्यापारी की शाखा है।"
 taxonomy:
   domain: places
   module: places
   doc_type: concept
   audience: [end-user]
 entity_tags: [place, transfer, merchant]
-keywords: [merchant location, branch, transfer place]
+keywords: [व्यापारी की जगह, शाखा, ट्रांसफ़र की जगह]
 related_docs:
   - doc-plc-expense
   - doc-plc-save-place
   - doc-gs-settle
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# On a transfer
+# ट्रांसफ़र पर
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+ट्रांसफ़र का एक भेजने वाला और एक पाने वाला होता है। कोई भी पक्ष व्यक्ति या व्यापारी हो सकता है।
 
-After you pick a merchant, choose the branch: a saved place, a place from the map, or an address you name. That is where the money went. It does not settle what people owe. See the English page for the full explanation.
+जब एक पक्ष व्यापारी हो, तब आप उस व्यापारी का स्थान चुनते हैं। वही शाखा है: एक सहेजी जगह, मानचित्र से एक जगह, या एक पता जिसे आप नाम देते हैं, जैसे Downtown Branch। व्यापारी के नीचे का नाम वह स्थान है। यहीं पैसा गया।
+
+यह खर्च पर **Location** चिप नहीं है। यह यह भी नहीं निपटाता कि लोग एक-दूसरे के कितने देनदार हैं। व्यक्ति-से-व्यक्ति भुगतान दर्ज करना [बकाया निपटाएँ](/hi/getting-started/tut-settle-balances) है। उसे सहेजना यह नहीं बदलता कि लोग कितने देनदार हैं।
+
+खर्च पर **Add transfer** स्विच यही व्यापारी भुगतान है। यह निपटान नहीं है। देखें [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)।

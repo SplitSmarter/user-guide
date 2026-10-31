@@ -1,20 +1,38 @@
 ---
-title: "Paid by vs sharers（中文译文即将推出）"
-description: "Who paid is not the same as who shares the cost. Translation pending."
+title: "付款人与分摊人"
+description: "谁付了钱，和谁分摊费用，不是同一件事。"
 id: "doc-exp-paid-by-vs-sharers"
 locale: "zh"
 available_locales: ["en","hi","zh"]
-summary: "Who paid is not the same as who shares the cost. Translation pending."
+summary: "谁付了钱，和谁分摊费用，不是同一件事。"
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"concept","audience":["end-user"]}
 entity_tags: ["paid-by","sharers"]
-keywords: ["who paid","split with","paid by","split between"]
+keywords: ["谁付了钱","分摊","Paid by","Split Between"]
 related_docs: ["doc-gs-log-expense","doc-set-balances","doc-exp-split-expense"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-22"
+last_updated: "2026-10-30"
 ---
 
-# Paid by vs sharers
+# 付款人与分摊人
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+**Paid by** 是谁交出了钱。**Split Between** 是谁分摊费用。他们可以是同一批人，也可以不是。
 
-**Paid by** is who handed over the money. **Split Between** is who shares the cost. Net = amount paid − share. In the dinner, Alice paid ₹1000, her share is ₹400, and Bob’s share is ₹600, so Bob owes Alice ₹600. See the English page for the full explanation.
+对费用上的每个人：
+
+**净额 = 已付金额 − 份额**
+
+- 正净额表示别人欠他们钱。
+- 负净额表示他们欠别人钱。
+
+## 晚餐
+
+Alice 付了 ₹1000。Alice 的份额是 ₹400。Bob 的份额是 ₹600。Bob 没有付钱。
+
+| 人 | 已付 | 份额 | 净额 |
+|--------|------|-------|-----|
+| Alice | ₹1000 | ₹400 | **+₹600**（被欠） |
+| Bob | ₹0 | ₹600 | **−₹600**（欠 Alice） |
+
+所以保存后的费用会说 Bob 欠 Alice ₹600。付给餐厅本身并不表示 Alice 的份额是整张账单。
+
+费用表单上这两处是 **Paid by** 和 **Split Between**。第一次设置它们见 [记下第一笔费用](/zh/getting-started/tut-log-first-expense)。债务如何结清见 [余额和转账](/zh/settlements/concept-balances-and-transfers)。

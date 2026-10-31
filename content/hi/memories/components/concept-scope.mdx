@@ -1,26 +1,34 @@
 ---
-title: "Scope"
-description: "Personal, Group, or Shared decides who a Memory is for and who sees it on an expense. Translation pending."
+title: "दायरा"
+description: "Memory Personal, Group, या Shared होती है। इससे तय होता है कि चालू रहते यह किसके लिए है।"
 id: "doc-mem-scope"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Personal, Group, or Shared decides who a Memory is for and who sees it on an expense. Translation pending."
+summary: "Memory Personal, Group, या Shared होती है। इससे तय होता है कि चालू रहते यह किसके लिए है।"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, scope]
-keywords: ['personal memory', 'group memory', 'shared memory']
+keywords: [personal memory, group memory, shared memory]
 related_docs:
   - doc-mem-concept
   - doc-mem-context
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> पूर्ण अनुवाद शीघ्र। उत्पाद नाम (Split Smart, Memory, Smart Ledger) Latin रूप में रहेंगे.
+# दायरा
 
-# Scope
+**दायरा** तय करता है कि Memory किसके लिए है और खर्च पर इसे कौन देखता है। यह फ़ोटो नहीं बदलता, और यह सदस्यता की सेटिंग के रूप में सहेजा नहीं जाता।
 
-Scope is Personal, Group, or Shared. An active Group Memory is selected on expenses in that group. A Personal Memory you turn on for a group is selected only on expenses you add. A Shared Memory is not selected for you; you choose it on the expense. See the English page for the full explanation.
+| दायरा | किसके लिए |
+|-------|----------------|
+| **Personal** | सिर्फ़ आपके लिए। कई एक साथ चालू हो सकती हैं। बिल समूह में हो या नहीं, वे आपके खर्चों पर लगती हैं। आज की तारीख वाले बिल पर आप चुनते हैं कि चालू में से कौन सी रहें। |
+| **Group** | जिस समूह से आप इसे जोड़ते हैं। उस समूह के लिए एक Group Memory चालू होती है। जब तक चालू है, समूह के खर्चों पर लगती है। लिंक साझा खर्च पर होता है। |
+| **Shared** | आप और जिन्हें आप बुलाते हैं। यह Personal Memory नहीं है, और किसी समूह से बँधी नहीं है। जब तक चालू है, यह आपके और बुलाए लोगों के लिए लगती है। |
+
+Group Memory को समूह चाहिए। Shared Memory उन लोगों का उपयोग करती है जिन्हें आप बुलाते हैं, और एक समूह से नहीं बँध सकती। Personal Memory आपकी रहती है।
+
+दायरा इस बात से अलग है कि Memory [चालू](/hi/memories/components/concept-current-context) है या नहीं। एक Group Memory समूह की हो सकती है, और उसी समय आपकी Personal Memories भी चालू हो सकती हैं। आज की तारीख वाले बिल पर जो Group और Shared Memories चालू हैं, वे लग जाती हैं। अगर वह बिल किसी एक का नहीं है, तो सहेजने से पहले उसे बंद कर दें।

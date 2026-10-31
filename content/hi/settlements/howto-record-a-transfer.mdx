@@ -1,27 +1,55 @@
 ---
-title: "Record a transfer"
-description: "Log that money moved. Translation pending."
+title: "ट्रांसफ़र दर्ज करें"
+description: "दर्ज करें कि पैसा आपसे किसी व्यक्ति या व्यापारी की ओर हिला, या उलटी दिशा में।"
 id: "doc-set-record-transfer"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Log that money moved. Translation pending."
+summary: "दर्ज करें कि पैसा आपसे किसी व्यक्ति या व्यापारी की ओर हिला, या उलटी दिशा में।"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: how-to
   audience: [end-user]
 entity_tags: [transfer]
-keywords: [record transfer, sender, recipient, merchant]
+keywords: [ट्रांसफ़र दर्ज करें, भेजने वाला, पाने वाला, व्यापारी]
 related_docs:
   - doc-settlements-index
   - doc-set-expense-transfer
   - doc-set-link-payment
+  - doc-plc-merchant-location
+  - doc-gs-settle
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Record a transfer
+# ट्रांसफ़र दर्ज करें
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+इसका उपयोग तब करें जब आप उस पैसे का रिकॉर्ड चाहते हैं जो पहले ही हिल चुका है। यह खर्च पर लोगों के बकाया को तब तक कवर नहीं करता जब तक आप उसे वहाँ निपटाते नहीं। देखें [खर्च निपटाएँ](/hi/settlements/howto-link-payment-to-expense)।
 
-**Sender** starts as **You**. The other side is a person or a merchant. Enter the amount and today’s date, pick a category so the form can save, then save. The expense is unchanged. See the English page for steps.
+## पहले से
+
+- आप साइन इन हैं
+- पैसा किनके बीच हिला, और कितना
+
+## कदम
+
+1. होम वॉलेट पर बनाने वाली शीट खोलें और **Transfer** चुनें। वही फ़ॉर्म होम के **Transfer** बटन से खुलता है, या **Activity** के **Transfers** टैब से **Add transfer** के ज़रिए।
+2. **Sender** **You** से शुरू होता है। आप एक तरफ रहते हैं। दूसरी तरफ **Select Peer** के नीचे सेट करें। टैब हैं **People** और **Merchants**। अदला-बदली वाले तीर दोनों तरफ बदलते हैं।
+3. शून्य से बड़ी राशि लिखें। तारीख आज से शुरू होती है। आप भविष्य की तारीख नहीं चुन सकते।
+4. एक category चुनें ताकि फ़ॉर्म सहेज सके। यह गाइड उन विकल्पों की व्याख्या नहीं करती।
+5. चाहें तो **Group**, **Transfer Name**, या एक अटैचमेंट सेट करें। नाम खाली छोड़ें तो Split Smarter इसे पाने वाले से नाम देता है।
+6. अगर एक पक्ष व्यापारी है, तो आप उस व्यापारी की शाखा चुन सकते हैं, या छोड़ सकते हैं। शाखा [ट्रांसफ़र पर](/hi/places/concept-place-on-transfer) है।
+7. सहेजें।
+
+कस्टम संपर्क वह व्यक्ति हो सकता है जिसे भुगतान मिला। वे वह व्यक्ति नहीं हो सकते जिसने भुगतान किया।
+
+## अच्छा परिणाम
+
+ट्रांसफ़र **Activity** पर **Transfers** के नीचे दिखता है, राशि के साथ और यह कि यह किससे किसको था। अगर आपने समूह सेट किया, तो यह उस समूह के **Transactions** टैब पर भी दिखता है। पंक्ति खोलने से कुछ नहीं होता। इसे संपादित या मिटाने की कोई स्क्रीन नहीं है।
+
+जुड़ा खर्च वैसा ही रहता है।
+
+## आगे
+
+- खर्च दर्ज करते समय व्यापारी को भुगतान: [खर्च पर](/hi/settlements/concept-add-transfer-on-expense)
+- रात के खाने का उदाहरण: [बकाया निपटाएँ](/hi/getting-started/tut-settle-balances)

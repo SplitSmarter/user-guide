@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Split Smart user-guide taxonomy",
+  "title": "Split Smarter user-guide taxonomy",
   "locales": ["en", "hi", "zh"],
   "default_locale": "en",
   "domains": [
@@ -20,7 +20,7 @@
   "doc_types": ["tutorial", "how-to", "concept", "reference"],
   "audiences": ["end-user", "admin", "developer", "agent"],
   "proper_nouns_allowlist": [
-    "Split Smart",
+    "Split Smarter",
     "Smart Ledger",
     "Debt Sync",
     "UPI",

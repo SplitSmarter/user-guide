@@ -1,6 +1,6 @@
-# Split Smart User Guide
+# Split Smarter User Guide
 
-End-user help center for **Split Smart**, published with [Nextra](https://nextra.site).
+End-user help center for **Split Smarter**, published with [Nextra](https://nextra.site).
 
 Repo: [github.com/SplitSmarter/user-guide](https://github.com/SplitSmarter/user-guide)  
 Local path: `D:\Projects\split smarter\user-guide`
@@ -52,7 +52,7 @@ npm run export:content  # export/pages.json for Vite / React Native embeds
 
 ## Theming (Platinum palette)
 
-Colors match the Split Smart mobile UI (`COLORS` / `global.css`).
+Colors match the Split Smarter mobile UI (`COLORS` / `global.css`).
 
 1. Edit **[`styles/palette.css`](styles/palette.css)** — light (`:root`) and dark (`.dark`) RGB tokens.
 2. Keep [`styles/nextra-bridge.css`](styles/nextra-bridge.css) mapping-only (no hardcoded hex).

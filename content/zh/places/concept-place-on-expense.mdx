@@ -1,27 +1,34 @@
 ---
-title: "On an expense"
-description: "Location on an expense is current, a saved place, or none. Translation pending."
+title: "在费用上"
+description: "费用上的 Location 是当前位置、已保存的地点，或没有。"
 id: "doc-plc-expense"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Location on an expense is current, a saved place, or none. Translation pending."
+summary: "费用上的 Location 是当前位置、已保存的地点，或没有。"
 taxonomy:
   domain: places
   module: places
   doc_type: concept
   audience: [end-user]
 entity_tags: [place, expense]
-keywords: [expense location, current location, add loc]
+keywords: [费用地点, 当前位置, add loc]
 related_docs:
   - doc-plc-save-place
   - doc-plc-merchant-location
   - doc-exp-attach-place
+  - doc-mem-photos
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# On an expense
+# 在费用上
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+添加费用时，**Location** 挨着 category 和小组。
 
-**Location** on an expense is **Current location**, a saved place, or **Add Loc** for none. It is not a Memory, a receipt, or a merchant branch. See the English page for the full explanation.
+- **Current location** 使用你现在所在的位置。
+- 已保存的地点使用你已经保留的位置。见 [保存一个地点](/zh/places/howto-save-a-place)。
+- **Add Loc** 表示这笔费用没有地点。这样可以。
+
+打开费用时，那个地点可以显示在地图上。
+
+这个位置不是 Memory。Memory 是这笔花费所属的经历。收据是账单的照片，不是地点。商户的分店属于转账，不属于这个芯片。见 [在转账上](/zh/places/concept-place-on-transfer)。

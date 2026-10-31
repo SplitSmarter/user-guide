@@ -1,29 +1,36 @@
 ---
-title: "Budgets"
-description: "A budget is a spending cap. Translation pending."
+title: "预算"
+description: "预算是花费上限。你选择它覆盖谁，也可以选择它看什么。"
 id: "doc-budgets-index"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "A budget is a spending cap. Translation pending."
+summary: "预算是花费上限。你选择它覆盖谁，也可以选择它看什么。"
 taxonomy:
   domain: budgets
   module: budgets
   doc_type: reference
   audience: [end-user]
 entity_tags: [budget]
-keywords: [budget, spending cap]
+keywords: [预算, 花费上限]
 related_docs:
   - doc-bud-create
   - doc-bud-rules
 version_introduced: v1.0.0
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 ---
 
-# Budgets
+# 预算
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+**预算** 是一段时间的花费上限。你为它命名、设置金额，并选择它覆盖谁：**Just me**、**Shared** 或 **Group**。它按 **Daily**、**Weekly**、**Monthly**、**Quarterly** 或 **Yearly** 重置。开始可以是过去。结束可以保持开放，或者必须是今天或更晚。
 
-A budget is a spending cap for **Just me**, **Shared**, or **Group**. A group budget shows on that group’s **Budgets** tab. The cards on home are examples. See the English page for the full explanation.
+创建一篇：[创建预算](/zh/budgets/howto-create-a-budget)。上限看什么，以及提醒和拦截的差别，见 [上限做什么](/zh/budgets/concept-budget-rules-and-caps)。
 
-- [Create a budget](/zh/budgets/howto-create-a-budget)
-- [What the cap does](/zh/budgets/concept-budget-rules-and-caps)
+## 它出现在哪里
+
+**小组** 预算出现在该小组的 **Budgets** 标签：名称、多久重置一次、**Soft** 或 **Hard**，以及金额。打开那一行还不可用。
+
+**Just me** 或 **Shared** 的预算没有自己的列表。添加费用时，匹配的预算可以显示成一张卡片，带名称和已用比例。这笔费用会超过硬上限时，卡片上显示 **Hard**。
+
+首页的 **Budgets & Goals** 卡片是示例。它们不是你保存的预算。
+
+保存之后，应用里没有画面可以编辑、删除或暂停预算。

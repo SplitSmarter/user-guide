@@ -1,27 +1,53 @@
 ---
-title: "Balances and transfers"
-description: "Who owes whom, and why a transfer does not clear that. Translation pending."
+title: "余额和转账"
+description: "共享费用之后谁欠谁，以及转账只有在你把它结到账单上之后才会抵上那笔欠款。"
 id: "doc-set-balances"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Who owes whom, and why a transfer does not clear that. Translation pending."
+summary: "共享费用之后谁欠谁，以及转账只有在你把它结到账单上之后才会抵上那笔欠款。"
 taxonomy:
   domain: settlements
   module: settlements
   doc_type: concept
   audience: [end-user]
 entity_tags: [balance, transfer, debt-sync]
-keywords: [balances, net, who owes whom]
+keywords: [余额, 净额, 谁欠谁]
 related_docs:
   - doc-set-record-transfer
   - doc-set-link-payment
   - doc-gs-settle
+  - doc-exp-paid-by-vs-sharers
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Balances and transfers
+# 余额和转账
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+记录一笔共享费用之后，Debt Sync 显示 **谁欠谁**。
 
-Net is amount paid minus share. Alice paid ₹1000, her share ₹400, Bob’s share ₹600, so Bob owes Alice ₹600. A transfer does not change that. See the English page for the full explanation.
+## 余额如何形成
+
+每笔共享费用都有 **付款** 的人和 **分摊** 费用的人。对这笔费用上的每个人：
+
+**净额 = 已付金额 − 份额**
+
+- 正净额表示别人欠他们钱。
+- 负净额表示他们欠别人钱。
+
+**例子：** Alice 付了晚餐的 ₹1000。Alice 的份额是 ₹400。Bob 的份额是 ₹600。
+
+| 人 | 已付 | 份额 | 净额 |
+|--------|------|-------|-----|
+| Alice  | ₹1000 | ₹400 | **+₹600**（Bob 欠她） |
+| Bob    | ₹0    | ₹600 | **−₹600**（欠 Alice） |
+
+付款人与分摊人见 [付款人与分摊人](/zh/expenses/concept-paid-by-vs-sharers)。
+
+## 转账改变什么
+
+转账记录钱已经移动。见 [记录转账](/zh/settlements/howto-record-a-transfer)。在你把那笔转账结到账单上之前，费用仍显示谁欠谁。见 [在费用上结清](/zh/settlements/howto-link-payment-to-expense)。
+
+## 下一步
+
+- 记录晚餐付款：[结清余额](/zh/getting-started/tut-settle-balances)
+- 从费用表单付给商户：[在费用上](/zh/settlements/concept-add-transfer-on-expense)

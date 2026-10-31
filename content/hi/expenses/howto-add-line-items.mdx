@@ -1,34 +1,39 @@
 ---
-title: "Add line items (हिंदी अनुवाद शीघ्र)"
-description: "Break an expense into line items and shares. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+title: "लाइन आइटम जोड़ें"
+description: "खर्च को आइटम में बाँटें, फिर बताएँ कि हर पंक्ति का भुगतान किसने किया और कौन उसे बाँटता है।"
 id: "doc-exp-line-items"
 locale: "hi"
 available_locales: ["en","hi","zh"]
-summary: "Break an expense into line items and shares. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।"
+summary: "खर्च को आइटम में बाँटें, फिर बताएँ कि हर पंक्ति का भुगतान किसने किया और कौन उसे बाँटता है।"
 taxonomy: {"domain":"expenses","module":"expenses","doc_type":"how-to","audience":["end-user"]}
 entity_tags: ["line-items"]
-keywords: ["line items","itemize"]
-related_docs: ["doc-exp-split-expense"]
+keywords: ["लाइन आइटम","आइटम","Assign items"]
+related_docs: ["doc-exp-split-expense","doc-exp-paid-by-vs-sharers"]
 version_introduced: "v1.0.0"
-last_updated: "2026-10-10T00:00:00.000Z"
+last_updated: "2026-10-30"
 ---
-## Overview
 
-Break an expense into line items and shares. — पूर्ण अनुवाद बाद में जोड़ा जाएगा।
+# लाइन आइटम जोड़ें
 
-## Prerequisites
+लाइन आइटम बिल की एक चीज़ है, जैसे एक व्यंजन। आप बता सकते हैं कि उस पंक्ति का भुगतान किसने किया और कौन उसे बाँटता है। अगर पंक्ति खाली छोड़ दें, तो खर्च के उस पक्ष पर पहले से मौजूद हर व्यक्ति उसे बाँटता है।
 
-- An active Split Smart account (unless this page is about creating one).
+## पहले से
 
-## Steps
+- आप खर्च फ़ॉर्म पर हैं, जिसमें वह सहेजा खर्च भी है जिसे आप संपादित कर रहे हैं
 
-1. Open the relevant screen in the app.
-2. Follow the on-screen flow for this task.
-3. Confirm the result matches what you expect.
+## कदम
 
-## Next steps
+1. खर्च पर **Assign items** खोलें।
+2. अपनी आइटम सूची से पंक्तियाँ जोड़ें। अगर आइटम वहाँ नहीं है, तो नया जोड़ सकते हैं।
+3. **Paid by** पर तय करें कि हर आइटम का भुगतान किसने किया। पंक्ति खाली छोड़ने पर **भुगतानकर्ता** में पहले से मौजूद हर व्यक्ति इस्तेमाल होता है।
+4. **Split between** पर तय करें कि हर आइटम कौन बाँटता है। पंक्ति खाली छोड़ने पर **इनके बीच बाँटें** में पहले से मौजूद हर व्यक्ति इस्तेमाल होता है।
+5. खर्च की कुल राशि आइटम का अनुसरण करती है। खर्च सहेजें।
 
-See related pages in the frontmatter `related_docs` list.
+## अच्छा परिणाम
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync, UPI) Latin रूप में रहेंगे।
+खर्च खोलें। **लाइन आइटम** हर पंक्ति, उसकी राशि, और कौन बाँटता है, दिखाता है।
 
+## आगे
+
+- [खर्च बाँटें](/hi/expenses/howto-split-an-expense)
+- [भुगतानकर्ता और साझीदार](/hi/expenses/concept-paid-by-vs-sharers)

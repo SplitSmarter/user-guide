@@ -2,7 +2,7 @@
   "name": "@splitsmarter/user-guide",
   "version": "0.1.0",
   "private": true,
-  "description": "Split Smart end-user help center (Nextra docs-as-code)",
+  "description": "Split Smarter end-user help center (Nextra docs-as-code)",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -23,6 +23,7 @@
     "@types/node": "20.17.6",
     "@types/react": "19.3.0",
     "gray-matter": "^4.0.3",
+    "pagefind": "^1.5.2",
     "patch-package": "^8.0.1"
   },
   "engines": {

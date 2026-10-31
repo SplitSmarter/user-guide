@@ -1,27 +1,34 @@
 ---
-title: "On an expense"
-description: "Location on an expense is current, a saved place, or none. Translation pending."
+title: "खर्च पर"
+description: "खर्च पर Location वर्तमान जगह, सहेजी जगह, या कोई नहीं है।"
 id: "doc-plc-expense"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Location on an expense is current, a saved place, or none. Translation pending."
+summary: "खर्च पर Location वर्तमान जगह, सहेजी जगह, या कोई नहीं है।"
 taxonomy:
   domain: places
   module: places
   doc_type: concept
   audience: [end-user]
 entity_tags: [place, expense]
-keywords: [expense location, current location, add loc]
+keywords: [खर्च की जगह, वर्तमान स्थान, add loc]
 related_docs:
   - doc-plc-save-place
   - doc-plc-merchant-location
   - doc-exp-attach-place
+  - doc-mem-photos
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# On an expense
+# खर्च पर
 
-> अनुवाद प्रगति पर है। उत्पाद नाम (Split Smart, Smart Ledger, Debt Sync) Latin रूप में रहेंगे।
+जब आप खर्च जोड़ते हैं, **Location** category और समूह के पास बैठती है।
 
-**Location** on an expense is **Current location**, a saved place, or **Add Loc** for none. It is not a Memory, a receipt, or a merchant branch. See the English page for the full explanation.
+- **Current location** वहाँ का उपयोग करती है जहाँ आप हैं।
+- सहेजी जगह उस स्थान का उपयोग करती है जिसे आप पहले रख चुके हैं। देखें [जगह सहेजें](/hi/places/howto-save-a-place)।
+- **Add Loc** का मतलब है इस खर्च की कोई जगह नहीं है। यह ठीक है।
+
+खर्च खोलने पर वह जगह मानचित्र पर दिख सकती है।
+
+यह स्थान Memory नहीं है। Memory वह अनुभव है जिससे खर्च जुड़ा है। रसीद बिल की फ़ोटो है, जगह नहीं। व्यापारी की शाखा ट्रांसफ़र पर होती है, इस चिप पर नहीं। देखें [ट्रांसफ़र पर](/hi/places/concept-place-on-transfer)।

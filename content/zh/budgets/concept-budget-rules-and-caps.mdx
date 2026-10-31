@@ -1,26 +1,49 @@
 ---
-title: "What the cap does"
-description: "A soft cap warns. A hard cap can refuse a new expense. Translation pending."
+title: "上限做什么"
+description: "软上限会提醒。硬上限可以拒绝一笔新费用。上限看的是份额，不是谁付的钱。"
 id: "doc-bud-rules"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "A soft cap warns. A hard cap can refuse a new expense. Translation pending."
+summary: "软上限会提醒。硬上限可以拒绝一笔新费用。上限看的是份额，不是谁付的钱。"
 taxonomy:
   domain: budgets
   module: budgets
   doc_type: concept
   audience: [end-user]
 entity_tags: [budget, cap]
-keywords: [soft cap, hard cap]
+keywords: [软上限, 硬上限, 预算范围]
 related_docs:
   - doc-bud-create
   - doc-budgets-index
+  - doc-exp-paid-by-vs-sharers
 version_introduced: v1.0.0
-last_updated: 2026-10-24
+last_updated: 2026-10-30
 ---
 
-# What the cap does
+# 上限做什么
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+上限是你在 [创建预算](/zh/budgets/howto-create-a-budget) 里设置的金额。
 
-**Soft** warns and the expense still saves. **Hard** can refuse a new expense that would pass the cap. The cap follows each person’s share, not who paid. See the English page for the full explanation.
+## 软和硬
+
+**Soft** 是起点。它在大约 80% 和达到上限时提醒。费用仍会保存。
+
+**Hard** 可以拒绝一笔会超过上限的新费用。它不会阻止转账。之后再改费用时不会再检查。
+
+## 它看什么
+
+上限看每个人在费用上的 **份额**，不是谁付的钱。见 [付款人与分摊人](/zh/expenses/concept-paid-by-vs-sharers)。
+
+**What counts** 里什么都不选时，这些费用份额会计入。选择 **Categories**、**Places**、**Merchants** 或 **Memories** 会缩小范围。父分类也会覆盖它下面的分类。
+
+你付给一个人的钱不计入。付给商户的钱，在该商户是你选中的商户时才计入。如果这笔付款就是同一张费用，它不会在份额之外再加一次。
+
+**Just me** 用你的份额。**Shared** 也用已经加入的人的份额。**Group** 用该小组里的人在该小组费用上的份额。
+
+## 何时重置
+
+**Daily**、**Weekly**、**Monthly**、**Quarterly** 或 **Yearly**。**Monthly** 是起点。
+
+**Forever** 表示没有固定结束日期。上限会按你选的周期继续重置。
+
+**This month** 或 **90 days** 这样的窗口在该范围结束时结束。开始可以是过去，那段时间里已有的花费会计入。结束可以保持开放，或者必须是今天或更晚。结束日期已经过去的预算不再运行。

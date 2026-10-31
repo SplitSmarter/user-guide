@@ -1,27 +1,45 @@
 ---
-title: "Groups, roles, and visibility"
-description: "Admin, coordinator, and member, plus public and private groups. Translation pending."
+title: "小组、角色和可见性"
+description: "创建小组的人是 admin。成员从较少的操作开始。公开小组在仍接受成员时可以被找到。"
 id: "doc-grp-roles-visibility"
 locale: "zh"
 available_locales: ["en", "hi", "zh"]
-summary: "Admin, coordinator, and member, plus public and private groups. Translation pending."
+summary: "创建小组的人是 admin。成员从较少的操作开始。公开小组在仍接受成员时可以被找到。"
 taxonomy:
   domain: groups
   module: groups
   doc_type: concept
   audience: [end-user]
 entity_tags: [group, roles, visibility]
-keywords: [admin, coordinator, member, public group, private group]
+keywords: [admin, coordinator, member, 公开, 私密]
 related_docs:
   - doc-groups-index
   - doc-grp-invite
   - doc-ppl-connection-settings
 version_introduced: v1.0.0
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 ---
 
-# Groups, roles, and visibility
+# 小组、角色和可见性
 
-> 完整译文稍后补充。产品专有名词（Split Smart、Smart Ledger、Debt Sync）保持拉丁写法。
+创建小组的人是 **admin**。后来加入的人从 **members** 开始。**coordinator** 拥有和 admin 一样的额外操作。
 
-The person who creates the group is the admin. People added later start as members. An admin or coordinator can edit the group and manage settlements and budgets. A member cannot. A public group can be found while it accepts members. A private group is only for members and people invited in. See the English page for the full explanation.
+你在 **Members** 上看到一个人的角色。
+
+## 谁能做什么
+
+**Admin** 和 **coordinator** 可以：
+
+- 编辑小组
+- 邀请并添加人
+- 记录费用
+- 批准成员
+- 管理结算和预算
+
+**member** 不编辑小组，也不管理结算或预算。成员可以记录费用、邀请、添加人，以及批准成员，但只在小组把这些操作留开的时候。
+
+## 公开和私密
+
+**public** 小组在仍接受成员时可以被找到。**private** 小组只给成员和被邀请的人。新小组从 public 开始。
+
+别人如何加入见 [邀请成员](/zh/groups/howto-invite-members)。他们是立刻加入还是收到邀请，取决于 [连接允许什么](/zh/people/concept-connection-settings) 里的设置。

@@ -1,27 +1,31 @@
 ---
-title: "Date window"
-description: "Start and end dates decide which expenses can stay linked. Translation pending."
+title: "तारीख की सीमा"
+description: "शुरू और अंत अनुभव को बताते हैं। खर्च तब जुड़ता है जब Memory चालू हो।"
 id: "doc-mem-dates"
 locale: "hi"
 available_locales: ["en", "hi", "zh"]
-summary: "Start and end dates decide which expenses can stay linked. Translation pending."
+summary: "शुरू और अंत अनुभव को बताते हैं। खर्च तब जुड़ता है जब Memory चालू हो।"
 taxonomy:
   domain: memories
   module: components
   doc_type: concept
   audience: [end-user]
 entity_tags: [memory, dates]
-keywords: ['memory dates', 'date window']
+keywords: [memory तारीख, तारीख की सीमा, शुरू अंत]
 related_docs:
   - doc-mem-concept
   - doc-mem-expense-links
   - doc-mem-lifecycle
 version_introduced: v1.0.0
-last_updated: 2026-10-21
+last_updated: 2026-10-30
 ---
 
-> पूर्ण अनुवाद शीघ्र। उत्पाद नाम (Split Smart, Memory, Smart Ledger) Latin रूप में रहेंगे.
+# तारीख की सीमा
 
-# Date window
+हर Memory का एक **शुरू** होता है। **अंत** वैकल्पिक है। दोनों मिलकर अनुभव बताते हैं। वे यह नियम नहीं हैं कि कौन से खर्च जुड़ेंगे। खर्च तब जुड़ता है जब Memory चालू थी। देखें [चालू Memory](/hi/memories/components/concept-current-context)।
 
-A Memory has a start and an end. An expense will not save while a selected Memory's dates do not cover the expense date. Later, links outside the window can be removed. Split Smart does not add links to old expenses on its own. See the English page for the full explanation.
+शुरू पिछला दिन हो सकता है, जब यात्रा या कार्यक्रम शुरू हुआ। वह भविष्य का दिन नहीं हो सकता। Memory बनाने पर वह उस शुरू से चालू हो जाती है। अगर शुरू पिछला है, तो उस अवधि में पहले से सहेजा खर्च बाद में जुड़ता है। वह काम सिर्फ़ लिंक जोड़ता है। पहले से रखे लिंक नहीं हटाता।
+
+अंत, जब आप रखें, आपकी समय-क्षेत्र में आज या बाद का दिन होना चाहिए, और शुरू के बाद। अगर समय-क्षेत्र नहीं है, तो आज UTC का दिन है। आज उस समय-क्षेत्र का कैलेंडर दिन है, सहेजे समय के आगे लिखी तारीख नहीं।
+
+आप Memory को जल्दी भी [पूरा](/hi/memories/guides/howto-complete-a-memory) कर सकते हैं। पूरा करने पर वह बंद हो जाती है। पहले से सहेजे लिंक रह जाते हैं। देखें [अवस्था](/hi/memories/components/concept-lifecycle) और [खर्च के लिंक](/hi/memories/components/concept-expense-links)।
