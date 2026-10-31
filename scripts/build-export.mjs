@@ -51,11 +51,11 @@ if (result.status !== 0) {
   process.exit(result.status === null ? 1 : result.status)
 }
 
-const require = createRequire(import.meta.url)
-const pagefindPkgPath = require.resolve('pagefind/package.json')
-const pagefindPkg = JSON.parse(readFileSync(pagefindPkgPath, 'utf8'))
+const pagefindEntryPoint = fileURLToPath(import.meta.resolve('pagefind'))
+const pagefindDir = path.resolve(path.dirname(pagefindEntryPoint), '..')
+const pagefindPkg = JSON.parse(readFileSync(path.join(pagefindDir, 'package.json'), 'utf8'))
 const pagefindBin = pagefindPkg.bin?.pagefind ?? pagefindPkg.bin
-const pagefindEntry = path.join(path.dirname(pagefindPkgPath), pagefindBin)
+const pagefindEntry = path.join(pagefindDir, pagefindBin)
 const outDir = fileURLToPath(new URL('../out', import.meta.url))
 
 const indexed = spawnSync(
